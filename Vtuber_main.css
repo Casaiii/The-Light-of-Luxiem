@@ -1,0 +1,1633 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kaisei Opti', serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.row {
+    /* position: relative; */
+}
+
+
+/* ---RWD手機版：375px--- */
+/* ---1.Navbar--- */
+nav {
+    position: relative;
+    /* outline: 1px solid red; */
+    background-color: black;
+}
+.logo {
+    /* outline: 1px solid red; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.logo a {
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    width: 100px;
+}
+
+.mobile-btn {
+    /* outline: 1px solid red; */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+.mobilebtn-1, .mobilebtn-2, .mobilebtn-3 {
+    width: 18px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #D3B572;
+    position: absolute;
+}
+.mobilebtn-1 {
+    transform: translateY(-7px);
+    transition: .5s;
+}
+.mobilebtn-2 {
+    transition: .5s;
+}
+.mobilebtn-3 {
+    transform: translateY(7px);
+    transition: .5s;
+}
+.mobile-menu-on {
+    left: 0px;
+  }
+  .mobilebtn-1-on {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .mobilebtn-2-on {
+    opacity: 0;
+  }
+  .mobilebtn-3-on {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.nav-right {
+    display: none;
+}
+
+.desktop-user {
+    display: none;
+}
+.mobile-menu {
+    /* height: 100vh; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url(./imgs/Navbar/mobile_navabr_bg.jpeg) no-repeat;
+    background-position: -65px 0px;
+    overflow: hidden;
+
+    transition: .5s;
+    /* position: fixed;
+    left: 0px; */
+    /* right: 0; */
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-imgwrap {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #D3B572;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.user-imgwrap img {
+    width: 100%;
+}
+.user-name {
+    color: #D3B572;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.user-login {
+    color: #D3B572;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.mobile-menu-list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mobile-menu ul {
+    list-style-type: none;
+    line-height: 35px;
+    padding-left: 0px;
+    margin: auto;
+}
+.mobile-menu-title-all {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.mobile-menu-title-all ul {
+    /* outline: 1px solid red; */
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+.mobile-menu-title-all:hover ul {
+    height: 150px;
+}
+
+.mobile-menu-maintitle {
+    color: #D3B572;
+    font-size: 22px;
+    font-weight: 500;
+}
+.mobile-menu-maintitle:hover {
+    text-decoration: none;
+    color: #D3B572;
+}
+.mobile-menu-subtitle {
+    color: #fff;
+    font-size: 16px;
+}
+.mobile-menu-subtitle:hover {
+    text-decoration: none;
+    color: #D3B572;
+}
+
+.mobile-menu-footer {
+    /* outline: 1px solid red; */
+    color: #D3B572;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 10px;
+}
+
+
+/* ---配件購物頁-------------------- */
+.desktop-itemshop-banner {
+    display: none;
+}
+
+.fitting-room {
+    background-color: #000;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* height: 2800px; */
+    /* overflow: hidden; */
+}
+.fitting-room h1 {
+    font-size: 32px;
+    font-family: Kaisei Opti;
+    color: #D3B572;
+    padding-left: 20px;
+    z-index: 1;
+}
+.spot-light {
+    width: 100%;
+    height: 350px;
+    /* outline: 1px solid red; */
+    position: relative;
+}
+.spot-light-ball {
+    position: absolute;
+    width: 320px;
+    height: 310px;
+    left: 30px;
+    top: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 30px #FFFFFF;
+}
+
+/* 下面是 兩個比較框 */
+.fitting-room-row {
+    position: relative;
+}
+.fitting-room-main {
+    width: 100%;
+    display: flex;
+    /* outline: 1px solid green; */
+    position: absolute;
+    top: -350px;
+}
+.col-6 {
+    /* outline: 1px solid red; */
+}
+.fitting-room-compare-role {
+    width: 130px;
+    border-bottom: 2px solid #D3B572;
+    margin: auto;
+}
+.fitting-room-compare-role a {
+    color: #667080;
+    font-size: 12px;
+}
+.fitting-room-compare-role-list a {
+    color: #667080;
+    font-size: 12px;
+}
+
+
+.fitting-room-compare-role-imgwrap {
+    width: 130px;
+    height: 160px;
+    border: 2px solid #D3B572;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+}
+.fitting-room-compare-role-imgwrap img {
+    width: 100%;
+    object-fit: cover;
+}
+.fitting-room-tryit {
+    display: none;
+}
+
+.fitting-room-add {
+    margin-top: 20px;
+    /* outline: 1px solid red; */
+    padding-left: 18px;
+}
+.fitting-room-add-text p, .fitting-room-buy-text p {
+    color: #667080;
+    font-size: 14px;
+}
+.fitting-room-add-text i {
+    color: #667080;
+    /* outline: 1px solid red; */
+    padding-top: 2px;
+    padding-left: 6px;
+}
+.fitting-room-add svg {
+    width: 92px;
+    /* outline: 1px solid red; */
+    margin-top: -50px;
+}
+.fitting-room-buy svg {
+    width: 82px;
+    margin-top: -50px;
+}
+
+.fitting-room-buy {
+    margin-top: -10px;
+    /* outline: 1px solid red; */
+    padding-left: 62px;
+}
+.fitting-room-buy-text i {
+    color: #667080;
+    /* outline: 1px solid red; */
+    padding-top: 2px;
+    padding-left: 6px;
+}
+
+/* 下面是 Your coins */
+.fitting-room-yourcoin {
+    /* outline: 1px solid red; */
+}
+.fitting-room-yourcoin h3 {
+    font-size: 20px;
+    font-family: Kaisei Opti;
+    color: #fff;
+    padding-left: 20px;
+}
+.fitting-room-yourcoin-type {
+    /* outline: 1px solid red; */
+    padding-left: 50px;
+}
+.fitting-room-yourcoin-type-gold {
+    align-items: center;
+}
+.fitting-room-yourcoin-type-gold svg, .fitting-room-yourcoin-type-free svg {
+    width: 20px;
+    height: 20px;
+}
+.fitting-room-yourcoin-type-gold-number {
+    font-size: 15px;
+    color: #D3B572;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.fitting-room-yourcoin-type-free {
+    align-items: center;
+    padding-left: 10px;
+}
+.fitting-room-yourcoin-type-free-number {
+    font-size: 15px;
+    color: #D3B572;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.fitting-room-yourcoin-moreinfo {
+    display: none;
+}
+.desktop-itemtype-menu {
+    display: none;
+}
+
+
+.fitting-room-select {
+    width: 90px;
+    /* border-bottom: 1px solid #D3B572; */
+    /* outline: 1px solid red; */
+    margin-right: 95px;
+}
+.fitting-room-select a {
+    color: #fff;
+    font-size: 14px;
+}
+.fitting-room-select:hover a {
+    color: #D3B572;
+}
+.fitting-room-select-list a {
+    /* color: #667080; */
+    font-size: 12px;
+}
+
+.fitting-room-itemselect-menu {
+    width: 100%;
+    /* outline: 1px solid red; */
+    position: relative;
+}
+.fitting-room-itemselect-menu p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: -51px;
+    right: 20px;
+}
+.fitting-room-itemselect-menu i {
+    padding-left: 3px;
+}
+.desktop-itemshop-tags {
+    display: none;
+}
+
+/* 配件購物 手機漢堡夾 */
+.mobile-itemtype-menu {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    position: absolute;
+    left: 375px;
+    display: none;
+}
+.mobile-itemtype-menu-on {
+    left: 0px;
+}
+.mobile--itemtype-menu-close {
+    font-size: 23px;
+    /* outline: 1px solid red; */
+    position: absolute;
+    right: 20px;
+}
+.mobile-itemtype-menu-hotfield {
+    /* outline: 1px solid red; */
+    padding-left: 50px;
+}
+
+.mobile-itemtype-menu h4 {
+    font-size: 16px;
+    color: #D3B572;
+    padding-top: 35px;
+}
+.mobile-itemtype-menu ul {
+    list-style-type: none;
+    line-height: 35px;
+    padding-left: 20px;
+    /* margin: auto; */
+}
+.mobile-itemtype-topic a {
+    color: #667080;
+    font-weight: 500;
+    font-size: 14px;
+}
+.mobile-itemtype-topic a:hover {
+    text-decoration: none;
+    color: #D3B572;
+}
+.mobile-itemtype-topic ul {
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+.mobile-itemtype-topic:hover ul {
+    height: 255px;
+}
+
+
+/* ---配件清單--- */
+.fitting-room-items-list-row1 {
+    width: 100%;
+    /* outline: 1px solid red; */
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.fitting-room-item-unit {
+    /* outline: 1px solid red; */
+}
+
+.fitting-room-item-imgwrap {
+    width: 75px;
+    height: 75px;
+    /* outline: 1px solid red; */
+    border: 2px solid #667080;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.fitting-room-item-imgwrap img {
+    width: 100%;
+    object-fit: cover;
+}
+.fitting-room-item-name {
+    padding-top: 10px;
+}
+.fitting-room-item-name p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.fitting-room-item-name-price {
+    padding-top: 6px;
+}
+.fitting-room-item-name-price-gold-number, .fitting-room-item-name-price-free-number {
+    font-size: 14px;
+    color: #D3B572;
+    padding-left: 3px;
+}
+.desktop-fitting-room-item-unit {
+    display: none;
+}
+
+.mobile-items-list-arrow {
+    /* outline: 1px solid red; */
+    width: 100%;
+    color: #D3B572;
+    font-size: 20px;
+    padding: 0px 15px;
+    position: absolute;
+    top: 1290px;
+}
+.desktop-items-list-arrow {
+    display: none;
+}
+.desktop-items-list-arrow i, .desktop-items-list-arrow a {
+    display: none;
+}
+
+
+/* ---代幣商店頁--------------------------- */
+.coinshop {
+    background-color: #000;
+    width: 100%;
+    padding-top: 30px;
+    /* padding-bottom: 380px; */
+
+    overflow: hidden;
+}
+
+.freecoin-mission-title, .goldcoin-title {
+    margin-left: 20px;
+}
+.freecoin-mission-title-en, .goldcoin-title-en {
+    font-size: 24px;
+    color: #D3B572;
+    font-family: Kaisei Opti;
+    /* outline: 1px solid red; */
+}
+.freecoin-mission-title-tc, .goldcoin-title-tc {
+    font-size: 16px;
+    color: #fff;
+    /* outline: 1px solid red; */
+    padding-top: 4px;
+    padding-left: 12px;
+}
+/* 代幣商店 3D輪播牆 */
+[type=radio] {
+    display: none;
+}
+
+#carousel {
+    /* outline: 1px solid red; */
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#carousel label {
+    margin: auto;
+    width: 45%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+#s1:checked~#slider4,
+#s2:checked~#slider5,
+#s3:checked~#slider1,
+#s4:checked~#slider2,
+#s5:checked~#slider3 {
+    /* box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37); */
+    transform: translate3d(-90%, 0, -200px);
+    filter: grayscale(70%);
+}
+
+#s1:checked~#slider5,
+#s2:checked~#slider1,
+#s3:checked~#slider2,
+#s4:checked~#slider3,
+#s5:checked~#slider4 {
+    /* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2); */
+    transform: translate3d(-45%, 0, -100px);
+    filter: grayscale(40%);
+}
+
+#s1:checked~#slider1,
+#s2:checked~#slider2,
+#s3:checked~#slider3,
+#s4:checked~#slider4,
+#s5:checked~#slider5 {
+    /* box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19); */
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#slider2,
+#s2:checked~#slider3,
+#s3:checked~#slider4,
+#s4:checked~#slider5,
+#s5:checked~#slider1 {
+    /* box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .19); */
+    transform: translate3d(45%, 0, -100px);
+    filter: grayscale(40%);
+}
+
+#s1:checked~#slider3,
+#s2:checked~#slider4,
+#s3:checked~#slider5,
+#s4:checked~#slider1,
+#s5:checked~#slider2 {
+    /* box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37); */
+    transform: translate3d(90%, 0, -200px);
+    filter: grayscale(70%);
+}
+
+/* 代幣商店頁 Your coins */
+.coinshop-yourcoins {
+    /* outline: 1px solid green; */
+    padding-bottom: 70px;
+    margin-top: 30px;
+}
+.coinshop-yourcoins h3 {
+    font-size: 20px;
+    font-family: Kaisei Opti;
+    color: #fff;
+    text-align: center;
+    /* padding-top: 10px; */
+    /* outline: 1px solid red; */
+    position: relative;
+    z-index: 1;
+}
+.coinshop-yourcoin-type {
+    border: 1px solid #D3B572;
+    width: 180px;
+    height: 46px;
+    border-radius: 10px;
+    /* margin: auto; */
+    position: absolute;
+    left: 100px;
+    top: 1000px;
+}
+.coinshop-yourcoin-type-gold {
+    align-items: center;
+    padding-left: 20px;
+}
+.coinshop-yourcoin-type-free {
+    align-items: center;
+    padding-left: 25px;
+}
+.coinshop-yourcoin-type-gold svg, .coinshop-yourcoin-type-free svg {
+    width: 20px;
+    height: 20px;
+}
+.coinshop-yourcoin-type-gold-number, .coinshop-yourcoin-type-free-number {
+    font-size: 16px;
+    color: #D3B572;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+/* 金幣禮包 */
+.coinshop-gold-package-row {
+    /* outline: 1px solid red; */
+    padding-top: 10px;
+}
+.coinshop-gold-package-unit {
+    /* outline: 1px solid red; */
+    /* padding: 0 6px; */
+    margin-right: 15px;
+}
+
+.coinshop-gold-package-unit-imgwrap {
+    width: 155px;
+    height: 155px;
+
+    position: relative;
+}
+.coinshop-gold-package-unit-imgwrap img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.coinshop-gold-package-unit-goldnumber-wrap {
+    /* outline: 1px solid red; */
+    width: 80px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:50px;
+    left: 50px;
+}
+.coinshop-gold-package-unit-goldnumber {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.coinshop-gold-package-unit-goldnumber-wrap svg {
+    margin-left: 5px;
+    width: 17px;
+    height: 17px;
+}
+
+.coinshop-gold-package-unit-ntd-wrap {
+    /* outline: 1px solid red; */
+    display: flex;
+    width: 60px;
+    height: 20px;
+    background-color: #D3B572;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:80px;
+    left: 48px;
+    z-index: 1;
+}
+.coinshop-gold-package-unit-ntd-wrap:hover {
+    background-color: #000;
+}
+.coinshop-gold-package-unit-ntd, .coinshop-gold-package-unit-ntd-price {
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+}
+.coinshop-gold-package-unit-ntd-wrap:hover .coinshop-gold-package-unit-ntd, .coinshop-gold-package-unit-ntd-wrap:hover .coinshop-gold-package-unit-ntd-price {
+    color: #fff;
+}
+
+.coinshop-gold-package-unit-ntd-price {
+    margin-left: 5px;
+}
+.coinshop-gold-package-unit-deco-imgwrap {
+    width: 40px;
+    height: 40px;
+    /* outline: 1px solid red; */
+    position: absolute;
+    bottom: 6px;
+    right: 5px;
+}
+.coinshop-gold-package-unit-deco-imgwrap img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.coinshop-gold-package-unit-deco-imgwrap2 {
+    /* outline: 1px solid red; */
+    width: 62px;
+    height: 32px;
+    position: absolute;
+    bottom: 12px;
+    right: 0px;
+}
+.coinshop-gold-package-unit-deco-imgwrap2 img {
+    width: 100%;
+    object-fit: cover;
+}
+.coinshop-gold-package-unit-deco-imgwrap3 {
+    /* outline: 1px solid red; */
+    width: 66px;
+    height: 32px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+.coinshop-gold-package-unit-deco-imgwrap3 img {
+    width: 100%;
+    object-fit: cover;
+}
+.coinshop-gold-package-unit-deco-imgwrap4 {
+    /* outline: 1px solid red; */
+    width: 60px;
+    height: 32px;
+    position: absolute;
+    bottom: 16px;
+    right: 0px;
+}
+.coinshop-gold-package-unit-deco-imgwrap4 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 金幣購買流程QA */
+.coinshop-buy-qa {
+    margin-top: 35px;
+}
+.wrapper {
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.collapsible {
+    width: 87%;
+    overflow: hidden;
+    font-weight: 500;
+}
+.collapsible input {
+    display: none;
+}
+
+.collapsible label {
+    font-size: 14px;
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding:  10px;
+    border-bottom: 2px solid #D3B572;
+    z-index: 1;
+}
+.collapsible label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    background: url(./icons/angle-down-solid.svg) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label:after {
+    transform: rotate(180deg);
+}
+
+.collapsible-text {
+    min-height: 1px;
+    overflow: hidden;
+    /* border-radius: 4px; */
+    line-height: 2;
+    position: relative;
+    top: -85%;
+    opacity: .5;
+    transition: all 0.3s ease;
+}
+.collapsible-text p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.collapsible input:checked ~ .collapsible-text {
+    max-height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 1;
+    top: 0;
+}
+
+.collapsible-text p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---Footer---- */
+.desktop-footer {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* ---RWD桌機版：1920px--- */
+@media screen and (min-width: 1600px) {
+    nav {
+        height: 80px;
+    }
+    .desktop-menu-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        /* outline: 1px solid red; */
+        padding-top: 0px;
+        padding-bottom: 0px;
+        line-height: 80px;
+    }
+    .logo a {
+        display: block;
+    }
+    .logo img {
+        width: 175px;
+    }
+
+    .nav-right {
+        display: block;
+        /* outline: 1px solid red; */
+        margin-left: 70px;
+    }
+    .nav-right ul {
+        margin-bottom: 0px;
+    }
+    .nav-right li {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .nav-right a {
+        font-size: 20px;
+        color: #fff;
+    }
+    .nav-right a:hover {
+        text-decoration: none;
+        color: #D3B572;
+    }
+
+
+
+    .nav__listitem {
+        position: relative;
+    }
+    .nav__listitem:hover ul,
+        .nav__listitem:focus ul {
+            opacity: 1;
+            visibility: visible;
+        }
+    .nav__listitemdrop {
+        position: absolute;
+        top: 3.47rem;
+        left: -3.7rem;
+        box-shadow: 0 0 10px #e1e5ee;
+        border: 1px solid #D3B572;
+        background-color: #fff;
+        border-radius: 0.2rem;
+        width: 12rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 200ms ease-in-out;
+        z-index: 1;
+    }
+    .nav__listitemdrop li {
+        border-bottom: 1px solid #D3B572;
+        list-style: none;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 0.2rem;
+        transition: background-color 200ms ease-in-out;
+
+        text-align: center;
+    }
+    .nav__listitemdrop a {
+        color: #D3B572;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .nav__listitemdrop li:hover,
+    .nav__listitemdrop li:focus {
+        background-color: #EEF1F4;
+    }
+
+
+    .desktop-user-nav {
+        display: flex;
+    }
+    .desktop-user {
+        display: block;
+    }
+    .user-info {
+        margin-left: 70px;
+        margin-right: 30px;
+    }
+    .user-imgwrap, .user-name, .user-login {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .user-name, .user-login {
+        font-size: 20px;
+    }
+    .log-icon {
+        height: 40px;
+        text-align: center;
+        
+    }
+    .log-icon i {
+        font-size: 25px;
+        color: #D3B572;
+        line-height: 40px;
+    }
+
+    .user-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-btn {
+        display: none;
+    }
+    .mobile-menu {
+        display: none;
+    }
+
+
+    /* ---配件購物頁-------------------- */
+    .desktop-itemshop-banner {
+        display: block;
+        width: 100%;
+        height: 600px;
+        /* outline: 1px solid red; */
+    }
+
+    /* 下面是主Banner輪播牆 */
+    .desktop-itemshop-banner-carousel {
+        width: 100%;
+        height: 600px;
+        /* outline: 1px solid blue; */
+        position: relative;
+        overflow: hidden;
+    }
+    .itemshop-banner-carousel-train {
+        width: 500%;
+        height: 600px;
+        transition: .5s;
+    }
+    .itemshop-banner-carousel-train li {
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+
+    .desktop-itemshop-banner-imgwrap {
+        width: 100%;
+        height: 600px;
+    }
+    .desktop-itemshop-banner-imgwrap img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: 0px -220px; 
+    }
+    .itemshop-banner-role {
+        /* outline: 2px solid green; */
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        bottom: 0px;
+        left: 550px;
+        overflow: hidden;
+    }
+    .itemshop-banner-role-imgwrap {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+    }
+    .itemshop-banner-role-imgwrap img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: 0px -20px;
+    }
+    .itemshop-banner-role-hand-imgwrap1 {
+        /* outline: 1px solid red; */
+        width: 120px;
+        position: absolute;
+        bottom: -25px;
+        left: 12px;
+    }
+    .itemshop-banner-role-hand-imgwrap1 img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .itemshop-banner-role-hand-imgwrap2 {
+        width: 220px;
+        position: absolute;
+        bottom: -55px;
+        left: -10px;
+    }
+    .itemshop-banner-role-hand-imgwrap2 img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .itemshop-banner-role-hand-imgwrap3 {
+        /* outline: 1px solid red; */
+        width: 155px;
+        position: absolute;
+        bottom: -43px;
+        left: -10px;
+    }
+    .itemshop-banner-role-hand-imgwrap3 img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .itemshop-banner-role-hand-imgwrap4 {
+        /* outline: 1px solid red; */
+        width: 210px;
+        position: absolute;
+        bottom: -175px;
+        left: -15px;
+    }
+    .itemshop-banner-role-hand-imgwrap4 img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .itemshop-banner-role-hand-imgwrap5 {
+        /* outline: 1px solid red; */
+        width: 300px;
+        position: absolute;
+        bottom: -120px;
+        left: 200px;
+    }
+    .itemshop-banner-role-hand-imgwrap5 img {
+        width: 100%;
+        object-fit: cover;
+    }
+    /* slider dots */
+    .desktop-itemshop-banner-carousel-slider-dots {
+        /* outline: 1px solid red; */
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+    }
+    .desktop-itemshop-banner-carousel-slider-dots li {
+        width: 35px;
+        height: 8px;
+        border-radius: 5px;
+        background-color: #fff;
+        margin: 0 10px;
+        transition: .5s;
+        cursor: pointer;
+    }
+    #desktop-itemshop-banner-carousel-slider-dots-no1 {
+        margin-left: 0;
+    }
+    .desktop-itemshop-banner-carousel-slider-dots li:hover {
+        background-color: #D3B572;
+    }
+    
+
+    /* Fitting Room */
+    .desktop-itemshop-banner-carousel-slider-dots {
+        position: absolute;
+        left: 240px;
+    }
+    .fitting-room h1 {
+        font-size: 128px;
+        font-family: Kaisei Opti;
+        /* outline: 1px solid red; */
+        padding-top: 80px;
+        position: absolute;
+        right: 240px;
+    }   
+    .spot-light-ball {
+        width: 685px;
+        height: 685px;
+        left: 200px;
+        top: 100px;
+    }
+    .fitting-room-yourcoin {
+        position: absolute;
+        left: 240px;
+        top: 800px;
+    }
+    .fitting-room-yourcoin h3 {
+        font-size: 48px;
+        font-family: Kaisei Opti;
+        padding-left: 0px;
+    }
+    .fitting-room-yourcoin-type {
+        padding-left: 0px;
+    }
+    .fitting-room-yourcoin-type-gold svg, .fitting-room-yourcoin-type-free svg {
+        width: 35px;
+        height: 35px;
+    }
+    .fitting-room-yourcoin-type-free {
+        padding-left: 35px;
+    }
+    .fitting-room-yourcoin-type-gold-number {
+        font-size: 24px;
+    }
+    .fitting-room-yourcoin-type-free-number {
+        font-size: 24px;
+    }
+    .fitting-room-yourcoin-moreinfo {
+        display: block;
+    }
+    .fitting-room-yourcoin-moreinfo {
+        /* outline: 1px solid red; */
+        padding-top: 10px;
+        padding-left: 123px;
+    }
+    .fitting-room-yourcoin-moreinfo a {
+        font-size: 14px;
+        color: #fff;
+    }
+    .fitting-room-yourcoin-moreinfo a:hover {
+        color: #D3B572;
+        text-decoration: none;
+    }
+    /* 篩選條件 */
+    .fitting-room-select-wrap {
+        position: relative;
+        width: 100%;
+        /* outline: 1px solid red; */
+    }
+    .fitting-room-select{
+        width: 100px;
+        /* outline: 1px solid red; */
+        margin: 0px;
+        text-align: right;
+        position: absolute;
+        top: 350px;
+        left: 1120px;
+    }
+
+    /* 桌機 Hashtags */
+    .desktop-itemshop-tags {
+        display: block;
+        width: 320px;
+        padding: 0 10px;
+        margin-left: 1320px;
+        margin-top: 180px;
+        /* outline: 1px solid red; */
+    }
+    .desktop-itemshop-tags a {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #667080;
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 10px 18px;
+        margin: 0px 6px 15px;
+    }
+    .desktop-itemshop-tags a:hover {
+        text-decoration: none;
+        background-color: #D3B572;
+        color: #fff;
+    }
+
+
+
+    /* 配件購物 桌機配件類型列表 */
+    .desktop-itemtype-menu {
+        display: block;
+        /* outline: 1px solid red; */
+        position: relative;
+    }
+    .desktop-itemtype-menu-all {
+        position: absolute;
+        top: -400px;
+        /* left: 240px; */
+        left: 300px;
+    }
+    .desktop-itemtype-menu h4 {
+        color: #D3B572;
+        font-size: 24px;
+        padding-top: 35px;
+    }
+    .desktop-itemtype-menu ul {
+        list-style-type: none;
+        line-height: 50px;
+    }
+    .desktop-itemtype-topic a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .desktop-itemtype-topic a:hover {
+        text-decoration: none;
+        color: #D3B572;
+    }
+    .desktop-itemtype-topic-list a {
+        color: #D3B572;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .desktop-itemtype-topic-list a:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+    .desktop-itemtype-topic-list {
+        /* outline: 1px solid red; */
+    }
+    .desktop-itemtype-topic ul {
+        height: 0px;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .desktop-itemtype-topic:hover ul {
+        height: 350px;
+    }
+
+
+
+
+
+
+
+
+    .fitting-room-select a {
+        font-size: 16px;
+    }
+    .fitting-room-select-list a {
+        font-size: 16px;
+    }
+
+
+    /* 下面是 兩個比較框 */
+    .fitting-room-main {
+        top: -100px;
+        left: 190px;
+        /* outline: 1px solid green; */
+        width: 60%;
+    }
+    .fitting-room-compare-content {
+        position: relative;
+    }
+    .fitting-room-compare-role {
+        width: 255px;
+    }
+    .fitting-room-compare-role a {
+        font-size: 16px;
+    }
+    .fitting-room-compare-role-list a {
+        font-size: 16px;
+    }
+
+    .fitting-room-compare-role-imgwrap {
+        width: 255px;
+        height: 280px;
+    }
+    .fitting-room-tryit {
+        display: block;
+    }
+    .fitting-room-tryit p {
+        /* outline: 1px solid red; */
+        width: 160px;
+        font-size: 48px;
+        color: #D3B572;
+        font-family: Kaisei Opti;
+        position: absolute;
+        top: 100px;
+        left: 224px;
+        transform: rotate(90deg);
+    }
+
+    .fitting-room-add {
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+    .fitting-room-add-text p, .fitting-room-buy-text p {
+        font-size: 20px;
+    }
+    .fitting-room-add-text i {
+        font-size: 18px;
+        padding-top: 6px;
+        padding-left: 6px;
+    }
+    .fitting-room-add svg {
+        width: 120px;
+        height: auto;
+    }
+    .fitting-room-buy svg {
+        width: 100px;
+        height: auto;
+    }
+
+    .fitting-room-buy {
+        margin-top: -50px;
+        padding-left: 185px;
+    }
+
+    .fitting-room-buy-text i {
+        font-size: 18px;
+        padding-top: 7px;
+        padding-left: 6px;
+    }
+
+    /* 配件清單 */
+    .fitting-room-items-list-rowtop {
+        margin-top: 50px;
+        z-index: 1;
+        /* outline: 1px solid red; */
+    }
+    .fitting-room-items-list-row1 {
+        width: 75%;
+        padding: 0;
+        padding-top: 30px;
+        margin-left: 200px;
+    }
+    .fitting-room-item-imgwrap {
+        width: 100px;
+        height: 100px;
+    }
+    .fitting-room-item-name p {
+        font-size: 14px;
+    }
+    .fitting-room-item-name-price-gold-number, .fitting-room-item-name-price-free-number {
+        font-size: 16px;
+        padding-left: 6px;
+    }
+    .desktop-fitting-room-item-unit {
+        display: block;
+    }
+
+    /* 桌機版 頁尾分頁 */
+    .desktop-items-list-arrow {
+        display: block;
+        /* outline: 1px solid red; */
+        padding-left: 900px;
+        padding-top: 30px;
+    }
+    .desktop-items-list-arrow i {
+        display: block;
+        color: #D3B572;
+        width: 24px;
+        height: 24px;
+        padding: 5px 15px;
+    }
+    .desktop-items-list-arrow a {
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 0;
+        padding: 0 15px;
+    }
+
+    .fitting-room-itemselect-menu {
+        display: none;
+    }
+
+
+    .mobile-itemtype-menu {
+        display: none;
+    }
+    .mobile-items-list-arrow {
+        display: none;
+    }
+    .mobile-items-list-arrow-left, .mobile-items-list-arrow-right {
+        display: none;
+    }
+
+
+    /* ---代幣商店頁--------------------------- */
+    .freecoin-mission-title, .goldcoin-title {
+        margin-left: 240px;
+    }
+    .freecoin-mission-title-en, .goldcoin-title-en {
+        font-size: 48px;
+        color: #D3B572;
+    }
+    .freecoin-mission-title-tc, .goldcoin-title-tc {
+        font-size: 24px;
+        color: #fff;
+        padding-top: 12px;
+        padding-left: 18px;
+    }
+    /* 代幣商店 3D輪播牆 */
+    #carousel {
+        height: 500px;
+        padding-top: 45px;
+    }
+    #carousel label {
+        width: 25%;
+    }
+
+    /* 代幣商店頁 Your coins */
+    .coinshop-yourcoins {
+        padding-bottom: 70px;
+        margin-top: 90px;
+    }
+    .coinshop-yourcoins h3 {
+        font-size: 48px;
+        text-align: center;
+    }
+    .coinshop-yourcoin-type {
+        width: 755px;
+        height: 140px;
+        left: 580px;
+        top: 832px;
+    }
+    .coinshop-yourcoin-type-gold {
+        padding-left: 160px;
+    }
+    .coinshop-yourcoin-type-free {
+        padding-left: 160px;
+    }
+    .coinshop-yourcoin-type-gold svg, .coinshop-yourcoin-type-free svg {
+        width: 55px;
+        height: 55px;
+    }
+    .coinshop-yourcoin-type-gold-number, .coinshop-yourcoin-type-free-number {
+        font-size: 48px;
+        padding-left: 20px;
+        font-weight: 500;
+    }
+    
+    .goldcoin-title {
+        /* outline: 1px solid red; */
+        margin-top: 150px;
+    }
+
+    /* 金幣禮包 */
+    .coinshop-gold-package-unit {
+        margin-right: 300px;
+    }
+    .coinshop-gold-package-row-no1 {
+        /* outline: 1px solid red; */
+        margin-left: 560px;
+        /* margin-top: 50px; */
+    }
+    .coinshop-gold-package-row-no2 {
+        /* outline: 1px solid blue; */
+        position: absolute;
+        top: 1350px;
+        left: 280px;
+    }
+
+    .coinshop-gold-package-unit-imgwrap {
+        width: 350px;
+        height: 350px;
+    }
+    .coinshop-gold-package-unit-goldnumber-wrap {
+        width: 180px;
+        top: 108px;
+        left: 90px;
+    }
+    .coinshop-gold-package-unit-goldnumber {
+        font-size: 48px;
+    }
+    .coinshop-gold-package-unit-goldnumber-wrap svg {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    
+    .coinshop-gold-package-unit-ntd-wrap {
+        width: 120px;
+        height: 40px;
+        top:187px;
+        left: 112px;
+    }
+    .coinshop-gold-package-unit-ntd, .coinshop-gold-package-unit-ntd-price {
+        font-size: 20px;
+    }
+    .coinshop-gold-package-unit-ntd-price {
+        margin-left: 10px;
+    }
+    .coinshop-gold-package-unit-deco-imgwrap {
+        width: 88px;
+        height: 70px;
+        bottom: 30px;
+        right: 10px;
+    }
+    .coinshop-gold-package-unit-deco-imgwrap2 {
+        width: 140px;
+        height: 75px;
+        bottom: 15px;
+        right: 0px;
+    }
+    .coinshop-gold-package-unit-deco-imgwrap3 {
+        /* outline: 1px solid red; */
+        width: 160px;
+        height: 67px;
+        bottom: 12px;
+        right: 0px;
+    }
+    .coinshop-gold-package-unit-deco-imgwrap4 {
+        /* outline: 1px solid red; */
+        width: 145px;
+        height: 110px;
+        bottom: 6px;
+        right: -5px;
+    }
+
+    /* 金幣購買流程QA */
+    .coinshop-buy-qa {
+        margin-top: 340px;
+    }
+    .wrapper {
+        margin-top: 18px;
+    }
+    .collapsible {
+        width: 65%;
+    }
+    .collapsible label {
+        font-size: 24px;
+    }
+    .collapsible label:after {
+        width: 28px;
+        height: 28px;
+    }
+    .collapsible-text p {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ---Footer---- */
+    footer {
+        width: 100vw;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #000;
+    }
+    .desktop-footer {
+        display: block;
+    }
+    .desktop-footer-team3rd {
+        font-size: 16px;
+        color: #D3B572;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+
+}
+
+
+
