@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar/Footer 測試版</title>
+    <title>Navbar/Footer 正式版（可收合）</title>
 
     <!-- 連結主要的css檔 -->
-    <link rel="stylesheet" href="./Vtuber_main.css">
+    <link rel="stylesheet" href="./css/0.navbar_footer.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -126,7 +126,7 @@
 
             <div class="desktop-user">
                 <div class="desktop-user-nav">
-                    <div class="user-info">
+                    <a class="user-info" href="#">
                         <div class="user-imgwrap">
                             <img src="./imgs/Navbar/user_img.png" alt="">
                         </div>
@@ -135,14 +135,14 @@
                         <div class="log-icon">
                             <i class="fa-solid fa-right-to-bracket"></i>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="user-cart">
+                    <a class="user-cart" href="#">
                         <div class="user-login">購物車</div>
                         <div class="log-icon">
                             <i class="fa-solid fa-cart-plus"></i>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -171,13 +171,13 @@
 
     <!-- 漢堡夾清單mobile_menu_list -->
     <div class="mobile-menu">
-        <div class="user-info">
+        <a class="user-info" href="#">
             <div class="user-imgwrap">
                 <img src="./imgs/Navbar/user_img.png" alt="">
             </div>
             <div class="user-name">Allen</div>
             <div class="user-login">登出</div>
-        </div>
+        </a>
 
         <div class="mobile-menu-list">
             <ul>
@@ -290,6 +290,12 @@
 
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Navbar/Footer js -->
+    <script src="./js/0.navbar_footer.js"></script>
+
+
+    
 </body>
 
 </html>
