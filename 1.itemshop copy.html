@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>配件購物頁 初版</title>
 
-    <!-- 連結主要的css檔 -->
-    <link rel="stylesheet" href="./css/Vtuber_main.css">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -23,6 +20,10 @@
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="./fontawesome/css/all.css">
+
+    <!-- 連結主要的css檔 -->
+    <link rel="stylesheet" href="./css/0.navbar_footer.css">
+    <link rel="stylesheet" href="./css/Vtuber_main.css">
 
 
 </head>
@@ -365,20 +366,51 @@
                             <div class="dropdown fitting-room-compare-role">
                                 <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Vox Akuma
+                                    選擇角色
                                 </a>
                                 <div class="dropdown-menu fitting-room-compare-role-list"
                                     aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Vox Akuma</a>
-                                    <a class="dropdown-item" href="#">Ike Eveland</a>
-                                    <a class="dropdown-item" href="#">Mysta Rias</a>
-                                    <a class="dropdown-item" href="#">Luca Kaneshiro</a>
-                                    <a class="dropdown-item" href="#">Shu Yamino</a>
+                                    <a class="dropdown-item role-change1">Vox Akuma</a>
+                                    <a class="dropdown-item role-change2">Ike Eveland</a>
+                                    <a class="dropdown-item role-change3">Mysta Rias</a>
+                                    <a class="dropdown-item role-change4">Luca Kaneshiro</a>
+                                    <a class="dropdown-item role-change5">Shu Yamino</a>
                                 </div>
+                                <!-- <div class="dropdown-menu fitting-room-compare-role-list"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no1"
+                                        href="#">Vox Akuma</a>
+                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no2"
+                                        href="#">Ike Eveland</a>
+                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no3"
+                                        href="#">Mysta Rias</a>
+                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no4"
+                                        href="#">Luca Kaneshiro</a>
+                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no5"
+                                        href="#">Shu Yamino</a>
+                                </div> -->
                             </div>
 
                             <div class="fitting-room-compare-role-imgwrap">
                                 <img src="./imgs/Itemshop/itemshop_banner_VoxAkuma.png" alt="">
+                            </div>
+
+                            <div class="fitting-room-compare-role-imgwrap-other">
+                                <div class="fitting-room-compare-role-change-imgwrap-no1">
+                                    <img src="./imgs/Itemshop/itemshop_banner_VoxAkuma.png" alt="">
+                                </div>
+                                <div class="fitting-room-compare-role-change-imgwrap-no2">
+                                    <img src="./imgs/Itemshop/itemshop_banner_Ike.png" alt="">
+                                </div>
+                                <div class="fitting-room-compare-role-change-imgwrap-no3">
+                                    <img src="./imgs/Itemshop/itemshop_banner_Mysta.png" alt="">
+                                </div>
+                                <div class="fitting-room-compare-role-change-imgwrap-no4">
+                                    <img src="./imgs/Itemshop/itemshop_banner_Luca.png" alt="">
+                                </div>
+                                <div class="fitting-room-compare-role-change-imgwrap-no5">
+                                    <img src="./imgs/Itemshop/itemshop_banner_Shu.png" alt="">
+                                </div>
                             </div>
 
                             <div class="fitting-room-tryit">
@@ -421,19 +453,19 @@
                             <div class="dropdown fitting-room-compare-role">
                                 <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Ike Eveland
+                                    選擇角色
                                 </a>
                                 <div class="dropdown-menu fitting-room-compare-role-list"
                                     aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Vox Akuma</a>
-                                    <a class="dropdown-item" href="#">Ike Eveland</a>
-                                    <a class="dropdown-item" href="#">Mysta Rias</a>
-                                    <a class="dropdown-item" href="#">Luca Kaneshiro</a>
-                                    <a class="dropdown-item" href="#">Shu Yamino</a>
+                                    <a class="dropdown-item role2-change1">Vox Akuma</a>
+                                    <a class="dropdown-item role2-change2">Ike Eveland</a>
+                                    <a class="dropdown-item role2-change3">Mysta Rias</a>
+                                    <a class="dropdown-item role2-change4">Luca Kaneshiro</a>
+                                    <a class="dropdown-item role2-change5">Shu Yamino</a>
                                 </div>
                             </div>
 
-                            <div class="fitting-room-compare-role-imgwrap">
+                            <div class="fitting-room-compare-role-imgwrap2">
                                 <img src="./imgs/Itemshop/itemshop_banner_Ike.png" alt="">
                             </div>
 
@@ -720,7 +752,7 @@
                         </ul>
                     </div>
                     <div class="mobile-itemtype-menu-hotfield">
-                        <h4>配件類型</h4>
+                        <h4 class="mobile-itemtype-menu-hotfield-title2">配件類型</h4>
                         <ul>
                             <li class="mobile-itemtype-topic">
                                 <a class="mobile-itemtype-topic-name" href="#">場景</a>
@@ -1476,42 +1508,10 @@
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
 
+    <script src="./js/0.navbar_footer.js"></script>
+
 
     <script>
-        // 手機漢堡夾Navbar 收合
-        $('.mobile-btn').click(function () {
-
-            if ($('.mobile-menu').hasClass('mobile-menu-on')) {
-                $('.mobile-menu').removeClass('mobile-menu-on');
-            }
-            else {
-                $('.mobile-menu').addClass('mobile-menu-on');
-            }
-
-            // 下面是 漢堡三條線變化
-            if ($('.mobilebtn-1').hasClass('mobilebtn-1-on')) {
-                $('.mobilebtn-1').removeClass('mobilebtn-1-on');
-            }
-            else {
-                $('.mobilebtn-1').addClass('mobilebtn-1-on');
-            }
-
-            if ($('.mobilebtn-2').hasClass('mobilebtn-2-on')) {
-                $('.mobilebtn-2').removeClass('mobilebtn-2-on');
-            }
-            else {
-                $('.mobilebtn-2').addClass('mobilebtn-2-on');
-            }
-
-            if ($('.mobilebtn-3').hasClass('mobilebtn-3-on')) {
-                $('.mobilebtn-3').removeClass('mobilebtn-3-on');
-            }
-            else {
-                $('.mobilebtn-3').addClass('mobilebtn-3-on');
-            }
-        });
-
-
         // 配件購物頁漢堡夾 配件類型清單
         // 漢堡收合式
         $('.fitting-room-itemselect-menu').click(function () {
@@ -1540,26 +1540,83 @@
         })
 
 
+        // Banner輪播牆
+        var page = 0;
+        let trainliWidth = $('.itemshop-banner-carousel-train li').innerWidth();
+        let nowWindowWidth = $(window).width();
 
+        $('.desktop-itemshop-banner-carousel-slider-dots li').click(function () {
+            page = $(this).index();
+            Carousel();
+        });
 
+        function Carousel() {
+            trainliWidth = $('.itemshop-banner-carousel-train li').innerWidth();
+            console.log('Carousel trainliWidth:', trainliWidth);
 
-        // $('.mobile-itemtype-topic').click(function () {
-        //     $('.mobile-itemtype-topic ul').toggle();
-        // });
+            $('.itemshop-banner-carousel-train').css('transform', `translateX(${page * -(trainliWidth)}px)`);
 
+            // $('.desktop-itemshop-banner-carousel-slider-dots li').eq(page).css('width', '35px').siblings().css('width', '8px');
+            $('.desktop-itemshop-banner-carousel-slider-dots li').eq(page).css('background-color', '#D3B572').siblings().css('background-color', '#fff');
+        }
 
-            
+        // 選擇角色 dropdown換角色圖
+        // 第一個人物比較框
+        $('.role-change1').click(function () {
 
+            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no1 img').attr('src'));
 
-        // $('.fitting-room-itemselect-menu p').click(function () {
+        })
+        $('.role-change2').click(function () {
 
-        //     if ($('.mobile-itemtype-menu').hasClass('.mobile-itemtype-menu-on')) {
-        //         ($('.mobile-itemtype-menu').removeClass('.mobile-itemtype-menu-on'));
-        //     }
-        //     else {
-        //         ($('.mobile-itemtype-menu').addClass('.mobile-itemtype-menu-on'));
-        //     }
-        // });
+            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no2 img').attr('src'));
+
+        })
+        $('.role-change3').click(function () {
+
+            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no3 img').attr('src'));
+
+        })
+        $('.role-change4').click(function () {
+
+            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no4 img').attr('src'));
+
+        })
+        $('.role-change5').click(function () {
+
+            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no5 img').attr('src'));
+
+        })
+
+        // 第二個人物比較框
+        $('.role2-change1').click(function () {
+
+            $('.fitting-room-compare-role-imgwrap2 img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no1 img').attr('src'));
+
+        })
+        $('.role2-change2').click(function () {
+
+            $('.fitting-room-compare-role-imgwrap2 img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no2 img').attr('src'));
+
+        })
+        $('.role2-change3').click(function () {
+
+            $('.fitting-room-compare-role-imgwrap2 img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no3 img').attr('src'));
+
+        })
+        $('.role2-change4').click(function () {
+
+            $('.fitting-room-compare-role-imgwrap2 img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no4 img').attr('src'));
+
+        })
+        $('.role2-change5').click(function () {
+
+            $('.fitting-room-compare-role-imgwrap2 img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no5 img').attr('src'));
+
+        })
+
+        
+
 
 
     </script>
