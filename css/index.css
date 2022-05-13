@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 body {
   background-color: #000000 !important;
@@ -404,7 +404,7 @@ body {
   }
   .index_square_btn_wrap {
     display: flex;
-    margin-left:20rem ;
+    margin-left: 20rem;
   }
   .index_square_btn_wrap p {
     width: 100px;
@@ -435,7 +435,7 @@ body {
   }
   .see_more {
     font-size: 20px;
-    text-decoration: #d3b572;
+    text-decoration: underline #d3b572;
   }
   .see_more:hover,
   .see_more:active {
@@ -444,6 +444,10 @@ body {
   }
   .svg_link {
     margin-top: 1rem;
+  }
+
+  .see_more_ph {
+    display: none;
   }
 }
 
@@ -465,6 +469,7 @@ body {
   justify-content: end;
   position: relative;
   top: 13rem;
+  text-decoration: underline #d3b572;
 }
 
 @media screen and (min-width: 1140px) {
@@ -491,12 +496,127 @@ body {
     top: -40rem;
     justify-content: center;
     align-items: center;
-
   }
-
-
-  .see_more_ph {
-    display: none;
-  }
-
+  
 }
+
+/* -----index_SC_rank---- */
+
+.index_SC_rank {
+  display: none;
+}
+
+@media screen and (min-width: 1140px) {
+  /* -----index_SC_rank---- */
+
+  .index_SC_rank {
+    display: block;
+    width: 264px;
+    height: 177px;
+    position: relative;
+    top: -13%;
+    left: 63%;
+  }
+  .index_SC_rank_wrap {
+    /* position: absolute; */
+  }
+  .index_SC_rank_info {
+    border: 1px solid #d3b572;
+    border-radius: 16px;
+    padding: 1rem 2rem;
+  }
+  .index_SC_rank_title {
+    font-size: 24px;
+    margin-bottom: -1.5rem;
+  }
+  .SC_rank_number {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .SC_rank_money {
+    font-size: 16px;
+  }
+
+  .index_SC_rank_info_btn p {
+    position: relative;
+    color: #d3b572;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 24px;
+    border: 1px solid #d3b572;
+    border-radius: 5px;
+  }
+  .index_SC_rank_info_btn p:hover {
+    color: #fff;
+    background-color: #d3b572;
+  }
+  .index_SC_rank_link {
+    position: absolute;
+    right: -5%;
+    top: 70%;
+  }
+}
+
+  /* -------index_livenow_timezone------ */
+
+.index_livenow_timezone {
+  width: 268px;
+  height: 276px;
+  position: relative;
+  left: 10%;
+  margin-top: 15rem;
+}
+.index_livenow_timezone_wrap {
+  position: absolute;
+}
+
+.index_livenow_title {
+  color: #E73D48 ;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.index_livenow_img {
+  width: 258px;
+  height: 145px;
+  position: relative;
+  background-color: #000000;
+}
+.index_livenow_img img {
+  opacity: 1;
+}
+.index_livenow_img:hover img {
+  opacity: .3;
+  transition: .3s;
+}
+.video_play_icon {
+  opacity: 0;
+}
+.index_livenow_img:hover .video_play_icon {
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  opacity: 1;
+  transition: .3s;
+}
+
+
+  @media screen and (min-width: 1140px) {
+    .index_livenow_timezone {
+      left: 15%;
+      top: -28rem;
+      z-index: 1;
+      margin-top: 0rem;
+    }
+  }
+
+
+
+
+  /* ------index_timezone_flag------- */
+
+  .btn {
+    /* background: url(../icons/angle-down-solid.svg) no-repeat; */
+    color: #d3b572 !important;
+    /* opacity: 0; */
+  }
