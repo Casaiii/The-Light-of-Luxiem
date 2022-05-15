@@ -19,74 +19,6 @@
     /* 這裡調整高度 */
     padding-bottom: 20px;
 }
-
-
-/* side vertical navbar */
-
-.side_nav_wrap{
-    position: absolute;
-    top: 96px;
-    left: 400px;
-    height: 80%;
-}
-.side_nav_upper{
-    position: relative
-}
-.side_nav_down{
-    position: relative
-}
-
-.vertical_line{
-    position: absolute;
-    top: 26px;
-    left: 8px;
-}
-
-.side.nav{
-    display:flex;
-}
-
-.side_nav_ticket{
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.hex_icon {
-    margin-right:30px;
-    margin-bottom:2px;
-
-}
-
-.side_nav_text {
-    width: 180px; 
-    position: relative;
-    display:inline-block;
-    padding: 8px 24px;
-    border: 0; margin-bottom: 15px;
-    background: transparent;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.side_nav_text::before {
-    content: ''; /* To generate the box */
-    position: absolute;
-    top: 0; right:0 ; bottom: 0; left:0 ;
-    z-index: 2;
-    border: #D3B572 1px solid;
-    transform: skew(-45deg);
-} 
-
-  .h1 {
-    font-size: 20px;
-    /* padding: 8px 24px; */
-    margin: 15px 0;
-    text-transform: uppercase;
-    color: #D3B572;
-  }
-
-
 .try-design{
     background-color: #ffffff9c;
     padding-top: 40px;
@@ -326,11 +258,6 @@ td, th {
     top:165%;
     animation: rolls 3s linear infinite;
 }
-
-.side_nav_wrap{
-    display: none;
-}
-
 @keyframes roll3{
 	0% { transform: rotate(0deg); }
     50% { transform: rotate(5deg); }
@@ -355,14 +282,75 @@ td, th {
     /* 調整內容物高度 */
     padding-top: 5%;
 }
-.side_nav_wrap{
-    display: block;
-}
-
 .try-design{
     width: 640px;
     margin-left: 20%
 }
+
+/* side vertical navbar */
+
+.side_nav_wrap{
+    position: absolute;
+    top: 96px;
+    left: 400px;
+    height: 80%;
+}
+.side_nav_upper{
+    position: relative
+}
+.side_nav_down{
+    position: relative
+}
+
+.vertical_line{
+    position: absolute;
+    top: 26px;
+    left: 8px;
+}
+
+.side.nav{
+    display:flex;
+}
+
+.side_nav_ticket{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.hex_icon {
+    margin-right:30px;
+    margin-bottom:2px;
+
+}
+
+.side_nav_text {
+    width: 180px; 
+    position: relative;
+    display:inline-block;
+    padding: 8px 24px;
+    border: 0; margin-bottom: 15px;
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.side_nav_text::before {
+    content: ''; /* To generate the box */
+    position: absolute;
+    top: 0; right:0 ; bottom: 0; left:0 ;
+    z-index: 2;
+    border: #D3B572 1px solid;
+    transform: skew(-45deg);
+} 
+
+  .h1 {
+    font-size: 20px;
+    /* padding: 8px 24px; */
+    margin: 15px 0;
+    text-transform: uppercase;
+    color: #D3B572;
+  }
 
 /* news wrap */
 
