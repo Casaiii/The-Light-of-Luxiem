@@ -194,6 +194,10 @@ nav.hide {
 }
 
 
+/* ---Footer---- */
+.desktop-footer {
+    display: none;
+}
 
 
 
