@@ -621,3 +621,13 @@ body {
     align-items: center;
   }
 }
+
+
+
+  /* ------index_timezone_flag------- */
+
+  .btn {
+    /* background: url(../icons/angle-down-solid.svg) no-repeat; */
+    color: #d3b572 !important;
+    /* opacity: 0; */
+  }

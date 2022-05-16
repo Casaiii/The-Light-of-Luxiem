@@ -376,23 +376,13 @@
                                     <a class="dropdown-item role-change4">Luca Kaneshiro</a>
                                     <a class="dropdown-item role-change5">Shu Yamino</a>
                                 </div>
-                                <!-- <div class="dropdown-menu fitting-room-compare-role-list"
-                                    aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no1"
-                                        href="#">Vox Akuma</a>
-                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no2"
-                                        href="#">Ike Eveland</a>
-                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no3"
-                                        href="#">Mysta Rias</a>
-                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no4"
-                                        href="#">Luca Kaneshiro</a>
-                                    <a class="dropdown-item dropdown-menu fitting-room-compare-role-list-no5"
-                                        href="#">Shu Yamino</a>
-                                </div> -->
                             </div>
 
-                            <div class="fitting-room-compare-role-imgwrap">
-                                <img src="./imgs/Itemshop/itemshop_banner_VoxAkuma.png" alt="">
+                            <div class="fitting-room-compare-role-imgwrap fitting-room-roleplay">
+                                <!-- 在這裡新增節點 prepend() -->
+                                <!-- <img class="roleplay-content-item" src="./imgs/Itemshop/Avatar_item/Shu/shu_hand_left1.png" alt=""> -->
+                                <img class="roleplay-content-role" src="./imgs/Itemshop/itemshop_banner_VoxAkuma.png"
+                                    alt="">
                             </div>
 
                             <div class="fitting-room-compare-role-imgwrap-other">
@@ -465,8 +455,8 @@
                                 </div>
                             </div>
 
-                            <div class="fitting-room-compare-role-imgwrap2">
-                                <img src="./imgs/Itemshop/itemshop_banner_Ike.png" alt="">
+                            <div class="fitting-room-compare-role-imgwrap2 fitting-room-roleplay">
+                                <img class="roleplay-content-role" src="./imgs/Itemshop/itemshop_banner_Ike.png" alt="">
                             </div>
 
                             <div class="fitting-room-tryit">
@@ -562,10 +552,10 @@
 
         <!-- 桌機 Hashtags -->
         <div class="desktop-itemshop-tags">
-            <a href="#"># 白色情人節</a>
-            <a href="#"># Vox Akuma</a>
-            <a href="#"># 台灣小吃</a>
-            <a href="#"># Ike Eveland</a>
+            <div class="desktop-itemshop-tags-name"># 白色情人節</div>
+            <div class="desktop-itemshop-tags-name"># Vox Akuma</div>
+            <div class="desktop-itemshop-tags-name"># 台灣小吃</div>
+            <div class="desktop-itemshop-tags-name"># Ike Eveland</div>
         </div>
 
         <!-- 配件購物 桌機配件類型列表 -->
@@ -575,16 +565,16 @@
                     <h4 class="desktop-itemtype-menu-hotfield-title">熱門專區</h4>
                     <ul>
                         <li class="desktop-itemtype-topic">
-                            <a class="desktop-itemtype-topic-name" href="#">熱銷排名</a>
+                            <div class="desktop-itemtype-topic-name">熱銷排名</div>
                         </li>
                         <li class="desktop-itemtype-topic">
-                            <a class="desktop-itemtype-topic-name" href="#">台灣特色小吃</a>
+                            <div class="desktop-itemtype-topic-name">台灣特色小吃</div>
                         </li>
                         <li class="desktop-itemtype-topic">
-                            <a class="desktop-itemtype-topic-name" href="#">白色情人節</a>
+                            <div class="desktop-itemtype-topic-name">白色情人節</div>
                         </li>
                         <li class="desktop-itemtype-topic">
-                            <a class="desktop-itemtype-topic-name" href="#">畢業季</a>
+                            <div class="desktop-itemtype-topic-name">畢業季</div>
                         </li>
                     </ul>
                 </div>
@@ -592,137 +582,66 @@
                     <h4>配件類型</h4>
                     <ul>
                         <li class="desktop-itemtype-topic">
-                            <a class="desktop-itemtype-topic-name" href="#">場景</a>
+                            <div class="desktop-itemtype-topic-name">場景</div>
                             <ul class="desktop-itemtype-topic-list">
-                                <li>
-                                    <a class="" href="#">Vox Akuma</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Ike Eveland</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Mysta Rias</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Luca Kaneshiro</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Shu Yamino</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">華麗風格</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Q版風格</a>
-                                </li>
+                                <li>Vox Akuma</li>
+                                <li>Ike Eveland</li>
+                                <li>Mysta Rias</li>
+                                <li>Luca Kaneshiro</li>
+                                <li>Shu Yamino</li>
+                                <li>華麗風格</li>
+                                <li>Q版風格</li>
                             </ul>
                         </li>
                         <li class="desktop-itemtype-topic">
-                            <a class="desktop-itemtype-topic-name" href="#">配件物品</a>
+                            <div class="desktop-itemtype-topic-name">配件物品</div>
                             <ul class="desktop-itemtype-topic-list">
-                                <li>
-                                    <a class="" href="#">Vox Akuma</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Ike Eveland</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Mysta Rias</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Luca Kaneshiro</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Shu Yamino</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">華麗風格</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Q版風格</a>
-                                </li>
+                                <li>Vox Akuma</li>
+                                <li>Ike Eveland</li>
+                                <li>Mysta Rias</li>
+                                <li>Luca Kaneshiro</li>
+                                <li>Shu Yamino</li>
+                                <li>華麗風格</li>
+                                <li>Q版風格</li>
                             </ul>
                         </li>
                         <li class="desktop-itemtype-topic">
-                            <a class="desktop-itemtype-topic-name" href="#">手部裝飾</a>
+                            <div class="desktop-itemtype-topic-name">手部裝飾</div>
                             <ul class="desktop-itemtype-topic-list">
-                                <li>
-                                    <a class="" href="#">Vox Akuma</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Ike Eveland</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Mysta Rias</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Luca Kaneshiro</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Shu Yamino</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">華麗風格</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Q版風格</a>
-                                </li>
+                                <li>Vox Akuma</li>
+                                <li>Ike Eveland</li>
+                                <li>Mysta Rias</li>
+                                <li>Luca Kaneshiro</li>
+                                <li>Shu Yamino</li>
+                                <li>華麗風格</li>
+                                <li>Q版風格</li>
                             </ul>
                         </li>
                         <li class="desktop-itemtype-topic">
-                            <a class="desktop-itemtype-topic-name" href="#">頭部裝飾</a>
+                            <div class="desktop-itemtype-topic-name">頭部裝飾</div>
                             <ul class="desktop-itemtype-topic-list">
-                                <li>
-                                    <a class="" href="#">Vox Akuma</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Ike Eveland</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Mysta Rias</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Luca Kaneshiro</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Shu Yamino</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">華麗風格</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Q版風格</a>
-                                </li>
+                                <li>Vox Akuma</li>
+                                <li>Ike Eveland</li>
+                                <li>Mysta Rias</li>
+                                <li>Luca Kaneshiro</li>
+                                <li>Shu Yamino</li>
+                                <li>華麗風格</li>
+                                <li>Q版風格</li>
                             </ul>
                         </li>
                         <li class="desktop-itemtype-topic">
-                            <a class="desktop-itemtype-topic-name" href="#">身體裝飾</a>
+                            <div class="desktop-itemtype-topic-name">身體裝飾</div>
                             <ul class="desktop-itemtype-topic-list">
-                                <li>
-                                    <a class="" href="#">Vox Akuma</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Ike Eveland</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Mysta Rias</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Luca Kaneshiro</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Shu Yamino</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">華麗風格</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#">Q版風格</a>
-                                </li>
+                                <li>Vox Akuma</li>
+                                <li>Ike Eveland</li>
+                                <li>Mysta Rias</li>
+                                <li>Luca Kaneshiro</li>
+                                <li>Shu Yamino</li>
+                                <li>華麗風格</li>
+                                <li>Q版風格</li>
                             </ul>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -738,16 +657,16 @@
                         <h4 class="mobile-itemtype-menu-hotfield-title">熱門專區</h4>
                         <ul>
                             <li class="mobile-itemtype-topic">
-                                <a class="mobile-itemtype-topic-name" href="#">熱銷排名</a>
+                                <div class="mobile-itemtype-topic-name">熱銷排名</div>
                             </li>
                             <li class="mobile-itemtype-topic">
-                                <a class="mobile-itemtype-topic-name" href="#">台灣特色小吃</a>
+                                <div class="mobile-itemtype-topic-name">台灣特色小吃</div>
                             </li>
                             <li class="mobile-itemtype-topic">
-                                <a class="mobile-itemtype-topic-name" href="#">白色情人節</a>
+                                <div class="mobile-itemtype-topic-name">白色情人節</div>
                             </li>
                             <li class="mobile-itemtype-topic">
-                                <a class="mobile-itemtype-topic-name" href="#">畢業季</a>
+                                <div class="mobile-itemtype-topic-name">畢業季</div>
                             </li>
                         </ul>
                     </div>
@@ -755,139 +674,67 @@
                         <h4 class="mobile-itemtype-menu-hotfield-title2">配件類型</h4>
                         <ul>
                             <li class="mobile-itemtype-topic">
-                                <a class="mobile-itemtype-topic-name" href="#">場景</a>
-                                <ul>
-                                    <li>
-                                        <a class="" href="#">Vox Akuma</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Ike Eveland</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Mysta Rias</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Luca Kaneshiro</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Shu Yamino</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">華麗風格</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Q版風格</a>
-                                    </li>
+                                <div class="mobile-itemtype-topic-name">場景</div>
+                                <ul class="mobile-itemtype-topic-list">
+                                    <li>Vox Akuma</li>
+                                    <li>Ike Eveland</li>
+                                    <li>Mysta Rias</li>
+                                    <li>Luca Kaneshiro</li>
+                                    <li>Shu Yamino</li>
+                                    <li>華麗風格</li>
+                                    <li>Q版風格</li>
                                 </ul>
                             </li>
                             <li class="mobile-itemtype-topic">
-                                <a class="mobile-itemtype-topic-name" href="#">配件物品</a>
-                                <ul>
-                                    <li>
-                                        <a class="" href="#">Vox Akuma</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Ike Eveland</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Mysta Rias</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Luca Kaneshiro</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Shu Yamino</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">華麗風格</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Q版風格</a>
-                                    </li>
+                                <div class="mobile-itemtype-topic-name">配件物品</div>
+                                <ul class="mobile-itemtype-topic-list">
+                                    <li>Vox Akuma</li>
+                                    <li>Ike Eveland</li>
+                                    <li>Mysta Rias</li>
+                                    <li>Luca Kaneshiro</li>
+                                    <li>Shu Yamino</li>
+                                    <li>華麗風格</li>
+                                    <li>Q版風格</li>
                                 </ul>
                             </li>
                             <li class="mobile-itemtype-topic">
-                                <a class="mobile-itemtype-topic-name" href="#">手部裝飾</a>
-                                <ul>
-                                    <li>
-                                        <a class="" href="#">Vox Akuma</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Ike Eveland</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Mysta Rias</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Luca Kaneshiro</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Shu Yamino</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">華麗風格</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Q版風格</a>
-                                    </li>
+                                <div class="mobile-itemtype-topic-name">手部裝飾</div>
+                                <ul class="mobile-itemtype-topic-list">
+                                    <li>Vox Akuma</li>
+                                    <li>Ike Eveland</li>
+                                    <li>Mysta Rias</li>
+                                    <li>Luca Kaneshiro</li>
+                                    <li>Shu Yamino</li>
+                                    <li>華麗風格</li>
+                                    <li>Q版風格</li>
                                 </ul>
                             </li>
                             <li class="mobile-itemtype-topic">
-                                <a class="mobile-itemtype-topic-name" href="#">頭部裝飾</a>
-                                <ul>
-                                    <li>
-                                        <a class="" href="#">Vox Akuma</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Ike Eveland</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Mysta Rias</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Luca Kaneshiro</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Shu Yamino</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">華麗風格</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Q版風格</a>
-                                    </li>
+                                <div class="mobile-itemtype-topic-name">頭部裝飾</div>
+                                <ul class="mobile-itemtype-topic-list">
+                                    <li>Vox Akuma</li>
+                                    <li>Ike Eveland</li>
+                                    <li>Mysta Rias</li>
+                                    <li>Luca Kaneshiro</li>
+                                    <li>Shu Yamino</li>
+                                    <li>華麗風格</li>
+                                    <li>Q版風格</li>
                                 </ul>
                             </li>
                             <li class="mobile-itemtype-topic">
-                                <a class="mobile-itemtype-topic-name" href="#">身體裝飾</a>
-                                <ul>
-                                    <li>
-                                        <a class="" href="#">Vox Akuma</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Ike Eveland</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Mysta Rias</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Luca Kaneshiro</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Shu Yamino</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">華麗風格</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="#">Q版風格</a>
-                                    </li>
+                                <div class="mobile-itemtype-topic-name">身體裝飾</div>
+                                <ul class="mobile-itemtype-topic-list">
+                                    <li>Vox Akuma</li>
+                                    <li>Ike Eveland</li>
+                                    <li>Mysta Rias</li>
+                                    <li>Luca Kaneshiro</li>
+                                    <li>Shu Yamino</li>
+                                    <li>華麗風格</li>
+                                    <li>Q版風格</li>
                                 </ul>
                             </li>
                         </ul>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -898,7 +745,27 @@
                 <div class="fitting-room-items-list-row1 fitting-room-items-list-rowtop d-flex justify-content-between">
                     <div class="fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
-                            <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <img src="./imgs/Itemshop/Avatar_item/Shu/shu_hand_left1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
                             <p>配件名稱</p>
@@ -944,7 +811,27 @@
                     </div>
                     <div class="fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
-                            <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <img src="./imgs/Itemshop/Avatar_item/Shu/shu_hand_left2.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
                             <p>配件名稱</p>
@@ -990,6 +877,26 @@
                     </div>
                     <div class="fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1036,6 +943,26 @@
                     </div>
                     <div class="fitting-room-item-unit desktop-fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1082,6 +1009,26 @@
                     </div>
                     <div class="fitting-room-item-unit desktop-fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1128,6 +1075,26 @@
                     </div>
                     <div class="fitting-room-item-unit desktop-fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1176,6 +1143,26 @@
                 <div class="fitting-room-items-list-row1 d-flex justify-content-between">
                     <div class="fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1222,6 +1209,26 @@
                     </div>
                     <div class="fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1268,6 +1275,26 @@
                     </div>
                     <div class="fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1314,6 +1341,26 @@
                     </div>
                     <div class="fitting-room-item-unit desktop-fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1360,6 +1407,26 @@
                     </div>
                     <div class="fitting-room-item-unit desktop-fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1406,6 +1473,26 @@
                     </div>
                     <div class="fitting-room-item-unit desktop-fitting-room-item-unit">
                         <div class="fitting-room-item-imgwrap">
+                            <!-- 喜愛追蹤 飄入愛心 -->
+                            <div class="fitting-room-item-imgwrap-follow-heart">
+                                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.4282 3.52466L7.75777 2.89015C6.27671 1.48843 3.93975 1.55276 2.53804 3.03382V3.03382C1.13632 4.51488 1.20064 6.85183 2.6817 8.25355L8.71552 13.9641L14.4261 7.93031C15.8278 6.44925 15.7635 4.11229 14.2824 2.71058V2.71058C12.8014 1.30886 10.4644 1.37318 9.06271 2.85424L8.4282 3.52466Z"
+                                        stroke="#D3B572" stroke-width="2" />
+                                </svg>
+                            </div>
+
+                            <!-- 加號icon 套用配件 -->
+                            <div class="fitting-room-item-imgwrap-add-wear">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33331V12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.33325 8H12.6666" stroke="#D3B572" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
                             <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1564,27 +1651,27 @@
         // 第一個人物比較框
         $('.role-change1').click(function () {
 
-            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no1 img').attr('src'));
+            $('.fitting-room-compare-role-imgwrap .roleplay-content-role').attr('src', $('.fitting-room-compare-role-change-imgwrap-no1 img').attr('src'));
 
         })
         $('.role-change2').click(function () {
 
-            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no2 img').attr('src'));
+            $('.fitting-room-compare-role-imgwrap .roleplay-content-role').attr('src', $('.fitting-room-compare-role-change-imgwrap-no2 img').attr('src'));
 
         })
         $('.role-change3').click(function () {
 
-            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no3 img').attr('src'));
+            $('.fitting-room-compare-role-imgwrap .roleplay-content-role').attr('src', $('.fitting-room-compare-role-change-imgwrap-no3 img').attr('src'));
 
         })
         $('.role-change4').click(function () {
 
-            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no4 img').attr('src'));
+            $('.fitting-room-compare-role-imgwrap .roleplay-content-role').attr('src', $('.fitting-room-compare-role-change-imgwrap-no4 img').attr('src'));
 
         })
         $('.role-change5').click(function () {
 
-            $('.fitting-room-compare-role-imgwrap img').attr('src', $('.fitting-room-compare-role-change-imgwrap-no5 img').attr('src'));
+            $('.fitting-room-compare-role-imgwrap .roleplay-content-role').attr('src', $('.fitting-room-compare-role-change-imgwrap-no5 img').attr('src'));
 
         })
 
@@ -1615,7 +1702,27 @@
 
         })
 
-        
+
+        // 點擊配件套上角色框內
+        // 第一步：點選一個角色框時邊框會亮黃色，且add classname（另一個角色框則不會）
+        $('.fitting-room-roleplay').click(function () {
+            // console.log('hi');
+            $(this).css('border', '2px solid #D3B572').parent().parent().siblings().children().children('.fitting-room-roleplay').css('border', '2px solid #667080');
+        });
+
+        $('.fitting-room-roleplay').click(function () {
+            $(this).addClass('fitting-room-roleplay-start-wear').parent().parent().siblings().children().children('.fitting-room-roleplay').removeClass('fitting-room-roleplay-start-wear');
+        });
+
+        // 第二步：如果有拿到classname的角色框，點擊配件會append疊圖
+        $('.fitting-room-item-imgwrap-add-wear').click(function () {
+            console.log('hi');
+            if ($('.fitting-room-roleplay').hasClass('fitting-room-roleplay-start-wear')) {
+                $('.fitting-room-roleplay-start-wear').prepend('<img class="roleplay-content-item" src="./imgs/Itemshop/Avatar_item/Shu/shu_hand_left1.png" alt="">');
+            }
+        });
+
+
 
 
 
