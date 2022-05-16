@@ -1,0 +1,201 @@
+/* sub header */
+
+*,
+*:before
+*:after {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black !important;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+
+
+/* ---RWD桌機版：1920px--- */
+@media screen and (min-width: 1600px){
+
+  body {
+    background-color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 1;
+  }
+
+
+  .site-header{
+    display: block;
+  }
+  
+  .site-header-mobile{
+    display: none;
+  }
+
+  .site-nav:before,
+  .site-nav:after {
+    content: '';
+    display: table;
+  }
+  
+  .site-nav:after {
+    clear: both;
+  }
+  
+  .site-header, .header-toggle{
+    transition: .3s all;
+  }
+  
+  .site-boundary {
+    /* margin: 0 auto; */
+    max-width: 1200px;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .stream-video-container{
+    position: fixed;
+    width: 100%;
+  }
+  
+  /* header */
+  .site-header {
+    background:rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: fixed;
+    left: 38%;
+    /* site-header all hiden */
+    transform: translateY(-100%);
+    width: 62.5%;
+    z-index: 100;
+  }
+  
+  #ike-icon,
+  #vox-icon,
+  #mysta-icon,
+  #luca-icon{
+    position:relative;
+    z-index: 100;
+  }
+  
+  .site-header.active {
+    /* site-header all show */
+    transform: translateY(0);
+  }
+  
+  .site-nav {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-header-profile-wrap {
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    z-index: 1;
+  }
+  
+  .site-header-profile-wrap img{
+    z-index: 100;
+  }
+  
+  .site-nav img{
+    border: #D3B572 2px solid;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* chat icon */
+  .chat_icon{
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    /* z-index: 6; */
+  }
+  
+  .header-toggle {
+    background: hsla(41, 52%, 64%, 0.8);
+    border-radius: 0 0 5px 5px;
+    height: 30px;
+    width: 64px;
+    position: absolute;
+    bottom: -30px;
+    right: 25%;
+    cursor: pointer;
+  }
+  .header-toggle-mobile{
+    display: none;
+  }
+  
+  .site-header.active .header-toggle {
+    transform: rotate(180deg);
+  }
+  .site-header.active .header-toggle:hover .header-toggle-icon {
+    animation: .6s 1 forwards;
+  }
+  
+  .header-toggle svg{
+    margin-left: 13px;
+  }
+  
+  /* stream video content */
+  .stream-video-container{
+    position: fixed;
+    background-color:black;
+  }
+  
+  .stream-video-row{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .stream-video-col{
+    /* width: 640px; */
+    height: 500px;
+    margin: 0;
+    z-index: -1;
+  
+  }
+  
+  .stream-video-row iframe{
+      z-index: -1;
+  } 
+  
+  .display-none{
+    display: none;
+  }  
+  
+  .stream-video-col .deco-right{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 450px;
+    z-index: -3;
+  }
+  
+  .deco-left{
+    display: block;
+    position: absolute;
+    top:700px;
+    z-index: -2;
+  } 
+    }
+  
+
