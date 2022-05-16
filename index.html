@@ -1,16 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首頁 測試版</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/icon" href="./images/L-1.ico" />
+  <title>Luxiem</title>
+
+
+  <!-- 頁面css檔 -->
+  <link rel="stylesheet" href="./css/index.css" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./bootstrap-4.2.1-dist/css/bootstrap.css" />
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kaisei+Opti:wght@400;500;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="./fontawesome/css/all.css">
+
+  <style></style>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <header></header>
+      <!-- Navbar -->
+      <!-- <nav>
+        <div class="desktop-menu-list">
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <img src="./imgs/Navbar/logo_Luxiem.png" alt="">
+                </a>
+            </div>
+
+            <div class="mobile-btn">
+                <span class="mobilebtn-1"></span>
+                <span class="mobilebtn-2"></span>
+                <span class="mobilebtn-3"></span>
+            </div>
+
+            <div class="nav-right">
+                <ul class="list-unstyled d-flex align-items-center">
+                    <li>
+                        <a href="#">首頁</a>
+                    </li>
+                    <li class="nav__listitem">
+                        <a href="#">人物介紹</a>
+                        <ul class="nav__listitemdrop">
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">心理測驗</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">人物介紹</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">粉絲創作</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">出道歷程</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__listitem">
+                        <a href="#">迷因配件</a>
+                        <ul class="nav__listitemdrop">
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">配件購物</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">代幣商店</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__listitem">
+                        <a href="#">直播首頁</a>
+                        <ul class="nav__listitemdrop">
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">直播間</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">烤肉區</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">抖內區</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">時差換算</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__listitem">
+                        <a href="#">會員中心</a>
+                        <ul class="nav__listitemdrop">
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">資料修改</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">訂單查詢</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">喜好收藏</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">持有配件</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__listitem">
+                        <a href="#">討論區</a>
+                        <ul class="nav__listitemdrop">
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">文章列表</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-subtitle" href="#">發表文章</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="desktop-user">
+                <div class="desktop-user-nav">
+                    <div class="user-info">
+                        <div class="user-imgwrap">
+                            <img src="./imgs/Navbar/user_img.png" alt="">
+                        </div>
+                        <div class="user-name">Allen</div>
+                        <div class="user-login">登出</div>
+                        <div class="log-icon">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </div>
+                    </div>
+
+                    <div class="user-cart">
+                        <div class="user-login">購物車</div>
+                        <div class="log-icon">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- 漢堡夾清單mobile_menu_list -->
+    <!-- <div class="mobile-menu">
+        <div class="user-info">
+            <div class="user-imgwrap">
+                <img src="./imgs/Navbar/user_img.png" alt="">
+            </div>
+            <div class="user-name">Allen</div>
+            <div class="user-login">登出</div>
+        </div>
+
+        <div class="mobile-menu-list">
+            <ul>
+                <li class="mobile-menu-title-all">
+                    <a class="mobile-menu-maintitle" href="#">首頁</a>
+                </li>
+                <li class="mobile-menu-title-all">
+                    <a class="mobile-menu-maintitle" href="#">人物介紹</a>
+                    <ul>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">心理測驗</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">人物介紹</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">粉絲創作</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">出道歷程</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-title-all">
+                    <a class="mobile-menu-maintitle" href="#">迷因配件</a>
+                    <ul>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">配件購物</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">代幣商店</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-title-all">
+                    <a class="mobile-menu-maintitle" href="#">直播首頁</a>
+                    <ul>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">直播間</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">烤肉區</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">抖內區</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">時差換算</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-title-all">
+                    <a class="mobile-menu-maintitle" href="#">會員中心</a>
+                    <ul>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">資料修改</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">訂單查詢</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">喜好收藏</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">持有配件</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-title-all">
+                    <a class="mobile-menu-maintitle" href="#">討論區</a>
+                    <ul>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">文章列表</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu-subtitle" href="#">發表文章</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu-footer">
+            Copyright © 2022 Design by Team3rd. All Rights Reserved. <br>
+            此網站僅用於資策會專題發表
+        </div>
+    </div> -->
+
+    <!-- index -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- index_Bigtitle -->
+        <div class="index_Bigtitle d-flex justify-content-center">
+          <img class="index_Bigtitle_img" src="./imgs/index/Luxiem.png" alt="" />
+        </div>
+
+        <!-- index_visual -->
+        <div class="index_visual">
+          <!-- width="560" height="315" -->
+          <iframe class="index_visual_video" src="https://www.youtube.com/embed/bdABx8gOhSs"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <!-- index_visual_bc -->
+          <div class="index_visual_bc_wrap">
+            <div class="index_visual_bc"></div>
+          </div>
+          <!-- index_visual_chat -->
+          <div class="index_visual_chat">
+            <h3>聊天室</h3>
+            <p><span class="mr-3">Casai卡特</span>好期待～終於要出道了！</p>
+            <p><span class="mr-3">瑄瑄</span>這是新的團嗎？</p>
+            <p><span class="mr-3">恩摁ㄣ</span>OMG 等好久了！</p>
+            <p><span class="mr-3">Tonny</span>FINALLY 終於終於</p>
+            <p><span class="mr-3">Enna 奇異鳥</span>聽起來不錯的公關團</p>
+          </div>
+        </div>
+        <!-- index_text -->
+        <div class="index_text KaiseiOpti d-flex">
+          <p class="index_text_up text-white">in the</p>
+          <p class="index_text_dn fakegold">Dark</p>
+        </div>
+        <!-- index_circle_btn1 -->
+        <div class="index_circle_btn1">
+          <div class="index_circle_btn_wrap">
+            <div class="index_circle_btn_circle">
+              <div class="index_arrow_1">
+                <div class="index_arrow_text Primary">
+                  <p>誰是你的靈魂伴侶？</p>
+                  <svg viewBox="0 0 93 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M92.7071 8.09821C93.0976 7.70769 93.0976 7.07452 92.7071 6.684L86.3431 0.320037C85.9526 -0.0704874 85.3194 -0.0704874 84.9289 0.320037C84.5384 0.710561 84.5384 1.34373 84.9289 1.73425L90.5858 7.3911L84.9289 13.048C84.5384 13.4385 84.5384 14.0716 84.9289 14.4622C85.3195 14.8527 85.9526 14.8527 86.3431 14.4622L92.7071 8.09821ZM7.71589e-08 8.39111L92 8.3911L92 6.3911L-7.71589e-08 6.39111L7.71589e-08 8.39111Z"
+                      fill="#D3B572" />
+                  </svg>
+                </div>
+              </div>
+              <img class="vox_bg" src="./imgs/index/VOX-BG.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- index_circle_btn2 -->
+        <div class="index_circle_btn2">
+          <div class="index_circle_btn_wrap">
+            <div class="index_circle_btn_circle">
+              <div class="index_arrow_2">
+                <div class="index_arrow_text Primary">
+                  <p>你是Luxiem裡面的誰？</p>
+                  <svg viewBox="0 0 93 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M92.7071 8.09821C93.0976 7.70769 93.0976 7.07452 92.7071 6.684L86.3431 0.320037C85.9526 -0.0704874 85.3194 -0.0704874 84.9289 0.320037C84.5384 0.710561 84.5384 1.34373 84.9289 1.73425L90.5858 7.3911L84.9289 13.048C84.5384 13.4385 84.5384 14.0716 84.9289 14.4622C85.3195 14.8527 85.9526 14.8527 86.3431 14.4622L92.7071 8.09821ZM7.71589e-08 8.39111L92 8.3911L92 6.3911L-7.71589e-08 6.39111L7.71589e-08 8.39111Z"
+                      fill="#D3B572" />
+                  </svg>
+                </div>
+              </div>
+              <img class="ike_bg" src="./imgs/index/IKE_BG.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- index_text_2 -->
+        <div class="index_text_2">
+          <p class="index_text_2_up KaiseiOpti fakegold">Who?</p>
+          <p class="index_text_2_dn text-white NotoSans">是誰？</p>
+        </div>
+
+        <!-- index_IKE_body -->
+        <div class="index_IKE_body">
+          <div class="index_IKE_body_wrap">
+            <img class="ike_body" src="./imgs/index/Ike_whole body.png" alt="" />
+          </div>
+          <img class="ike_shadow" src="./imgs/index/Ike_shadow.png" alt="" />
+        </div>
+
+        <!-- index_square_btn -->
+        <div class="index_square_btn d-flex">
+          <div class="index_square_btn_wrap ">
+            <p>voice 1</p>
+            <p>voice 1</p>
+            <p>voice 1</p>
+            <p>voice 1</p>
+          </div>
 
 
-    <footer></footer>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+      <!-- Footer -->
+      <!-- <footer>
+        <div class="desktop-footer">
+            <div class="desktop-footer-team3rd">
+                Copyright © 2022 Design by Team3rd. All Rights Reserved. <br>
+                此網站僅用於資策會專題發表
+            </div>
+        </div>
+    </footer> -->
+  
+
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
