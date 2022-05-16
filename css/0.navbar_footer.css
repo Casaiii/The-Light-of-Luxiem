@@ -346,6 +346,24 @@ nav.hide {
         display: none;
     }
 
+    /* ---Footer---- */
+    footer {
+        width: 100vw;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #000;
+    }
+    .desktop-footer {
+        display: block;
+    }
+    .desktop-footer-team3rd {
+        font-size: 16px;
+        color: #D3B572;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
 
 }
 

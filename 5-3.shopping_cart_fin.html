@@ -8,8 +8,8 @@
     
     <!-- 連結主要的css檔 -->
     <link rel="stylesheet" href="./css/shopping_cart.css">
-    <link rel="stylesheet" href="./css/Vtuber_main.css">
-
+    <link rel="stylesheet" href="./css/0.navbar_footer.css">
+  
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -28,33 +28,6 @@
 
 <style>
 
-body{
-  background-color: black;
-}
- 
-.container_pc {
-  width: 1140px;
-  margin: auto;
-  /* border: 1px red solid; */
-} 
-
-/* shopping_cart */
-.shopping_cart_title{
-  display: flex;
-  align-items: flex-end;
-}
-.shopping_cart_title .main_title{
-  font-family: 'Kaisei Opti', serif;
-  color: #D3B572;
-  font-size: 24px;
-}
-.sub_title{
-  font-family: 'Noto Sans TC', sans-serif;
-  color: white;
-  font-size: 16px;
-  margin-left: 20px; 
-}
-
 /* fin_title */
 
 .fin_title{
@@ -62,12 +35,15 @@ body{
   color:white;
   font-size:16px;
   display:flex;
+  
 }
 
 .fin_title_left{
   width:30px;
   height:30px;
-  padding:10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-right:20px;
 }
 
 /* fin_title */
@@ -78,208 +54,6 @@ body{
   font-size:20px;
   display:flex;
 }
-
-
-
-
-
-/* yourcoins */
-.yourcoins {
-  display: flex;
-  align-items: flex-end;
-}
-.yourcoins .main_title{
-    font-family: 'Kaisei Opti', serif;
-    color:white;
-    font-size: 24px;
-    margin-top: 20px;
-}
-.yourcoins .sub_title{
-    font-family: 'Inter', sans-serif;;
-    color:#D3B572;
-    font-size: 16px;
-    margin-left:10px;
-}
-/* progress section */
-.progress {
-  display: flex;
-  padding-left: 0px;
-  margin-top: 40px;
-  counter-reset:step;
-}
-
-.progress li {
-  font-family: 'Noto Sans TC', sans-serif;
-  color: #667080;
-  list-style-type: none;
-  float:left;
-  width: 15%;
-  position:relative;
-  text-align:center;
-}
-
-.progress li:before {
-  content:counter(step);
-  counter-increment: step;
-  width: 30px;
-  height: 30px;
-  line-height:30px;
-  border:1px solid #667080;
-  display:block;
-  text-align:center;
-  margin:0 auto 10px auto;
-  border-radius:50%;
-  background-color: black;
-}
-.progress li:after {
-  content:"";
-  position:absolute;
-  width: 100%;
-  height:1px;
-  background-color: #667080;
-  top: 15px;
-  left: -50%;
-  z-index:-1;
-}
-.progress li:first-child:after {
-  content:none;
-}
-.progress li.active {
-  color:#D3B572;
-}
-.progress li.active:before {
-  border-color:#D3B572;
-}
-.progress li.active + li:after {
-  background-color:#D3B572;
-}
-
-/* item list*/
-.item_header {
-    display: flex;
-    align-items: flex-end;
-    width: 1140px;
-    margin-top:20px;
-    height: 38px;
-    padding-left: 10px;
-}
-
-.underline{
-  margin-top: 5px;
-  width: 1140px;
-  border-top: #D3B572 solid 1px;
-}
-.topline{
-  margin: 20px auto 0 auto;
-  width: 1140px;
-  border-top: #D3B572 solid 1px;
-}
-
-.item_header div{
-    width: 12%;
-    color: white;
-    /* border: #D3B572 solid 1px; */
-}
-
-.item_header p{
-  margin: 0 0 0 5px;
-}
-
-.item_header .price,
-.item_header .totalprice { 
-  display: flex;
-  align-items: center;
-}
-
-
-.item_header .item_detail{
-    width: 70%;
-
-}
-.item_body{
-    margin-top:20px;
-    height: 100px;
-    display: flex;
-    align-items: center;    
-}
-.item_detail img{
-    width: 100px;
-    height: 100px;
-    border: #667080 solid 1px;
-    border-radius: 5px;
-    /* margin-top: 10px; */
-    float: left;
-    object-fit: contain;
-}
-.item_detail .name{
-    width: 70%;
-    margin-left: 140px;
-    margin-top: 20px;
-  } 
-
-/* Totals section */
-
-.totals{
-  margin:20px auto 0 auto;
-}
-
-.totals .totals-item{
-  margin:2px auto;
-  display: flex;
-  clear: both;
-  width: 1000px;
-
-}
-    
-.totals label {
-  color: white;
-  float: left;
-  clear: both;
-  width: 88.5%;
-  text-align: right;
-}
-  
-
-.totals-value {
-  color: #D3B572;
-  float: right;
-  width:12.5%;
-  height:auto;
-  text-align: right;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-.totals p{
-  margin:0 0 0 5px;
-}
-
-
-.totals-item-total {
-  font-weight: 900;
-}
-
-/* checkout button */
-.checkout{
-  margin-right:50px;
-  height: 68px;
-}
-.checkout button {
-  float: right;
-  border: 0;
-  margin-top: 20px;
-  margin-left: 20px;
-  padding: 13px 24px;
-  background-color: #D3B572;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 6px;
-}
-
-.checkout button:hover {
-  background-color:#667080;
-} 
 
  /* order taotal amount PC  */
 
@@ -317,10 +91,6 @@ body{
 }
 
 
-
-
-
-
 @media screen and (min-width: 376px){
     .container_mobile{
       display:none;
@@ -330,11 +100,11 @@ body{
     .container_pc{
       display:none;
     }
-    .container_mobile{
+    /* .container_mobile{
       width:375px;
       margin-left: 20px;
       margin-top:0;
-    }
+    } */
     /* progress mobile */
     .progress{
       padding-left:-40px ;
@@ -475,7 +245,7 @@ body{
 
     /* checkout button */
 
-    .checkout{
+    /* .checkout{
       width: 327px;
       margin-right: 0;
       display: flex;
@@ -502,7 +272,7 @@ body{
 
     .checkout button:hover {
     background-color:#667080;
-    } 
+    }  */
 
 
 
@@ -539,12 +309,11 @@ body{
       width: 70%;
     }
     .fin_title_left{
-
-      padding:20px 30px 20px 0;
+      padding:20px 50px 20px 0;
     }
 
     
-     /* order taotal amount PC  */
+/* order taotal amount PC  */
 
 .ordertotal{
   background-color:hsla(41, 53%, 64%, 0.5);
@@ -576,9 +345,245 @@ body{
 
 </style>
 <body>
+
+    <!-- Navbar -->
     <nav>
-        <!-- navbar will be here :D -->
+      <div class="desktop-menu-list">
+          <div class="logo">
+              <a href="#" class="logo-link">
+                  <img src="./imgs/Navbar/logo_Luxiem.png" alt="">
+              </a>
+          </div>
+
+          <div class="mobile-btn">
+              <span class="mobilebtn-1"></span>
+              <span class="mobilebtn-2"></span>
+              <span class="mobilebtn-3"></span>
+          </div>
+
+          <div class="nav-right">
+              <ul class="list-unstyled d-flex align-items-center">
+                  <li>
+                      <a href="#">首頁</a>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">人物介紹</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">心理測驗</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">人物介紹</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">粉絲創作</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">出道歷程</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">迷因配件</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">配件購物</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">代幣商店</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">直播首頁</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">直播間</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">烤肉區</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">抖內區</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">時差換算</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">會員中心</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">資料修改</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">訂單查詢</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">喜好收藏</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">持有配件</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">討論區</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">文章列表</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">發表文章</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="desktop-user">
+              <div class="desktop-user-nav">
+                  <div class="user-info">
+                      <div class="user-imgwrap">
+                          <img src="./imgs/Navbar/user_img.png" alt="">
+                      </div>
+                      <div class="user-name">Allen</div>
+                      <div class="user-login">登出</div>
+                      <div class="log-icon">
+                          <i class="fa-solid fa-right-to-bracket"></i>
+                      </div>
+                  </div>
+
+                  <div class="user-cart">
+                      <div class="user-login">購物車</div>
+                      <div class="log-icon">
+                          <i class="fa-solid fa-cart-plus"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+
+
+
+      <!-- <div class="nav-links d-flex align-items-center mr-auto ml-4 border-left pl-4">
+          <ul class="list-unstyled d-flex align-items-center mb-0" >
+              <li>
+                  <a href="#" class="text-dark">探索</a>
+              </li>
+              <li class="ml-3" >
+                  <a href="#" class="text-dark"></a>提案</a>
+              </li>
+          </ul>
+      </div> -->
+
+
+
+
+
+
     </nav>
+
+    <!-- 漢堡夾清單mobile_menu_list -->
+    <div class="mobile-menu">
+      <div class="user-info">
+          <div class="user-imgwrap">
+              <img src="./imgs/Navbar/user_img.png" alt="">
+          </div>
+          <div class="user-name">Allen</div>
+          <div class="user-login">登出</div>
+      </div>
+
+      <div class="mobile-menu-list">
+          <ul>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">首頁</a>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">人物介紹</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">心理測驗</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">人物介紹</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">粉絲創作</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">出道歷程</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">迷因配件</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">配件購物</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">代幣商店</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">直播首頁</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">直播間</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">烤肉區</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">抖內區</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">時差換算</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">會員中心</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">資料修改</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">訂單查詢</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">喜好收藏</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">持有配件</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">討論區</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">文章列表</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">發表文章</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+
+      <div class="mobile-menu-footer">
+          Copyright © 2022 Design by Team3rd. All Rights Reserved. <br>
+          此網站僅用於資策會專題發表
+      </div>
+    </div>
+
     <!-- shopping cart PC -->
     <div class="container_pc">
       <div class="shopping_cart_title">
@@ -738,56 +743,59 @@ body{
       
 
         <!-- item list mobile -->
+
         <div class="container_mobile">
-          <div class="underline"></div>
-
-          <div class="item_body">
-
-            <div class="item_img_wrap">
-              <img src="imgs/Shoppingcard/shu mic.png" alt="">
-            </div>
-            <div class="item_detail">
-
-              <div class="item_upper">
-                <div class="name">Shu 麥克風</div>
+          <div class="container_mobile_product">
+            <div class="underline"></div>
+  
+            <div class="item_body">
+  
+              <div class="item_img_wrap">
+                <img src="imgs/Shoppingcard/shu mic.png" alt="">
               </div>
-
-              <div class="item_under">
-                <div class="price"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.5 13.3334V6.66675C17.4997 6.37448 17.4225 6.08742 17.2763 5.83438C17.13 5.58134 16.9198 5.37122 16.6667 5.22508L10.8333 1.89175C10.58 1.74547 10.2926 1.66846 10 1.66846C9.70744 1.66846 9.42003 1.74547 9.16667 1.89175L3.33333 5.22508C3.08022 5.37122 2.86998 5.58134 2.72372 5.83438C2.57745 6.08742 2.5003 6.37448 2.5 6.66675V13.3334C2.5003 13.6257 2.57745 13.9127 2.72372 14.1658C2.86998 14.4188 3.08022 14.6289 3.33333 14.7751L9.16667 18.1084C9.42003 18.2547 9.70744 18.3317 10 18.3317C10.2926 18.3317 10.58 18.2547 10.8333 18.1084L16.6667 14.7751C16.9198 14.6289 17.13 14.4188 17.2763 14.1658C17.4225 13.9127 17.4997 13.6257 17.5 13.3334Z" fill="#D3B572" stroke="#D3B572" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <p>100</p>
-                  
-                  </div>
-                  <div class="count"> x1 </div>
+              <div class="item_detail">
+  
+                <div class="item_upper">
+                  <div class="name">Shu 麥克風</div>
+                </div>
+  
+                <div class="item_under">
+                  <div class="price"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 13.3334V6.66675C17.4997 6.37448 17.4225 6.08742 17.2763 5.83438C17.13 5.58134 16.9198 5.37122 16.6667 5.22508L10.8333 1.89175C10.58 1.74547 10.2926 1.66846 10 1.66846C9.70744 1.66846 9.42003 1.74547 9.16667 1.89175L3.33333 5.22508C3.08022 5.37122 2.86998 5.58134 2.72372 5.83438C2.57745 6.08742 2.5003 6.37448 2.5 6.66675V13.3334C2.5003 13.6257 2.57745 13.9127 2.72372 14.1658C2.86998 14.4188 3.08022 14.6289 3.33333 14.7751L9.16667 18.1084C9.42003 18.2547 9.70744 18.3317 10 18.3317C10.2926 18.3317 10.58 18.2547 10.8333 18.1084L16.6667 14.7751C16.9198 14.6289 17.13 14.4188 17.2763 14.1658C17.4225 13.9127 17.4997 13.6257 17.5 13.3334Z" fill="#D3B572" stroke="#D3B572" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>100</p>
+                    
+                    </div>
+                    <div class="count"> x1 </div>
+                </div>
+  
               </div>
-
             </div>
+  
+            <div class="item_body">
+  
+              <div class="item_img_wrap">
+                <img src="imgs/Shoppingcard/shu mic.png" alt="">
+              </div>
+              <div class="item_detail">
+  
+                <div class="item_upper">
+                  <div class="name">Shu 麥克風</div>
+                </div>
+  
+                <div class="item_under">
+                  <div class="price"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 13.3334V6.66675C17.4997 6.37448 17.4225 6.08742 17.2763 5.83438C17.13 5.58134 16.9198 5.37122 16.6667 5.22508L10.8333 1.89175C10.58 1.74547 10.2926 1.66846 10 1.66846C9.70744 1.66846 9.42003 1.74547 9.16667 1.89175L3.33333 5.22508C3.08022 5.37122 2.86998 5.58134 2.72372 5.83438C2.57745 6.08742 2.5003 6.37448 2.5 6.66675V13.3334C2.5003 13.6257 2.57745 13.9127 2.72372 14.1658C2.86998 14.4188 3.08022 14.6289 3.33333 14.7751L9.16667 18.1084C9.42003 18.2547 9.70744 18.3317 10 18.3317C10.2926 18.3317 10.58 18.2547 10.8333 18.1084L16.6667 14.7751C16.9198 14.6289 17.13 14.4188 17.2763 14.1658C17.4225 13.9127 17.4997 13.6257 17.5 13.3334Z" fill="#D3B572" stroke="#D3B572" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>100</p>
+                    </div>
+                    <div class="count"> x1 </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="underline"></div>
           </div>
-
-          <div class="item_body">
-
-            <div class="item_img_wrap">
-              <img src="imgs/Shoppingcard/shu mic.png" alt="">
-            </div>
-            <div class="item_detail">
-
-              <div class="item_upper">
-                <div class="name">Shu 麥克風</div>
-              </div>
-
-              <div class="item_under">
-                <div class="price"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.5 13.3334V6.66675C17.4997 6.37448 17.4225 6.08742 17.2763 5.83438C17.13 5.58134 16.9198 5.37122 16.6667 5.22508L10.8333 1.89175C10.58 1.74547 10.2926 1.66846 10 1.66846C9.70744 1.66846 9.42003 1.74547 9.16667 1.89175L3.33333 5.22508C3.08022 5.37122 2.86998 5.58134 2.72372 5.83438C2.57745 6.08742 2.5003 6.37448 2.5 6.66675V13.3334C2.5003 13.6257 2.57745 13.9127 2.72372 14.1658C2.86998 14.4188 3.08022 14.6289 3.33333 14.7751L9.16667 18.1084C9.42003 18.2547 9.70744 18.3317 10 18.3317C10.2926 18.3317 10.58 18.2547 10.8333 18.1084L16.6667 14.7751C16.9198 14.6289 17.13 14.4188 17.2763 14.1658C17.4225 13.9127 17.4997 13.6257 17.5 13.3334Z" fill="#D3B572" stroke="#D3B572" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <p>100</p>
-                  </div>
-                  <div class="count"> x1 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="underline"></div>
         </div>
 
     <!-- Totals section PC -->
@@ -893,11 +901,38 @@ body{
     <!-- checkout button  mobile  -->
     <div class="container_mobile"> 
       <div class="checkout">
+        <!-- <button class="">回到商品頁</button>
+        <button class="">我的訂單</button>
+        <button class="button_far_right">觀看持有配件</button> -->
         <button class="">回到商品頁</button>
         <button class="">我的訂單</button>
-        <button class="button_far_right">觀看持有配件</button>
+        <button class="">觀看持有配件</button>
       </div>
     </div>
+
+    <!-- footer -->
+  <footer>
+    <div class="desktop-footer">
+        <div class="desktop-footer-team3rd">
+            Copyright © 2022 Design by Team3rd. All Rights Reserved. <br>
+            此網站僅用於資策會專題發表
+        </div>
+    </div>
+  </footer>
+
+
+
+<script src="./js/jquery-3.6.0.js"></script>
+<script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
+
+<!-- Navbar/Footer js -->
+<script src="./js/0.navbar_footer.js"></script>
+
+<!-- 下面是 導覽列套用scroll滑動效果 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="./js/script.js"></script>
+
 
   
 </body>

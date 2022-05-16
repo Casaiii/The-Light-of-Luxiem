@@ -8,8 +8,8 @@
     
     <!-- 連結主要的css檔 -->
     <link rel="stylesheet" href="./css/shopping_cart.css">
-    <link rel="stylesheet" href="./css/Vtuber_main.css">
-
+    <link rel="stylesheet" href="./css/0.navbar_footer.css">
+    
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -28,7 +28,8 @@
 
 
 <body>
-  <div class="nav_pc">
+
+    <!-- Navbar -->
     <nav>
       <div class="desktop-menu-list">
           <div class="logo">
@@ -161,11 +162,112 @@
               </li>
           </ul>
       </div> -->
-  </nav>
 
-  <!-- 購物車內容 -->
 
-  </div>
+
+
+
+
+    </nav>
+
+    <!-- 漢堡夾清單mobile_menu_list -->
+    <div class="mobile-menu">
+      <div class="user-info">
+          <div class="user-imgwrap">
+              <img src="./imgs/Navbar/user_img.png" alt="">
+          </div>
+          <div class="user-name">Allen</div>
+          <div class="user-login">登出</div>
+      </div>
+
+      <div class="mobile-menu-list">
+          <ul>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">首頁</a>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">人物介紹</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">心理測驗</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">人物介紹</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">粉絲創作</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">出道歷程</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">迷因配件</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">配件購物</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">代幣商店</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">直播首頁</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">直播間</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">烤肉區</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">抖內區</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">時差換算</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">會員中心</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">資料修改</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">訂單查詢</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">喜好收藏</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">持有配件</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">討論區</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">文章列表</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">發表文章</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+
+      <div class="mobile-menu-footer">
+          Copyright © 2022 Design by Team3rd. All Rights Reserved. <br>
+          此網站僅用於資策會專題發表
+      </div>
+    </div>
+
+
     <!-- shopping cart PC -->
     <div class="container_pc">
       <div class="shopping_cart_title">
@@ -174,12 +276,15 @@
       </div>
     </div>
      <!-- shopping cart mobile -->
+     
     <div class="container_mobile">
       <div class="shopping_cart_title">
         <div class="main_title" style="font-size:24px">Shopping Cart</div>
         <div class="sub_title" style="font-size:14px">購物車</div>
       </div>
     </div>
+     
+
     <!-- your coins PC-->
     <div class="container_pc">
       <div class="yourcoins">
@@ -229,7 +334,7 @@
         <li class="active" >確認購買清單</li>
         <li class="">代幣結帳</li>
         <li>購物完成</li>
-      </ul>
+      </ul>  
     </div>
     
 
@@ -360,11 +465,10 @@
         
       </div>
      
-      
-
         <!-- item list mobile -->
         <div class="container_mobile">
-          <div class="underline"></div>
+          <div class="container_mobile_product">
+            <div class="underline"></div>
 
           <div class="item_body">
 
@@ -439,6 +543,7 @@
           </div>
 
           <div class="underline"></div>
+          </div>
         </div>
 
     <!-- Totals section PC -->
@@ -805,13 +910,28 @@
         </div>
     </div>
 <!-- footer -->
-    <footer>
-      <div class="desktop-footer">
-          <div class="desktop-footer-team3rd">
-              Copyright © 2022 Design by Team3rd. All Rights Reserved. <br>
-              此網站僅用於資策會專題發表
-          </div>
-      </div>
+  <footer>
+    <div class="desktop-footer">
+        <div class="desktop-footer-team3rd">
+            Copyright © 2022 Design by Team3rd. All Rights Reserved. <br>
+            此網站僅用於資策會專題發表
+        </div>
+    </div>
   </footer>
+
+
+
+<script src="./js/jquery-3.6.0.js"></script>
+<script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
+
+<!-- Navbar/Footer js -->
+<script src="./js/0.navbar_footer.js"></script>
+
+<!-- 下面是 導覽列套用scroll滑動效果 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="./js/script.js"></script>
+
+
 </body>
 </html>

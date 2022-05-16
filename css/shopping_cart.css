@@ -1,8 +1,8 @@
-
-  *{
-    margin:0;
-    padding:0
+*{
+  margin:0;
+  padding:0
 }
+
 li{
     list-style:none
 }
@@ -17,7 +17,7 @@ body{
  
 .container_pc {
   width: 1140px;
-  margin: auto;
+  margin:auto;
   /* border: 1px red solid; */
 } 
 
@@ -29,7 +29,7 @@ body{
 
 /* shopping_cart */
 .shopping_cart_title{
-  margin-top:20px;
+  padding-top:100px;
   display: flex;
   align-items: flex-end;
 }
@@ -94,7 +94,7 @@ body{
   counter-increment: step;
   width: 30px;
   height: 30px;
-  line-height:30px;
+  line-height:27px;
   border:1px solid #667080;
   display:block;
   text-align:center;
@@ -266,10 +266,10 @@ body{
 /* recommendation card section */
 
 .recommendation_card_wrap{
-  width: 93%;
+  width: 85%;
   margin-top:20px;
   height: 38px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   display: flex;
   justify-content: space-between;
 }
@@ -368,21 +368,80 @@ body{
     .container_pc{
       display:none;
     }
+    .desktop-footer{
+      display: none;
+    }
+    body{
+      background-color: black !important;
+      /* border:red 1px solid; */
+    }
 
-    
+    *{
+      margin:0;
+      padding:0
+    }
+
+    /* 整修mobile navbar */
     .container_mobile{
-      width:375px;
-      margin-left: 10px;
-      margin-top:0;
+      width:100%;
     }
+
+    .shopping_cart_title{
+      padding-left: 20px;
+    }
+    .yourcoins{
+      padding-left: 20px;
+    }
+    .shopping_cart_progress{
+      padding-left: 20px;
+    }
+    .container_mobile_product{
+      padding-left: 20px;
+    }
+    .totals{
+      margin-left: 20px;
+    }
+    .checkout{
+      margin-left: 20px;
+    }
+    
+    .recommendation-title{
+      padding-left: 20px;
+    }
+    .recommendation_card_wrap{
+      padding-left: 20px;
+    }
+    .fin_title{
+      padding-left: 20px;
+    }
+    .order_number{
+      padding-left: 20px;
+    }
+
+    .ordertotal{
+      margin-left: 20px;
+    }
+    /* 整修mobile navbar */
+
+    .shopping_cart_title{
+      padding-top: 50px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .shopping_cart_title .main_title{
+      font-family: 'Kaisei Opti', serif;
+      color: #D3B572;
+      font-size: 24px;
+    }
+    
     /* progress mobile */
-    .progress{
+    .shopping_cart_progress{
       padding-left:-40px ;
-    }
-    .container_mobile .progress li{
+    } 
+    .container_mobile .shopping_cart_progress li{
       width:100px;
     }
-    .container_mobile .progress{
+    .container_mobile .shopping_cart_progress{
       margin-top:20px;
       margin-bottom: 0;
     }
@@ -521,7 +580,7 @@ body{
     font-weight: 900;
     }
 
-        /* checkout button */
+    /* checkout button mobile */
 
     .checkout{
       width: 327px;
@@ -556,17 +615,16 @@ body{
       font-family: 'Noto Sans TC', sans-serif;
     }
     
-    .card_wrap{
+    .recommendation_card_wrap{
       width: 90%;
       margin-top:20px;
-      padding-left: 0px;
       height:213px;
       display: flex;
       justify-content: space-between;
       /* border: red 1px solid; */
 
     }
-    .card{
+    .recommendation_card{
       height:213px;
       width:100px;
     }

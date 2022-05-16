@@ -8,6 +8,7 @@
     
      <!-- 連結主要的css檔 -->
      <link rel="stylesheet" href="./css/shopping_cart.css">
+     <link rel="stylesheet" href="./css/0.navbar_footer.css">
  
      <!-- Bootstrap CSS -->
  
@@ -27,342 +28,6 @@
 
 <style>
 
-body{
-  background-color: black;
-}
- 
-.container_pc {
-  width: 1140px;
-  margin: auto;
-  /* border: 1px red solid; */
-} 
-
-/* shopping_cart */
-.shopping_cart_title{
-  display: flex;
-  align-items: flex-end;
-}
-.shopping_cart_title .main_title{
-  font-family: 'Kaisei Opti', serif;
-  color: #D3B572;
-  font-size: 24px;
-}
-.sub_title{
-  font-family: 'Noto Sans TC', sans-serif;
-  color: white;
-  font-size: 16px;
-  margin-left: 20px; 
-}
-
-/* yourcoins */
-.yourcoins {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-
-}
-.yourcoins .main_title{
-  display: flex;
-  align-items: center;
-  font-family: 'Kaisei Opti', serif;
-  color:white;
-  font-size: 24px;
-}
-.yourcoins .sub_title{
-  display: flex;
-  align-items: center;
-  font-family: 'Inter', sans-serif;;
-  color:#D3B572;
-  font-size: 16px;
-  margin-left:10px;
-}
-
-.yourcoins_price{
-  margin-left:5px
-}
-/* progress section */
-.progress {
-  display: flex;
-  padding-left: 0px;
-  margin-top: 40px;
-  counter-reset:step;
-}
-
-.progress li {
-  font-family: 'Noto Sans TC', sans-serif;
-  color: #667080;
-  list-style-type: none;
-  float:left;
-  width: 15%;
-  position:relative;
-  text-align:center;
-}
-
-.progress li:before {
-  content:counter(step);
-  counter-increment: step;
-  width: 30px;
-  height: 30px;
-  line-height:30px;
-  border:1px solid #667080;
-  display:block;
-  text-align:center;
-  margin:0 auto 10px auto;
-  border-radius:50%;
-  background-color: black;
-}
-.progress li:after {
-  content:"";
-  position:absolute;
-  width: 100%;
-  height:1px;
-  background-color: #667080;
-  top: 15px;
-  left: -50%;
-  z-index:-1;
-}
-.progress li:first-child:after {
-  content:none;
-}
-.progress li.active {
-  color:#D3B572;
-}
-.progress li.active:before {
-  border-color:#D3B572;
-}
-.progress li.active + li:after {
-  background-color:#D3B572;
-}
-
-/* item list*/
-.item_header {
-    display: flex;
-    align-items: flex-end;
-    width: 1140px;
-    margin-top:20px;
-    height: 38px;
-    padding-left: 10px;
-}
-
-
-.underline{
-  margin-top: 5px;
-  width: 1140px;
-  border-top: #D3B572 solid 1px;
-}
-.topline{
-  margin: 20px auto 0 auto;
-  width: 1140px;
-  border-top: #D3B572 solid 1px;
-}
-
-.item_header div{
-    width: 10%;
-    color: white;
-    /* border: #D3B572 solid 1px; */
-}
-
-.item_header p{
-  margin: 0 0 0 5px;
-}
-
-.item_header .price,
-.item_header .totalprice { 
-  display: flex;
-  align-items: center;
-}
-
-
-.item_header .item_detail{
-    width: 70%;
-
-}
-.item_body{
-    margin-top:20px;
-    height: 100px;
-    display: flex;
-    align-items: center;    
-}
-.item_detail img{
-    width: 100px;
-    height: 100px;
-    border: #667080 solid 1px;
-    border-radius: 5px;
-    /* margin-top: 10px; */
-    float: left;
-    object-fit: contain;
-}
-.item_detail .name{
-    width: 70%;
-    margin-left: 140px;
-    margin-top: 20px;
-  } 
-
-
-/* Totals section */
-
-.totals{
-  margin:20px auto 0 auto;
-}
-
-.totals .totals-item{
-  margin:2px auto;
-  display: flex;
-  clear: both;
-  width: 1000px;
-
-}
-    
-.totals label {
-  color: white;
-  float: left;
-  clear: both;
-  width: 88.5%;
-  text-align: right;
-}
-  
-.totals-value {
-  color: #D3B572;
-  float: right;
-  width:12.5%;
-  height:auto;
-  text-align: right;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-.totals p{
-  margin:0 0 0 5px;
-}
-
-.totals-item-total {
-  font-weight: 900;
-}
-
-/* checkout button */
-.checkout{
-  /* margin-right:65px; */
-  height: auto;
-}
-.checkout button {
-  width: 135px;
-  float: right;
-  border: 0;
-  margin-top: 20px;
-  margin-left: 20px;
-  padding: 13px 24px;
-  background-color: #D3B572;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 6px;
-}
-
-.checkout button:hover {
-  background-color:#667080;
-} 
-
-/* recommendation section */
-
-.recommendation-title{
-  margin-top:108px;
-}
-.main-title{
-    font-size: 20px;
-    color:white;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-
-/* recommendation card section */
-
-.card_wrap{
-  width: 93%;
-  margin-top:20px;
-  height: 38px;
-  padding-left: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.card{
-  height:213px;
-  width:100px;
-  /* border: red 1px solid; */
-}
-
-.card_pic img{
-  margin-bottom:10px;
-  width: 100px;
-  height: 100px;
-  border: #667080 solid 1px;
-  border-radius: 5px;
-  float: left;
-  object-fit: contain;
-}
-
-.card_name{
-  font-family: 'Noto Sans TC', sans-serif;
-  font-size: 14px;
-  color: #fff;
-}
-.card .price{
-  color:#D3B572;
-  font-size: 16px;
-}
-.card .info{
-  color:white;
-  font-size: 16px;
-}
-.card button {
-  border: 0;
-  padding: 5px 12px;
-  background-color: #D3B572;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
-.sub_card_detail{
-  width: 100px;
-  display:flex;
-  align-items:center;
-}
-.sub_card_detail p{
-  margin:0;
-  margin-left:5px;
-}
-
-
-.sub_card_detail{
-  /* border: red 1px solid; */
-  display: flex;
-  justify-content: space-between;
-  clear: both;
-  margin: 7px 0 17px 0;
-}
-    
-.sub_card_detail> .price {
-  color: #D3B572;
-  float: left;
-  clear: both;
-  width: 60%;
-  /* text-align: left; */
-  display:flex;
-  align-items:center;
-}
-  
-.sub_card_detail> .info {
-  color: white;
-  float: right;
-  width: 30%;
-  justify-content: end;
-  /* text-align: right; */
-  display:flex;
-  align-items:center;
-}
-
-.car_detail_buymore{
-  text-align: center;
-}
 
 /* token held */
 
@@ -406,165 +71,10 @@ body{
     }
   }
 @media screen and (max-width: 375px){
-    .container_pc{
-      display:none;
-    }
 
-    
-    .container_mobile{
-      width:375px;
-      margin-left: 10px;
-      margin-top:0;
-    }
-    /* progress mobile */
-    .progress{
-      padding-left:-40px ;
-    }
-    .container_mobile .progress li{
-      width:100px;
-    }
-    .container_mobile .progress{
-      margin-top:20px;
-      margin-bottom: 0;
-    }
+   /* checkout button */
 
-    .yourcoins{
-      width:100%;
-      margin-top:20px;
-      margin-bottom: 0;
-    }
-
-     /* item mobile */
-    .underline{
-      margin-top: 20px;
-      width: 327px;
-      border-top: #D3B572 solid 1px;
-    }
-
-    .item_body{
-      width:327px;
-      height: 81px;
-      display: flex;
-      justify-content: space-between; 
-    } 
-
-    .item_img_wrap img{
-      width: 75px;
-      height: 75px;
-      border: #667080 solid 1px;
-      border-radius: 5px;
-      display: flex;
-      float: left;
-      object-fit: contain;
-    }
-     
-    .item_detail{
-      margin-left: 6px;;
-      width: 270px;
-      height: 80px;
-      /* display: flex;
-      justify-content: space-between; */
-      /* border: 1px red solid; */
-    }
-    .item_upper{
-      height:56px;
-      display: flex;
-      justify-content: space-between; 
-      /* border: 1px red solid; */
-
-    }
-    .item_upper> .name{
-      font-family:'Noto Sans TC', sans-serif;
-      font-size:14px;
-      color:#fff;
-      margin-left:0;
-      margin-top:0;
-      text-align: start;
-    }
-
-    .item_upper> .buynexttime{
-      font-family:'Noto Sans TC', sans-serif;
-      font-size:14px;
-      color:#fff;
-      text-align:start;
-    }
-
-    .item_under{
-      height:24px;   
-      color:#fff;
-      display: flex;
-      justify-content: space-between;  
-      padding-right:2px
-
-    }
-    .item_under > .price{
-      font-family:'Noto Sans TC', sans-serif;
-      font-size:14px;
-      color:#D3B572;
-      width: 30%;
-      display: flex;
-      align-items: center;
-    }
-    .item_under p {
-      margin:0 0 0 5px;
-    }
-
-    .item_under > .delete .count{
-      font-family:'Noto Sans TC', sans-serif;
-      width: 100px;
-      font-size:14px;
-      color:#fff;
-      text-align: start;
-      width:30%;
-    }
-
-    /* Totals section */
-
-
-    .totals{
-    margin:20px auto 0 auto;
-    width:375px;
-
-    }
-
-    .totals .totals-item{
-    font-size:16px;
-    margin: 2px auto;
-    display: flex;
-    clear: both;
-    width: 375px;
-    }
-
-    .totals label {
-    color: white;
-    float: right;
-    clear: both;
-    width: 200px;
-    text-align: right;
-    }
-
-    .totals-value {
-    /* border:1px solid red; */
-    color: #D3B572;
-    float: right;
-    width:125px;
-    text-align: right;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    }
-
-    .totals p{
-      margin:0 0 0 5px;
-    }
-
-    .totals-item-total {
-    font-weight: 900;
-    }
-
-        /* checkout button */
-
-    .checkout{
+   .checkout{
       width: 327px;
       margin-right: 0;
       display: flex;
@@ -623,6 +133,8 @@ body{
     .checkout_buy{
       /* border:red 1px solid; */
       width: 327px;
+      margin-left:20px;
+      margin-bottom:20px;
       margin-right: 0;
       display: flex;
       justify-content:space-between;
@@ -658,6 +170,7 @@ body{
     justify-content:end;
     /* margin-right:10px; */
     margin-top:20px;
+    margin-left:20px;
     }
 
     .tokenholding div{
@@ -676,18 +189,251 @@ body{
       color:#D3B572;
       margin-right:5px
     }
-      
-
-    
-      
-  }
-
-
+}
 </style>
+
 <body>
+
+      <!-- Navbar -->
+    <!-- Navbar -->
     <nav>
-        <!-- navbar will be here :D -->
+      <div class="desktop-menu-list">
+          <div class="logo">
+              <a href="#" class="logo-link">
+                  <img src="./imgs/Navbar/logo_Luxiem.png" alt="">
+              </a>
+          </div>
+
+          <div class="mobile-btn">
+              <span class="mobilebtn-1"></span>
+              <span class="mobilebtn-2"></span>
+              <span class="mobilebtn-3"></span>
+          </div>
+
+          <div class="nav-right">
+              <ul class="list-unstyled d-flex align-items-center">
+                  <li>
+                      <a href="#">首頁</a>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">人物介紹</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">心理測驗</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">人物介紹</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">粉絲創作</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">出道歷程</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">迷因配件</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">配件購物</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">代幣商店</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">直播首頁</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">直播間</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">烤肉區</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">抖內區</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">時差換算</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">會員中心</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">資料修改</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">訂單查詢</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">喜好收藏</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">持有配件</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav__listitem">
+                      <a href="#">討論區</a>
+                      <ul class="nav__listitemdrop">
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">文章列表</a>
+                          </li>
+                          <li>
+                              <a class="mobile-menu-subtitle" href="#">發表文章</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="desktop-user">
+              <div class="desktop-user-nav">
+                  <div class="user-info">
+                      <div class="user-imgwrap">
+                          <img src="./imgs/Navbar/user_img.png" alt="">
+                      </div>
+                      <div class="user-name">Allen</div>
+                      <div class="user-login">登出</div>
+                      <div class="log-icon">
+                          <i class="fa-solid fa-right-to-bracket"></i>
+                      </div>
+                  </div>
+
+                  <div class="user-cart">
+                      <div class="user-login">購物車</div>
+                      <div class="log-icon">
+                          <i class="fa-solid fa-cart-plus"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+
+
+
+      <!-- <div class="nav-links d-flex align-items-center mr-auto ml-4 border-left pl-4">
+          <ul class="list-unstyled d-flex align-items-center mb-0" >
+              <li>
+                  <a href="#" class="text-dark">探索</a>
+              </li>
+              <li class="ml-3" >
+                  <a href="#" class="text-dark"></a>提案</a>
+              </li>
+          </ul>
+      </div> -->
+
+
+
+
+
+
     </nav>
+
+    <!-- 漢堡夾清單mobile_menu_list -->
+    <div class="mobile-menu">
+      <div class="user-info">
+          <div class="user-imgwrap">
+              <img src="./imgs/Navbar/user_img.png" alt="">
+          </div>
+          <div class="user-name">Allen</div>
+          <div class="user-login">登出</div>
+      </div>
+
+      <div class="mobile-menu-list">
+          <ul>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">首頁</a>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">人物介紹</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">心理測驗</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">人物介紹</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">粉絲創作</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">出道歷程</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">迷因配件</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">配件購物</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">代幣商店</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">直播首頁</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">直播間</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">烤肉區</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">抖內區</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">時差換算</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">會員中心</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">資料修改</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">訂單查詢</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">喜好收藏</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">持有配件</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mobile-menu-title-all">
+                  <a class="mobile-menu-maintitle" href="#">討論區</a>
+                  <ul>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">文章列表</a>
+                      </li>
+                      <li>
+                          <a class="mobile-menu-subtitle" href="#">發表文章</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+
+      <div class="mobile-menu-footer">
+          Copyright © 2022 Design by Team3rd. All Rights Reserved. <br>
+          此網站僅用於資策會專題發表
+      </div>
+    </div>
+
+
     <!-- shopping cart PC -->
     <div class="container_pc">
       <div class="shopping_cart_title">
@@ -740,19 +486,19 @@ body{
 
     <!-- progress section PC-->
     <div class="container_pc">
-      <ul class="progress">
-        <li >確認購買清單</li>
-        <li class="active">代幣結帳</li>
+      <ul class="shopping_cart_progress">
+        <li class="active">確認購買清單</li>
+        <li class="">代幣結帳</li>
         <li>購物完成</li>
       </ul>
     </div>
     <!-- progress section mobile -->
     <div class="container_mobile">
-      <ul class="progress" style="font-size:12px">
-        <li >確認購買清單</li>
-        <li class="active">代幣結帳</li>
+      <ul class="shopping_cart_progress" style="font-size:12px">
+        <li class="active" >確認購買清單</li>
+        <li class="">代幣結帳</li>
         <li>購物完成</li>
-      </ul>
+      </ul>  
     </div>
     
 
@@ -880,14 +626,14 @@ body{
       </div>
       <div class="topline"></div>
       </div>
-        
       </div>
      
       
 
         <!-- item list mobile -->
         <div class="container_mobile">
-          <div class="underline"></div>
+          <div class="container_mobile_product">
+            <div class="underline"></div>
 
           <div class="item_body">
 
@@ -962,6 +708,7 @@ body{
           </div>
 
           <div class="underline"></div>
+          </div>
         </div>
 
     <!-- Totals section PC -->
@@ -1097,6 +844,31 @@ body{
         <button class="button_right">確認結帳(3)</button>
       </div>
     </div>
+
+<!-- footer -->
+<footer>
+<div class="desktop-footer">
+  <div class="desktop-footer-team3rd">
+      Copyright © 2022 Design by Team3rd. All Rights Reserved. <br>
+      此網站僅用於資策會專題發表
+  </div>
+</div>
+</footer>
+
+
+
+<script src="./js/jquery-3.6.0.js"></script>
+<script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
+
+<!-- Navbar/Footer js -->
+<script src="./js/0.navbar_footer.js"></script>
+
+<!-- 下面是 導覽列套用scroll滑動效果 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="./js/script.js"></script>
+
+
 
 
 
