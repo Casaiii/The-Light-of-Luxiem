@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配件購物車頁Lightbox 光箱測試版</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kaisei+Opti:wght@400;500;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+
+    <!-- 連結主要的css檔 -->
+    <link rel="stylesheet" href="./css/Vtuber_main.css">
+
+    <style>
+        .choose-goldpackage {
+            /* width: 350vh; */
+            width: 100vw;
+            height: 150vh;
+            position: fixed;
+            background-color: rgb(0, 0, 0, 0.3);
+            z-index: 3;
+            /* outline: 1px solid red; */
+        }
+
+        .choose-goldpackage-wrap {
+            width: 95%;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 5px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        .choose-goldpackage-name {
+            /* outline: 1px solid red; */
+            color: #000;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 35px;
+        }
+
+
+
+
+        .fitting-room-select {
+            width: 100px;
+            outline: 1px solid red;
+        }
+
+        .fitting-room-select a {
+            color: #667080;
+            font-size: 14px;
+        }
+
+        .fitting-room-select:hover a {
+            color: #667080;
+        }
+
+        .fitting-room-select-list a {
+            /* color: #667080; */
+            font-size: 12px;
+        }
+
+        .fitting-room-itemselect-menu {
+            width: 100%;
+            /* outline: 1px solid red; */
+            position: relative;
+            /* z-index: 1; */
+        }
+
+        .fitting-room-itemselect-menu p {
+            color: #667080;
+            font-size: 14px;
+            margin-bottom: 0px;
+            position: absolute;
+            top: -51px;
+            right: 20px;
+        }
+
+
+
+
+
+        .checkout {
+            margin-right: 65px;
+            height: auto;
+        }
+
+        .checkout button {
+            float: right;
+            border: 0;
+            margin-top: 20px;
+            margin-left: 10px;
+            padding: 13px 24px;
+            background-color: #D3B572;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+
+        .checkout button:hover {
+            background-color: #667080;
+        }
+
+
+
+
+
+
+
+        /* 關閉叉叉按鈕 */
+        .choose-goldpackage-close {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .choose-goldpackage-close svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+
+
+
+        /* ---RWD桌機版：1920px--- */
+        @media screen and (min-width: 1600px) {
+            .itemshop-itemdetails-wrap {
+                width: 25%;
+                height: 400px;
+            }
+
+            .itemshop-itemdetails-name {
+                font-size: 24px;
+                margin-top: 40px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="choose-goldpackage">
+        <div class="choose-goldpackage-wrap">
+            <div class="choose-goldpackage-name">代幣加值</div>
+
+            <div class="choose-goldpackage-main">
+                <!-- 選擇金幣禮包 下拉選單 -->
+                <div class="fitting-room-select-wrap">
+                    <div class="dropdown fitting-room-select">
+                        <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            金幣禮包
+                        </a>
+                        <div class="dropdown-menu fitting-room-select-list" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">+100金幣</a>
+                            <a class="dropdown-item" href="#">+180金幣</a>
+                            <a class="dropdown-item" href="#">+300金幣</a>
+                            <a class="dropdown-item" href="#">+380金幣</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 按鈕 -->
+                <div class="choose-goldpackage-btn">
+                    <div class="checkout">
+                        <button class="">取消</button>
+                        <button class="">確定</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- 關閉叉叉按鈕 -->
+            <div class="choose-goldpackage-close">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.5 8.5L8.5 25.5" stroke="#667080" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M8.5 8.5L25.5 25.5" stroke="#667080" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
+
+    <script>
+        $('.choose-goldpackage-close').click(function () {
+            console.log('hi');
+            $('.choose-goldpackage').addClass('hide');
+        })
+    </script>
+
+</body>
+
+</html>
