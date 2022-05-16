@@ -30,3 +30,24 @@ $('.mobile-btn').click(function () {
         $('.mobilebtn-3').addClass('mobilebtn-3-on');
     }
 });
+
+
+
+
+// ---Navbar scroll事件：隱藏&顯示---
+let lastScroll = 0;
+
+$(window).scroll(function () {
+    console.log('scrolltop', $(window).scrollTop());
+
+    let nowScroll = $(window).scrollTop();
+
+    if (nowScroll > 30 && nowScroll > lastScroll) {
+        $('nav').addClass('hide');
+    }
+    else {
+        $('nav').removeClass('hide');
+    }
+
+    lastScroll = $(window).scrollTop();
+})
