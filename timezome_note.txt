@@ -1,0 +1,14 @@
+
+Japan JST
+'Asia/Tokyo' GMT+9
+Taiwan CST
+'Asia/Taipei' GMT+8
+Sweden CEST
+'Europe/Stockholm' GMT+1
+Australia ACST
+'Australia/Sydney' GMT+10
+United Kindom BST
+'Europe/London' GMT+0
+America EDT 'America/New_York' GMT-5
+Canada PDT 
+'America/Vancouver' GMT-8

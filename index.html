@@ -134,9 +134,9 @@
           <!-- index_intro_count -->
           <div class="index_intro_count">
             <div class="index_intro_count_wrap KaiseiOpti text-white">
-              <p class="fakegold">1</p>
+              <p class="fakegold numerator">1</p>
               <p>／</p>
-              <p>5</p>
+              <p class="denominator">5</p>
             </div>
           </div>
 
@@ -361,46 +361,105 @@
               </div>
 
               <div class="index_timezone">
-                <div class="index_timezone_wrap">
+                <div class="index_timezone_wrap d-flex align-items-start">
                   <!-- index_timezone_flag -->
-                  <div class="dropdown index_timezone_flag">
-                    <a
-                      class="btn btn-sm dropdown-toggle"
-                      href="#"
-                      role="button"
-                      id="dropdownMenuLink"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <img src="./imgs/index/flag/TW.png" alt="" />
-                    </a>
-                    <div
-                      class="dropdown-menu index_timezone_flag_list"
-                      aria-labelledby="dropdownMenuLink"
-                    >
-                      <a class="dropdown-item" href="#">
-                        <img src="./imgs/index/flag/TW.png" alt="" />
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <img src="./imgs/index/flag/JP.png" alt="" />
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <img src="./imgs/index/flag/GB.png" alt="" />
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <img src="./imgs/index/flag/CA.png" alt="" />
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <img src="./imgs/index/flag/SE.png" alt="" />
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <img src="./imgs/index/flag/US.png" alt="" />
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <img src="./imgs/index/flag/AU.png" alt="" />
-                      </a>
-                    </div>
+                  <!-- <div class="dropdown index_timezone_flag">
+                                    <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="./imgs/index/flag/TW.png" alt="">
+                                    </a>
+                                    <div class="dropdown-menu index_timezone_flag_list"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./imgs/index/flag/TW.png" alt="">
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./imgs/index/flag/JP.png" alt="">
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./imgs/index/flag/GB.png" alt="">
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./imgs/index/flag/CA.png" alt="">
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./imgs/index/flag/SE.png" alt="">
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./imgs/index/flag/US.png" alt="">
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="./imgs/index/flag/AU.png" alt="">
+                                        </a>
+                                    </div>
+                                </div> -->
+                  <div class="index_timezome_flag_dropdown_menu_wrap">
+                    <ul class="index_timezome_flag_dropdown_menu mr-3">
+                      <li class="flag_wrap_top">
+                        <a class="flag_wrap" >
+                          <img class="flag_top" src="./imgs/index/flag/TW.png" alt="" />
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6 9L12 15L18 9"
+                              stroke="#D3B572"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </a>
+
+                        <ul>
+                            <li>
+                                <a class="flag_wrap flag_TW" >
+                                    <img src="./imgs/index/flag/TW.png" alt="" />
+                            </li>
+                          <li>
+                            <a class="flag_wrap flag_JP" >
+                              <img src="./imgs/index/flag/JP.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="flag_wrap flag_GB" >
+                              <img src="./imgs/index/flag/GB.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="flag_wrap flag_AU" >
+                              <img src="./imgs/index/flag/AU.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="flag_wrap flag_US" >
+                              <img src="./imgs/index/flag/US.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="flag_wrap flag_SE" >
+                              <img src="./imgs/index/flag/SE.png" alt="" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="flag_wrap flag_CA" >
+                              <img src="./imgs/index/flag/CA.png" alt="" />
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="TimezoneInfo_wrap d-flex pt-2">
+                    <p id="TimezoneInfo" class="mr-3"></p>
+                    <p
+                      id="TimezoneInfoCount"
+                      class="mr-2 d-flex align-items-center"
+                    ></p>
                   </div>
                 </div>
               </div>
@@ -454,5 +513,8 @@
 
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <script src="./js/index_timezone.js"></script>
+
+    <script></script>
   </body>
 </html>
