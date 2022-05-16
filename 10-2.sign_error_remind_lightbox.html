@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>配件購物車頁-代幣加值（選擇金幣禮包） 光箱測試版</title>
+    <title>會員系統-登入時錯誤提醒 光箱測試版</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -25,7 +25,7 @@
     <!-- <link rel="stylesheet" href="./css/Vtuber_main.css"> -->
 
     <style>
-        .choose-goldpackage {
+        .sign-error-remind {
             /* width: 350vh; */
             width: 100vw;
             height: 150vh;
@@ -35,9 +35,9 @@
             /* outline: 1px solid red; */
         }
 
-        .choose-goldpackage-wrap {
+        .sign-error-remind-wrap {
             width: 95%;
-            height: 240px;
+            height: 280px;
             background-color: #fff;
             border-radius: 5px;
             position: fixed;
@@ -49,30 +49,45 @@
             text-align: center;
         }
 
-        .choose-goldpackage-name {
+        .sign-error-remind-name {
             /* outline: 1px solid red; */
             color: #000;
-            font-size: 16px;
-            font-weight: 500;
             margin-top: 35px;
         }
 
-        .choose-goldpackage-list {
-            /* outline: 1px solid red; */
-            width: 110px;
-            margin-top: 30px;
-            border: none;
-            border-bottom: 1px solid #D3B572;
-            padding-bottom: 3px;
+        .sign-error-remind-name p {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 0;
+            padding-left: 10px;
+            padding-right: 10px;
         }
+
+        .sign-error-remind-text {
+            /* outline: 1px solid red; */
+            font-size: 14px;
+            color: #667080;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 20px;
+            /* line-height: 25px; */
+        }
+        .sign-error-remind-text-content {
+            text-align: left;
+            line-height: 30px;
+        }
+        .sign-error-remind-text-content a {
+            color: #D3B572;
+        }
+        .sign-error-remind-text-content a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
 
         /* 按鈕 */
-        .choose-goldpackage-btn {
-            /* outline: 1px solid red; */
-        }
 
         .checkout {
-            /* margin-right: 65px; */
             height: auto;
             /* outline: 1px solid red; */
             display: flex;
@@ -80,10 +95,8 @@
         }
 
         .checkout button {
-            /* outline: 1px solid red; */
-            /* float: right; */
             border: 0;
-            margin-top: 35px;
+            margin-top: 15px;
             margin-left: 15px;
             margin-right: 15px;
             padding: 13px 24px;
@@ -101,7 +114,7 @@
 
 
         /* 關閉叉叉按鈕 */
-        .choose-goldpackage-close {
+        .sign-error-remind-close {
             width: 30px;
             height: 30px;
             position: absolute;
@@ -109,7 +122,7 @@
             top: 10px;
         }
 
-        .choose-goldpackage-close svg {
+        .sign-error-remind-close svg {
             width: 20px;
             height: 20px;
         }
@@ -123,15 +136,31 @@
 
         /* ---RWD桌機版：1920px--- */
         @media screen and (min-width: 1600px) {
-            .choose-goldpackage-wrap {
+            .sign-error-remind-wrap {
                 /* outline: 1px solid red; */
                 width: 25%;
-                height: 280px;
+                height: 300px;
             }
 
-            .choose-goldpackage-name {
+            .sign-error-remind-name p {
                 font-size: 24px;
-                margin-top: 40px;
+                margin-bottom: 0;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .sign-error-remind-text {
+                /* outline: 1px solid red; */
+                font-size: 16px;
+                padding-top: 20px;
+                padding-left: 50px;
+            }
+            .sign-error-remind-text-content {
+                line-height: 35px;
+            }
+
+            .checkout button {
+                margin-top: 15px;
             }
 
 
@@ -141,23 +170,39 @@
 </head>
 
 <body>
-    <div class="choose-goldpackage">
-        <div class="choose-goldpackage-wrap">
-            <div class="choose-goldpackage-name">代幣加值</div>
+    <div class="sign-error-remind">
+        <div class="sign-error-remind-wrap">
+            <div class="sign-error-remind-name d-flex justify-content-center align-items-center">
+                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.3928 3.91666H31.6078L43.0837 15.3925V31.6075L31.6078 43.0833H15.3928L3.91699 31.6075V15.3925L15.3928 3.91666Z"
+                        stroke="#D3B572" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M23.5 15.6667V23.5" stroke="#D3B572" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M23.5 31.3333H23.5196" stroke="#D3B572" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <p>提示訊息</p>
+            </div>
 
-            <div class="choose-goldpackage-main">
-                <!-- 選擇金幣禮包 下拉選單 -->
-                <select class="choose-goldpackage-list" >
-                    <option>+100金幣 </option>
-                    <option>+180金幣 </option>
-                    <option>+300金幣 </option>
-                    <option>+380金幣 </option>
-                </select>
+            <div class="sign-error-remind-text">
+                <ul class="sign-error-remind-text-content" >
+                    <li>您輸入的帳號或密碼錯誤，請
+                        <a href="#">重新輸入</a>
+                    </li>
+                    <li>忘了會員密碼，請點擊
+                        <a href="#">找回密碼</a>
+                    </li>
+                    <li>還不是會員，請
+                        <a href="#">加入會員</a>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="sign-error-remind-main">
                 <!-- 按鈕 -->
-                <div class="choose-goldpackage-btn">
+                <div class="sign-error-remind-btn">
                     <div class="checkout">
-                        <button class="">取消</button>
                         <button class="">確定</button>
                     </div>
                 </div>
@@ -167,7 +212,7 @@
 
 
             <!-- 關閉叉叉按鈕 -->
-            <div class="choose-goldpackage-close">
+            <div class="sign-error-remind-close">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5 8.5L8.5 25.5" stroke="#667080" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
@@ -187,9 +232,9 @@
     <script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
 
     <script>
-        $('.choose-goldpackage-close').click(function () {
+        $('.sign-error-remind-close').click(function () {
             console.log('hi');
-            $('.choose-goldpackage').addClass('hide');
+            $('.sign-error-remind').addClass('hide');
         })
     </script>
 

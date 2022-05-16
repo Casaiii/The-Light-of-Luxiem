@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>配件購物車頁-代幣加值（選擇金幣禮包） 光箱測試版</title>
+    <title>配件購物車頁-已加入喜好收藏 光箱測試版</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -25,7 +25,7 @@
     <!-- <link rel="stylesheet" href="./css/Vtuber_main.css"> -->
 
     <style>
-        .choose-goldpackage {
+        .add-to-fllow {
             /* width: 350vh; */
             width: 100vw;
             height: 150vh;
@@ -35,9 +35,9 @@
             /* outline: 1px solid red; */
         }
 
-        .choose-goldpackage-wrap {
+        .add-to-fllow-wrap {
             width: 95%;
-            height: 240px;
+            height: 190px;
             background-color: #fff;
             border-radius: 5px;
             position: fixed;
@@ -49,7 +49,7 @@
             text-align: center;
         }
 
-        .choose-goldpackage-name {
+        .add-to-fllow-name {
             /* outline: 1px solid red; */
             color: #000;
             font-size: 16px;
@@ -57,22 +57,9 @@
             margin-top: 35px;
         }
 
-        .choose-goldpackage-list {
-            /* outline: 1px solid red; */
-            width: 110px;
-            margin-top: 30px;
-            border: none;
-            border-bottom: 1px solid #D3B572;
-            padding-bottom: 3px;
-        }
-
         /* 按鈕 */
-        .choose-goldpackage-btn {
-            /* outline: 1px solid red; */
-        }
 
         .checkout {
-            /* margin-right: 65px; */
             height: auto;
             /* outline: 1px solid red; */
             display: flex;
@@ -80,8 +67,6 @@
         }
 
         .checkout button {
-            /* outline: 1px solid red; */
-            /* float: right; */
             border: 0;
             margin-top: 35px;
             margin-left: 15px;
@@ -101,7 +86,7 @@
 
 
         /* 關閉叉叉按鈕 */
-        .choose-goldpackage-close {
+        .add-to-fllow-close {
             width: 30px;
             height: 30px;
             position: absolute;
@@ -109,7 +94,7 @@
             top: 10px;
         }
 
-        .choose-goldpackage-close svg {
+        .add-to-fllow-close svg {
             width: 20px;
             height: 20px;
         }
@@ -123,15 +108,19 @@
 
         /* ---RWD桌機版：1920px--- */
         @media screen and (min-width: 1600px) {
-            .choose-goldpackage-wrap {
+            .add-to-fllow-wrap {
                 /* outline: 1px solid red; */
                 width: 25%;
-                height: 280px;
+                height: 250px;
             }
 
-            .choose-goldpackage-name {
+            .add-to-fllow-name {
                 font-size: 24px;
                 margin-top: 40px;
+            }
+
+            .checkout button {
+                margin-top: 50px;
             }
 
 
@@ -141,23 +130,16 @@
 </head>
 
 <body>
-    <div class="choose-goldpackage">
-        <div class="choose-goldpackage-wrap">
-            <div class="choose-goldpackage-name">代幣加值</div>
+    <div class="add-to-fllow">
+        <div class="add-to-fllow-wrap">
+            <div class="add-to-fllow-name">已加入喜好收藏</div>
 
-            <div class="choose-goldpackage-main">
-                <!-- 選擇金幣禮包 下拉選單 -->
-                <select class="choose-goldpackage-list" >
-                    <option>+100金幣 </option>
-                    <option>+180金幣 </option>
-                    <option>+300金幣 </option>
-                    <option>+380金幣 </option>
-                </select>
+            <div class="add-to-fllow-main">
 
                 <!-- 按鈕 -->
-                <div class="choose-goldpackage-btn">
+                <div class="add-to-fllow-btn">
                     <div class="checkout">
-                        <button class="">取消</button>
+                        <button class="">我的收藏</button>
                         <button class="">確定</button>
                     </div>
                 </div>
@@ -167,7 +149,7 @@
 
 
             <!-- 關閉叉叉按鈕 -->
-            <div class="choose-goldpackage-close">
+            <div class="add-to-fllow-close">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5 8.5L8.5 25.5" stroke="#667080" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
@@ -187,9 +169,9 @@
     <script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
 
     <script>
-        $('.choose-goldpackage-close').click(function () {
+        $('.add-to-fllow-close').click(function () {
             console.log('hi');
-            $('.choose-goldpackage').addClass('hide');
+            $('.add-to-fllow').addClass('hide');
         })
     </script>
 
