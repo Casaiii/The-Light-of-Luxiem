@@ -73,6 +73,12 @@ input::-webkit-input-placeholder{
     border:  1px solid #D3B572;
     color: #ffffff;
     background-color: #D3B572;
+    transition: .5s;
+}
+.mc-btn:hover{
+    border:  1px solid #D3B572;
+    color: #D3B572;
+    background-color: #000000;
 }
 .small-polygon{
     position: absolute;

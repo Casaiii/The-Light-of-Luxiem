@@ -263,7 +263,9 @@ td, th {
     50% { transform: rotate(5deg); }
 	100% { transform: rotate(0deg); }
 }
-
+.side_nav_wrap{
+    display: none;
+}
 /* ---RWD桌機版：1920px--- */
 @media screen and (min-width: 1920px){
 
@@ -294,6 +296,7 @@ td, th {
     top: 96px;
     left: 400px;
     height: 80%;
+    display: block;
 }
 .side_nav_upper{
     position: relative
@@ -343,7 +346,18 @@ td, th {
     border: #D3B572 1px solid;
     transform: skew(-25deg);
 } 
-
+.side_nav_ticket:hover .side_nav_text::before{
+    background: linear-gradient(#ffffff00, #D3B572);
+}
+.side_nav_ticket:hover .h1{
+    color: #ffffff;
+}
+.side_nav_ticket:nth-child(3) .side_nav_text::before{
+    background: linear-gradient(#ffffff00, #D3B572);
+}
+.side_nav_ticket:nth-child(3) .h1{
+    color: #ffffff;
+}
   .h1 {
     font-size: 20px;
     /* padding: 8px 24px; */

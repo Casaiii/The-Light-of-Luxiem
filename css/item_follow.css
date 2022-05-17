@@ -554,7 +554,18 @@ a.item-follow-btn:hover {
     border: #D3B572 1px solid;
     transform: skew(-25deg);
 } 
-
+.side_nav_ticket:hover .side_nav_text::before{
+    background: linear-gradient(#ffffff00, #D3B572);
+}
+.side_nav_ticket:hover .h1{
+    color: #ffffff;
+}
+.side_nav_ticket:nth-child(4) .side_nav_text::before{
+    background: linear-gradient(#ffffff00, #D3B572);
+}
+.side_nav_ticket:nth-child(4) .h1{
+    color: #ffffff;
+}
   .h1 {
     font-size: 20px;
     /* padding: 8px 24px; */

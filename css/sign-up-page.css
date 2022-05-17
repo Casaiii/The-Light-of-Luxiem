@@ -4,6 +4,15 @@
     box-sizing: border-box;
     font-family: 'Noto Sans TC', sans-serif;
 }
+nav{
+    z-index: 4;
+}
+.mobile-menu{
+    z-index: 3;
+}
+.nav__listitemdrop{
+    z-index: 2;
+}
 .mc-bg{
     height: 100vh;
     background: linear-gradient(#ffffff, #D3B572);
@@ -95,6 +104,11 @@ input::-webkit-input-placeholder{
     border:  1px solid #D3B572;
     color: #ffffff;
     background-color: #D3B572;
+    transition: .3s;
+}
+.mc-btn:hover{
+    color: #D3B572;
+    background-color: #000000;
 }
 .small-polygon{
     position: absolute;
