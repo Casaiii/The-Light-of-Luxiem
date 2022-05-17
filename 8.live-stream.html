@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>直播間＿多重視窗 v1</title>
     <!-- 頁面css檔 -->
-     <link rel="stylesheet" href="./live_stream.css" />
+     <link rel="stylesheet" href="./css/live_stream.css" />
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -26,8 +26,9 @@
 </head>
 
 <body>
-    <!--sub header -->
-    <!-- <header class="site-header-mobile">     
+
+    <!--sub header mobile-->
+    <header class="site-header-mobile">     
         <div class="site-boundary">
             <nav class="site-nav">
                 <div class="site-header-profile-wrap" id="ike-icon" href="#">
@@ -112,7 +113,7 @@
                     </svg>
             </div>
         </div>
-    </header> -->
+    </header>
 
     <!--sub header PC-->
     <header class="site-header">     
@@ -195,77 +196,73 @@
         </div>
     </header>
 
-      <!-- stream video content -->
-      <div class="stream-video-container-mobile">
+      <!-- stream video content mobile-->
+    <div class="stream-video-container-mobile">
         <div class="stream-video-row">
-             <div class="stream-video-col">
+            <div class="stream-video-col">
                 <div class="display-none" id="ytplayer1"></div> 
-                    </div>
-            <div class="stream-video-col">
-                <div class="display-none" id="ytplayer2"></div>
             </div>
             <div class="stream-video-col">
-                <div class="display-none" id="ytplayer3"></div>
+                <div class="display-none" id="ytplayer2"></div> 
             </div>
-        </div>
-        <div class="stream-video-row">
             <div class="stream-video-col">
-                <div class="display-none" id="ytplayer4"></div>
-                <div class="deco-left">
-                    <svg width="304" height="290" viewBox="0 0 304 290" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M49.1927 36.9509L118.981 27.2131L162.309 82.783L135.848 148.091L66.0591 157.829L22.7315 102.259L49.1927 36.9509Z" stroke="#D3B572"/>
-                        <path d="M200.768 41.8102L269.228 129.614L227.418 232.804L117.148 248.19L48.6877 160.386L90.4979 57.1964L200.768 41.8102Z" fill="#D3B572" fill-opacity="0.5"/>
-                        </svg>
-                </div>
+                <div class="display-none" id="ytplayer3"></div> 
             </div>
-            <div class="stream-video-col"></div>
-            <div class="stream-video-col">
-                <div class="deco-right">
-                    <svg width="441" height="396" viewBox="0 0 441 396" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M226.773 163.45L336.566 148.13L404.73 235.555L363.101 338.299L253.307 353.619L185.143 266.194L226.773 163.45Z" stroke="#D3B572"/>
-                        <path d="M243.299 54.4527L332.459 168.806L278.007 303.199L134.393 323.238L45.2323 208.884L99.685 74.4915L243.299 54.4527Z" fill="#D3B572" fill-opacity="0.5"/>
-                        </svg>
-                </div>
+            <div class="deco-left">
+                <svg width="304" height="290" viewBox="0 0 304 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.1927 36.9509L118.981 27.2131L162.309 82.783L135.848 148.091L66.0591 157.829L22.7315 102.259L49.1927 36.9509Z" stroke="#D3B572"/>
+                    <path d="M200.768 41.8102L269.228 129.614L227.418 232.804L117.148 248.19L48.6877 160.386L90.4979 57.1964L200.768 41.8102Z" fill="#D3B572" fill-opacity="0.5"/>
+                </svg>
+            </div>
+            <div class="deco-right">
+                <svg width="441" height="396" viewBox="0 0 441 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M226.773 163.45L336.566 148.13L404.73 235.555L363.101 338.299L253.307 353.619L185.143 266.194L226.773 163.45Z" stroke="#D3B572"/>
+                    <path d="M243.299 54.4527L332.459 168.806L278.007 303.199L134.393 323.238L45.2323 208.884L99.685 74.4915L243.299 54.4527Z" fill="#D3B572" fill-opacity="0.5"/>
+                </svg>
             </div>
         </div>
-</div> 
+        <div class="stream-video-row"> 
+            <div class="stream-video-col">
+                <div class="display-none" id="ytplayer4"></div> 
+            </div>
+        </div>
+    </div> 
 
 
-    <!-- stream video content
-    <div class="stream-video-container">
-            <div class="stream-video-row">
-                 <div class="stream-video-col">
+<!--  stream video content pc -->
+    <!-- <div class="stream-video-container">
+            <div class="stream-video-row-pc">
+                 <div class="stream-video-col-pc">
                     <div class="display-none" id="ytplayer1"></div> 
-                        </div>
-                <div class="stream-video-col">
+                </div>
+                <div class="stream-video-col-pc">
                     <div class="display-none" id="ytplayer2"></div>
                 </div>
-                <div class="stream-video-col">
+                <div class="stream-video-col-pc">
                     <div class="display-none" id="ytplayer3"></div>
                 </div>
             </div>
             <div class="stream-video-row">
-                <div class="stream-video-col">
+                <div class="stream-video-col-pc">
                     <div class="display-none" id="ytplayer4"></div>
                     <div class="deco-left">
                         <svg width="304" height="290" viewBox="0 0 304 290" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M49.1927 36.9509L118.981 27.2131L162.309 82.783L135.848 148.091L66.0591 157.829L22.7315 102.259L49.1927 36.9509Z" stroke="#D3B572"/>
                             <path d="M200.768 41.8102L269.228 129.614L227.418 232.804L117.148 248.19L48.6877 160.386L90.4979 57.1964L200.768 41.8102Z" fill="#D3B572" fill-opacity="0.5"/>
-                            </svg>
+                        </svg>
                     </div>
                 </div>
-                <div class="stream-video-col"></div>
-                <div class="stream-video-col">
+                <div cclass="stream-video-col-pc"></div>
+                <div class="stream-video-col-pc">
                     <div class="deco-right">
                         <svg width="441" height="396" viewBox="0 0 441 396" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M226.773 163.45L336.566 148.13L404.73 235.555L363.101 338.299L253.307 353.619L185.143 266.194L226.773 163.45Z" stroke="#D3B572"/>
                             <path d="M243.299 54.4527L332.459 168.806L278.007 303.199L134.393 323.238L45.2323 208.884L99.685 74.4915L243.299 54.4527Z" fill="#D3B572" fill-opacity="0.5"/>
-                            </svg>
+                        </svg>
                     </div>
                 </div>
             </div>
-    </div>  -->
-
+    </div>   -->
 
 <!-- 
 
@@ -273,11 +270,6 @@
     <div class="display-none" id="ytplayer2"></div>
     <div class="display-none" id="ytplayer3"></div>
     <div class="display-none" id="ytplayer4"></div> -->
-
-   <!-- <div>
-        <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
-            <path class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path><path d="M 45,24 27,14 27,34" fill="#fff"></path></svg>
-    </div> -->
 
 
     <script src="./js/jquery-3.6.0.js"></script>
