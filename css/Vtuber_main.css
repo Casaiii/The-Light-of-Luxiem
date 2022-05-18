@@ -109,13 +109,52 @@ body {
 .fitting-room-roleplay-start-wear {
     opacity: 0.5;
 }
-.roleplay-content-item {
-    width: 70%;
-    object-fit: cover;
+
+/* 第一個比較框 Vox */
+/* 下面是按照 珍奶（手部） */
+.fitting-room-roleplay-hand {
+    /* outline: 1px solid red; */
+    width: 160px;
     position: absolute;
-    right: -65px;
-    bottom: -50px;
+    right: -30px;
+    bottom: -85px;
 }
+/* 下面是 麥克風（物品） */
+.fitting-room-roleplay-object {
+    width: 130px;
+    position: absolute;
+    left: 10px;
+    bottom: -40px;
+}
+/* 下面是  機長帽（頭部） */
+.fitting-room-roleplay-head {
+    width: 150px;
+    position: absolute;
+    left: 52px;
+    top: -46px;
+}
+.roleplay-content-item {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 第二個比較框 Shu */
+/* 下面是按照 香蕉抱枕（手部） */
+.fitting-room-roleplay-hand2 {
+    /* outline: 1px solid red; */
+    width: 350px;
+    position: absolute;
+    right: -40px;
+    bottom: -340px;
+}
+/* 頭部:shu眼鏡 */
+.fitting-room-roleplay-head2 {
+    width: 87px;
+    position: absolute;
+    left: 83px;
+    top: 65px;
+}
+
 
 .fitting-room-compare-role-imgwrap-other {
     /* width: 130px;
@@ -138,10 +177,16 @@ body {
     /* outline: 1px solid red; */
     padding-left: 18px;
 }
-.fitting-room-add-text p, .fitting-room-buy-text p {
+.fitting-room-add-text, .fitting-room-buy-text {
+    /* outline: 1px solid red; */
     color: #667080;
     font-size: 14px;
 }
+.fitting-room-add a:hover, .fitting-room-buy a:hover {
+    text-decoration: none;
+    color: #D3B572;
+}
+
 .fitting-room-add-text i {
     color: #667080;
     /* outline: 1px solid red; */
