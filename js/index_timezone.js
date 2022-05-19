@@ -31,9 +31,11 @@ const showClock = () => {
     // 轉換成字串 用空白切開
 
     // console.log(ar);
-    TimezoneInfo.innerHTML = ar[1] + "<br>" + ar[2]; //這是索引
+    //TimezoneInfo.innerHTML = ar[1] + "<br>" + ar[2]; //這是索引
+    $(".TimezoneInfo").html(ar[1] + "<br>" + ar[2]);
 
-    TimezoneInfoCount.innerHTML = "GMT+8" + "<br>" + ar[4];
+    //TimezoneInfoCount.innerHTML = "GMT+8" + "<br>" + ar[4];
+    $(".TimezoneInfoCount").html("GMT+8" + "<br>" + ar[4]);
 
     // console.log("showClock", count);
     // count = count + 1; //注意擺放的順序
@@ -57,9 +59,9 @@ $(".flag_TW").click(function () {
       // 轉換成字串 用空白切開
 
       console.log(ar);
-      TimezoneInfo.innerHTML = ar[1] + "<br>" + ar[2]; //這是索引
+      $(".TimezoneInfo").html(ar[1] + "<br>" + ar[2]);
 
-      TimezoneInfoCount.innerHTML = "GMT+8" + "<br>" + ar[4];
+      $(".TimezoneInfoCount").html("GMT+8" + "<br>" + ar[4]);
 
       // console.log("showClock", count);
       // count = count + 1; //注意擺放的順序
@@ -93,9 +95,10 @@ $(".flag_JP").click(function () {
       const ar1 = now.toLocaleString("en-us", options).split(" ");
 
       console.log(ar1);
-      TimezoneInfo.innerHTML = ar1[0] + "<br>" + ar1[1];
-
-      TimezoneInfoCount.innerHTML = "GMT+9" + "<br>" + ar1[3];
+      $(".TimezoneInfo").html(ar1[0] + "<br>" + ar1[1]);
+      //TimezoneInfo.innerHTML = ar1[0] + "<br>" + ar1[1];
+      $(".TimezoneInfoCount").html("GMT+9" + "<br>" + ar1[3]);
+      //TimezoneInfoCount.innerHTML = "GMT+9" + "<br>" + ar1[3];
 
       setTimeout(showClock, 1000);
     } else {
@@ -127,9 +130,9 @@ $(".flag_GB").click(function () {
       const ar1 = now.toLocaleString("en-us", options).split(" ");
 
       console.log(ar1);
-      TimezoneInfo.innerHTML = ar1[0] + "<br>" + ar1[1];
+      $(".TimezoneInfo").html(ar1[0] + "<br>" + ar1[1]);
 
-      TimezoneInfoCount.innerHTML = "GMT+0" + "<br>" + ar1[3];
+      $(".TimezoneInfoCount").html("GMT+0" + "<br>" + ar1[3]);
 
       setTimeout(showClock, 1000);
     } else {
@@ -160,9 +163,9 @@ $(".flag_AU").click(function () {
       const ar1 = now.toLocaleString("en-us", options).split(" ");
 
       console.log(ar1);
-      TimezoneInfo.innerHTML = ar1[0] + "<br>" + ar1[1];
+      $(".TimezoneInfo").html(ar1[0] + "<br>" + ar1[1]);
 
-      TimezoneInfoCount.innerHTML = "GMT+10" + "<br>" + ar1[3];
+      $(".TimezoneInfoCount").html("GMT+10" + "<br>" + ar1[3]);
 
       setTimeout(showClock, 1000);
     } else {
@@ -194,9 +197,9 @@ $(".flag_US").click(function () {
       const ar1 = now.toLocaleString("en-us", options).split(" ");
 
       console.log(ar1);
-      TimezoneInfo.innerHTML = ar1[0] + "<br>" + ar1[1];
+      $(".TimezoneInfo").html(ar1[0] + "<br>" + ar1[1]);
 
-      TimezoneInfoCount.innerHTML = "GMT-5" + "<br>" + ar1[3];
+      $(".TimezoneInfoCount").html("GMT-5" + "<br>" + ar1[3]);
 
       setTimeout(showClock, 1000);
     } else {
@@ -228,9 +231,9 @@ $(".flag_SE").click(function () {
       const ar1 = now.toLocaleString("en-us", options).split(" ");
 
       console.log(ar1);
-      TimezoneInfo.innerHTML = ar1[0] + "<br>" + ar1[1];
+      $(".TimezoneInfo").html(ar1[0] + "<br>" + ar1[1]);
 
-      TimezoneInfoCount.innerHTML = "GMT+1" + "<br>" + ar1[3];
+      $(".TimezoneInfoCount").html("GMT+1" + "<br>" + ar1[3]);
 
       setTimeout(showClock, 1000);
     } else {
@@ -262,9 +265,9 @@ $(".flag_CA").click(function () {
       const ar1 = now.toLocaleString("en-us", options).split(" ");
 
       console.log(ar1);
-      TimezoneInfo.innerHTML = ar1[0] + "<br>" + ar1[1];
+      $(".TimezoneInfo").html(ar1[0] + "<br>" + ar1[1]);
 
-      TimezoneInfoCount.innerHTML = "GMT-8" + "<br>" + ar1[3];
+      $(".TimezoneInfoCount").html("GMT-8" + "<br>" + ar1[3]);
 
       setTimeout(showClock, 1000);
     } else {

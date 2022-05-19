@@ -344,6 +344,51 @@ body {
   }
 }
 
+/* ----index_intro_Bigtrain_wrap----- */
+.index_intro_Bigtrain_wrap {
+  width: 375px;
+  overflow: hidden;
+  outline: 2px solid #ffff00;
+
+}
+@media screen and (min-width: 1140px) {
+.index_intro_Bigtrain_wrap {
+  width: 1140px;
+  overflow: hidden;
+}
+}
+
+/* -------index_intro_Bigtrain------- */
+
+.index_intro_Bigtrain {
+  width: 1875px;
+  outline: 2px solid #00ff66;
+  /* transform: translateX(-750px); */
+}
+
+@media screen and (min-width: 1140px) {
+.index_intro_Bigtrain {
+  width: 5700px;
+  outline: 2px solid #00ff66;
+  /* transform: translateX(-3420px); */
+}
+}
+
+/* -------index_intro_Ike_outwrap--------- */
+.index_intro_Ike_outwrap {
+  width: 375px;
+  /* height: 300px; */
+  outline: 2px solid #00f0ff;
+}
+
+@media screen and (min-width: 1140px) {
+.index_intro_Ike_outwrap {
+  width: 1140px;
+  /* height: 300px; */
+  outline: 2px solid #00f0ff;
+}
+}
+
 /* -------index_IKE_body--------- */
 
 .index_IKE_body {
@@ -460,10 +505,10 @@ body {
   text-decoration: underline #d3b572;
 }
 .see_more_ph:hover a,
-  .see_more_ph:active a {
-    color: #667080;
-    text-decoration: none;
-  }
+.see_more_ph:active a {
+  color: #667080;
+  text-decoration: none;
+}
 
 /* -----index_SC_rank---- */
 
@@ -479,8 +524,8 @@ body {
     width: 264px;
     height: 177px;
     position: relative;
-    top: -13%;
-    left: 63%;
+    top: -21rem;
+    left: 44rem;
     z-index: 1;
   }
 
@@ -558,7 +603,7 @@ body {
   transition: 0.3s;
 }
 .video_play_icon {
-  transform: scale(.5);
+  transform: scale(0.5);
   opacity: 0;
 }
 .index_livenow_img:hover .video_play_icon {
@@ -658,22 +703,14 @@ body {
 .TimezoneInfo_wrap {
   text-align: center;
 }
-#TimezoneInfo {
+.TimezoneInfo {
   color: #d3b572;
   font-size: 24px;
 }
-#TimezoneInfoCount {
+.TimezoneInfoCount {
   color: #fff;
   font-size: 24px;
 }
-
-
-
-
-
-
-
-
 
 /* -----index_intro_chevron_left---- */
 .index_intro_chevron_left {
