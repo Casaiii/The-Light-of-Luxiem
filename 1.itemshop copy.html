@@ -389,9 +389,9 @@
 
                                 <!-- 物品:Vox麥克風 -->
                                 <div class="fitting-room-roleplay-object">
-                                    <img class="roleplay-content-item"
+                                    <!-- <img class="roleplay-content-item"
                                         src="./imgs/Itemshop/Avatar_item/Vox/object/vox_object_right_Microphone2.png"
-                                        alt="">
+                                        alt=""> -->
                                 </div>
 
 
@@ -596,10 +596,11 @@
 
         <!-- 桌機 Hashtags -->
         <div class="desktop-itemshop-tags">
-            <div class="desktop-itemshop-tags-name"># 白色情人節</div>
-            <div class="desktop-itemshop-tags-name"># Vox Akuma</div>
-            <div class="desktop-itemshop-tags-name"># 台灣小吃</div>
-            <div class="desktop-itemshop-tags-name"># Ike Eveland</div>
+            <div class="desktop-itemshop-tags-name"># 麥克風</div>
+            <div class="desktop-itemshop-tags-name"># 美食</div>
+            <div class="desktop-itemshop-tags-name"># 愛心</div>
+            <div class="desktop-itemshop-tags-name"># 螢光棒</div>
+            <div class="desktop-itemshop-tags-name"># 帽子</div>
         </div>
 
         <!-- 配件購物 桌機配件類型列表 -->
@@ -673,7 +674,7 @@
                                 <li>Q版風格</li> -->
                             </ul>
                         </li>
-                        <li class="desktop-itemtype-topic">
+                        <!-- <li class="desktop-itemtype-topic">
                             <div class="desktop-itemtype-topic-name">場景</div>
                             <ul class="desktop-itemtype-topic-list">
                                 <li>Vox Akuma</li>
@@ -681,10 +682,8 @@
                                 <li>Mysta Rias</li>
                                 <li>Luca Kaneshiro</li>
                                 <li>Shu Yamino</li>
-                                <!-- <li>華麗風格</li>
-                                <li>Q版風格</li> -->
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -765,7 +764,7 @@
                                     <li>Q版風格</li> -->
                                 </ul>
                             </li>
-                            <li class="mobile-itemtype-topic">
+                            <!-- <li class="mobile-itemtype-topic">
                                 <div class="mobile-itemtype-topic-name">場景</div>
                                 <ul class="mobile-itemtype-topic-list">
                                     <li>Vox Akuma</li>
@@ -773,10 +772,8 @@
                                     <li>Mysta Rias</li>
                                     <li>Luca Kaneshiro</li>
                                     <li>Shu Yamino</li>
-                                    <!-- <li>華麗風格</li>
-                                    <li>Q版風格</li> -->
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -809,7 +806,8 @@
                                 </svg>
                             </div>
 
-                            <img src="./imgs/Itemshop/Avatar_item/Vox/hand/vox_hand_left_BubbleTea.png" alt="">
+                            <img class="item-hand"
+                                src="./imgs/Itemshop/Avatar_item/Vox/hand/vox_hand_left_BubbleTea.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
                             <p>配件名稱</p>
@@ -875,7 +873,8 @@
                                 </svg>
 
                             </div>
-                            <img src="./imgs/Itemshop/Avatar_item/Vox/object/vox_object_right_Microphone2.png" alt="">
+                            <img class="item-object"
+                                src="./imgs/Itemshop/Avatar_item/Vox/object/vox_object_right_Microphone2.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
                             <p>配件名稱</p>
@@ -941,7 +940,8 @@
                                 </svg>
 
                             </div>
-                            <img src="./imgs/Itemshop/Avatar_item/Vox/head/vox_head_top_CaptainHat.png" alt="">
+                            <img class="item-head"
+                                src="./imgs/Itemshop/Avatar_item/Vox/head/vox_head_top_CaptainHat.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
                             <p>配件名稱</p>
@@ -1007,7 +1007,8 @@
                                 </svg>
 
                             </div>
-                            <img src="./imgs/Itemshop/Avatar_item/Vox/hand/vox_hand_left_CaptainHand.png" alt="">
+                            <img class="item-hand"
+                                src="./imgs/Itemshop/Avatar_item/Vox/hand/vox_hand_left_CaptainHand.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
                             <p>配件名稱</p>
@@ -1759,58 +1760,120 @@
         });
 
         // 第二步：如果有拿到classname的角色框，點擊配件會append疊圖
+        // 點擊+ icon
         $('.fitting-room-item-imgwrap-add-wear').click(function () {
             console.log('hi');
+            // 如果角色框有classname
             if ($('.fitting-room-roleplay').hasClass('fitting-room-roleplay-start-wear')) {
-                $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').append('<img class="roleplay-content-item" src="./imgs/Itemshop/Avatar_item/Vox/hand/vox_hand_left_BubbleTea.png" alt="">');
+
+                // 先判斷：在左手的div盒子有沒有東西
+                if ($('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').children().length == 0) {
+
+                    // 沒有東西的話
+                    // $(this).next()配件縮圖 帶有item-hand的classsname
+                    if ($(this).next().hasClass('item-hand')) {
+
+                        // 宣告變數：配件縮圖的src
+                        var img = $(this).next().attr('src');
+
+                        // 在左手的div盒子append 此配件縮圖的src
+                        $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').append(`<img class="roleplay-content-item" src="${img}"/>`);
+
+                        // 同時此配件縮圖的邊框會變黃色
+                        $(this).parent().addClass('active');
+                    }
+                }
+
+                else {
+                    // 有東西的話再判斷：這個東西是不是自己（點擊的+ icon）？
+                    // 如果第二次點擊+ icon的src ，不是自己的src （和角色框內的配件圖src不一樣）
+                    if ($(this).next().attr('src') !== $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').attr('src')) {
+
+                        // 帶有item-hand的classsname才能配戴
+                        if ($(this).next().hasClass('item-hand')) {
+
+                            // 第二次點擊的配件邊框變成黃色
+                            $(this).parent().addClass('active');
+                            // 其他的配件邊框變成灰色
+                            $(this).parent().parent().siblings().children('.fitting-room-item-imgwrap').removeClass('active');
+
+                            // 先清空原本左手div盒子的配件圖
+                            $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').empty();
+
+                            // 再將左手的div盒子append 第二次點擊的配件圖src
+                            var img2 = $(this).next().attr('src');
+
+                            $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').append(`<img class="roleplay-content-item" src="${img2}"/>`);
+                        }
+
+                    }
+
+                    else {
+                        // 如果第二次點擊+ icon的src ，等於自己的src （和角色框內的配件圖src一樣）
+
+                        $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').empty();
+
+                        $(this).parent().removeClass('active');
+                    }
+                }
+
+
+
+
+
+                // 下面是 Vox左手
+                // if ($('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').children().length == 0) {
+
+                //     var img = $(this).next().attr('src');
+
+                // $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').append('<img class="roleplay-content-item" src="./imgs/Itemshop/Avatar_item/Vox/hand/vox_hand_left_BubbleTea.png" alt="">');
+
+                //     $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').append($('<img/>').attr('src', img).addClass('roleplay-content-item'));
+
+                //     $(this).parent().addClass('active');
+                // }
+
+                // else {
+                //     $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').empty();
+
+                //     $(this).parent().removeClass('active');
+                // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             }
-            
+
+
+
+
+
         });
 
-        
-
-
-
-        // $('.fitting-room-item-imgwrap-add-wear').click(function () {
-        //     console.log('hi');
-        //     $('.fitting-room-roleplay-hand').toggle(500);
-
-        //     if ($('.fitting-room-roleplay').hasClass('fitting-room-roleplay-start-wear')) {
-        //         $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').append('<img class="roleplay-content-item" src="./imgs/Itemshop/Avatar_item/Vox/hand/vox_hand_left_BubbleTea.png" alt="">');
-        //     }
-        // });
 
 
 
 
-
-
-
-        // $(".fitting-room-item-imgwrap-add-wear").click(function () {
-        //     $(this).toggleClass("fitting-room-roleplay-hand-try");
-        // });
-
-
-
-        // $('.fitting-room-item-imgwrap-add-wear').click(function () {
-        //     $('.fitting-room-roleplay-hand').toggle(100);
-        // });
-
-
-
-
-
-
-        // $(function () {
-        //     $(".fitting-room-item-imgwrap-add-wear").click(function () {
-        //         $(".fitting-room-item-imgwrap-add-wear").slideToggle(300);
-        //         if ($('.fitting-room-roleplay-hand').is(':hidden')) {
-        //             $(this).append('<img class="roleplay-content-item roleplay-content-item-hand" src="./imgs/Itemshop/Avatar_item/Vox/hand/vox_hand_left_BubbleTea.png" alt="">');
-        //         } else {
-        //             $('.roleplay-content-item-hand').remove();
-        //         }
-        //     });
-        // });
 
 
 
