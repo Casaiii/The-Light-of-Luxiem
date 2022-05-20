@@ -389,9 +389,9 @@
 
                                 <!-- 物品:Vox麥克風 -->
                                 <div class="fitting-room-roleplay-object">
-                                    <!-- <img class="roleplay-content-item"
+                                    <img class="roleplay-content-item"
                                         src="./imgs/Itemshop/Avatar_item/Vox/object/vox_object_right_Microphone2.png"
-                                        alt=""> -->
+                                        alt="">
                                 </div>
 
 
@@ -806,7 +806,7 @@
                                 </svg>
                             </div>
 
-                            <img class="item-hand"
+                            <img class="item-hand" data-position="left-hand"
                                 src="./imgs/Itemshop/Avatar_item/Vox/hand/vox_hand_left_BubbleTea.png" alt="">
                         </div>
                         <div class="fitting-room-item-name d-flex justify-content-between align-items-center">
@@ -1777,17 +1777,23 @@
                         var img = $(this).next().attr('src');
 
                         // 在左手的div盒子append 此配件縮圖的src
-                        $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').append(`<img class="roleplay-content-item" src="${img}"/>`);
+                        // 
+                        $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').html(`<img class="roleplay-content-item" src="${img}"/>`);
 
                         // 同時此配件縮圖的邊框會變黃色
                         $(this).parent().addClass('active');
                     }
+
+
                 }
 
                 else {
+                    console.log($('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand img').attr('src'));
+                    console.log($(this).next().attr('src'));
+
                     // 有東西的話再判斷：這個東西是不是自己（點擊的+ icon）？
                     // 如果第二次點擊+ icon的src ，不是自己的src （和角色框內的配件圖src不一樣）
-                    if ($(this).next().attr('src') !== $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').attr('src')) {
+                    if ($(this).next().attr('src') !== $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand img').attr('src')) {
 
                         // 帶有item-hand的classsname才能配戴
                         if ($(this).next().hasClass('item-hand')) {
@@ -1798,12 +1804,12 @@
                             $(this).parent().parent().siblings().children('.fitting-room-item-imgwrap').removeClass('active');
 
                             // 先清空原本左手div盒子的配件圖
-                            $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').empty();
+                            // $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').empty();
 
                             // 再將左手的div盒子append 第二次點擊的配件圖src
                             var img2 = $(this).next().attr('src');
 
-                            $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').append(`<img class="roleplay-content-item" src="${img2}"/>`);
+                            $('.fitting-room-roleplay-start-wear .fitting-room-roleplay-hand').html(`<img class="roleplay-content-item" src="${img2}"/>`);
                         }
 
                     }

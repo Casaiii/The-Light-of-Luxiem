@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： localhost
--- 產生時間： 2022 年 05 月 19 日 00:24
+-- 產生時間： 2022 年 05 月 20 日 15:37
 -- 伺服器版本： 10.4.21-MariaDB
 -- PHP 版本： 8.0.17
 
@@ -26,6 +26,7 @@ CREATE TABLE `items` (
   `item_categories_sid` int(11) NOT NULL DEFAULT 1,
   `item_name` varchar(60) NOT NULL,
   `item_img` varchar(500) NOT NULL,
+  `item_img_position` varchar(60) NOT NULL,
   `item_price` int(11) NOT NULL,
   `item_introduction` varchar(255) NOT NULL,
   `item_author` varchar(60) NOT NULL,
@@ -33,6 +34,13 @@ CREATE TABLE `items` (
   `item_type` varchar(60) NOT NULL,
   `item_created_at` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- 傾印資料表的資料 `items`
+--
+
+INSERT INTO `items` (`sid`, `item_categories_sid`, `item_name`, `item_img`, `item_img_position`, `item_price`, `item_introduction`, `item_author`, `item_story`, `item_type`, `item_created_at`) VALUES
+(1, 10, '珍珠奶茶', 'vox_hand_left_BubbleTea.png', 'left', 100, '口感特別的台灣之光飲料，喝過的人都愛不釋口！', '4LpWeuvZ', 'Vox意外得到了粉絲請的珍奶，一試成主顧～', '物品', '2022-04-07');
 
 --
 -- 已傾印資料表的索引
@@ -53,7 +61,7 @@ ALTER TABLE `items`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `items`
 --
 ALTER TABLE `items`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- 已傾印資料表的限制式
