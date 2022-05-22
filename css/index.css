@@ -349,13 +349,12 @@ body {
   width: 375px;
   overflow: hidden;
   outline: 2px solid #ffff00;
-
 }
 @media screen and (min-width: 1140px) {
-.index_intro_Bigtrain_wrap {
-  width: 1140px;
-  overflow: hidden;
-}
+  .index_intro_Bigtrain_wrap {
+    width: 1140px;
+    overflow: hidden;
+  }
 }
 
 /* -------index_intro_Bigtrain------- */
@@ -363,15 +362,16 @@ body {
 .index_intro_Bigtrain {
   width: 1875px;
   outline: 2px solid #00ff66;
+  height: 700px;
   /* transform: translateX(-750px); */
 }
 
 @media screen and (min-width: 1140px) {
-.index_intro_Bigtrain {
-  width: 5700px;
-  outline: 2px solid #00ff66;
-  /* transform: translateX(-3420px); */
-}
+  .index_intro_Bigtrain {
+    width: 5700px;
+    outline: 2px solid #00ff66;
+    /* transform: translateX(-3420px); */
+  }
 }
 
 /* -------index_intro_Ike_outwrap--------- */
@@ -382,11 +382,11 @@ body {
 }
 
 @media screen and (min-width: 1140px) {
-.index_intro_Ike_outwrap {
-  width: 1140px;
-  /* height: 300px; */
-  outline: 2px solid #00f0ff;
-}
+  .index_intro_Ike_outwrap {
+    width: 1140px;
+    /* height: 300px; */
+    outline: 2px solid #00f0ff;
+  }
 }
 
 /* -------index_IKE_body--------- */
@@ -756,5 +756,163 @@ body {
     top: -78rem;
     justify-content: center;
     align-items: center;
+  }
+}
+
+/* ----index_MEME_outwrap---- */
+@media screen and (min-width: 1140px) {
+  .index_MEME_outwrap {
+    max-width: 1140px;
+    height: 800px;
+    max-height: 800px;
+    /* outline: 2px solid #348ec7; */
+    position: relative;
+  }
+
+  .index_MEME_text p {
+    margin-bottom: 0;
+    position: absolute;
+    /* outline: 2px solid #348ec7; */
+  }
+  .index_MEME_text_up {
+    transform: translateY(-5.5rem);
+  }
+
+  .MEME_text_1 {
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    transform: translate(15rem, -5rem);
+  }
+  .MEME_text_2 {
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 120px;
+    transform: translate(15rem, 0rem);
+    z-index: 3;
+  }
+  .MEME_text_3 {
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 120px;
+    transform: rotate(-90deg) translate(-10rem, -1rem);
+  }
+}
+
+/* ----------- menu_btn ------------*/
+.menu_btn {
+  display: none;
+}
+@media screen and (min-width: 1140px) {
+  .menu_btn {
+    display: block;
+    width: 4rem;
+    max-width: 4rem;
+    height: 4rem;
+    z-index: 3;
+    position: absolute;
+    /* top: 8rem; */
+    /* left: 8rem; */
+    background-color: #d3b572;
+    transform: translate(58rem, -1.5rem);
+  }
+  .menu_line {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+  }
+  .line_up {
+    background: #fff;
+    height: 0.1rem;
+    transition: 0.3s;
+    position: absolute;
+    width: 3rem;
+    /* transform: translateY(-8px) rotate(-45deg); */
+  }
+  .line_up.tranup {
+    transform: translateY(1rem) rotate(-30deg);
+  }
+  .line_middle {
+    background: #fff;
+    height: 0.1rem;
+    transition: 0.3s;
+    position: absolute;
+    width: 3rem;
+    margin: 1rem 0;
+    display: block;
+  }
+  .line_down {
+    background: #fff;
+    height: 0.1rem;
+    transition: 0.3s;
+    position: absolute;
+    width: 3rem;
+    margin: 2rem 0;
+    /* transform: translateY(8px) rotate(45deg); */
+  }
+  .line_middle.none1 {
+    transform: rotate(30deg);
+  }
+  .line_down.trandn {
+    transform: translateY(-1rem) rotate(30deg);
+  }
+}
+
+/* ----------index_MEME_img----------- */
+@media screen and (min-width: 1140px) {
+  .index_MEME_img_wrap {
+    width: 720px;
+    height: 455px;
+    position: relative;
+  }
+  .index_MEME_img {
+    width: 100%;
+    height: 100%;
+    outline: 3px solid #00ff66;
+    position: absolute;
+    z-index: -1;
+    transform: translate(15rem, 0rem);
+  }
+  .index_MEME_img_wrap_other {
+    display: none;
+  }
+}
+
+/* -----------index_MEME_btn------------ */
+@media screen and (min-width: 1140px) {
+  .index_MEME_btn_wrap {
+    margin-top: 3rem;
+    justify-content: center;
+  }
+  .index_MEME_btn {
+    width: 850px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .MEME_btn {
+    width: 125px;
+    height: 69px;
+    border: 1px solid #d3b572;
+    padding: 8px 12px;
+    margin: 10px 32px;
+    text-align: center;
+  }
+  .MEME_btn p {
+    width: 83px;
+    height: 50px;
+    background-color: #d3b572;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+  .contain-1 {
+    background-origin: content-box;
+  }
+  .MEME_btn:hover p {
+    background-color: #eef1f4;
+    color: #667080;
   }
 }

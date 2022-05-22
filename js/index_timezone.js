@@ -132,7 +132,7 @@ $(".flag_GB").click(function () {
       console.log(ar1);
       $(".TimezoneInfo").html(ar1[0] + "<br>" + ar1[1]);
 
-      $(".TimezoneInfoCount").html("GMT+0" + "<br>" + ar1[3]);
+      $(".TimezoneInfoCount").html("GMT+1" + "<br>" + ar1[3]);
 
       setTimeout(showClock, 1000);
     } else {
@@ -275,4 +275,21 @@ $(".flag_CA").click(function () {
     }
   };
   showClock();
+});
+
+//------------漢堡夾小動畫---------------
+$(".menu_btn").click(function () {
+  if (
+    ($(".line_up").hasClass("tranup"),
+    $(".line_down").hasClass("trandn"),
+    $(".line_middle").hasClass("none1"))
+  ) {
+    $(".line_up").removeClass("tranup");
+    $(".line_down").removeClass("trandn");
+    $(".line_middle").removeClass("none1");
+  } else {
+    $(".line_up").addClass("tranup");
+    $(".line_down").addClass("trandn");
+    $(".line_middle").addClass("none1");
+  }
 });
