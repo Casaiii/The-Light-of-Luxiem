@@ -244,7 +244,7 @@ body {
 }
 .index_arrow_2 {
   position: absolute;
-  transform: translate(0.6rem, 3rem);
+  transform: translate(0.6rem, 3.5rem);
 }
 .index_arrow_text {
   font-size: 12px;
@@ -346,7 +346,7 @@ body {
 
 /* ----index_intro_Bigtrain_wrap----- */
 .index_intro_Bigtrain_wrap {
-  width: 375px;
+  width: 345px;
   overflow: hidden;
   outline: 2px solid #ffff00;
 }
@@ -360,16 +360,17 @@ body {
 /* -------index_intro_Bigtrain------- */
 
 .index_intro_Bigtrain {
-  width: 1875px;
+  width: 1725px;
   outline: 2px solid #00ff66;
-  height: 700px;
-  /* transform: translateX(-750px); */
+  height: 1000px;
+  /* transform: translateX(-690px); */
 }
 
 @media screen and (min-width: 1140px) {
   .index_intro_Bigtrain {
     width: 5700px;
     outline: 2px solid #00ff66;
+    height: 700px;
     /* transform: translateX(-3420px); */
   }
 }
@@ -633,6 +634,7 @@ body {
 }
 .index_timezome_flag_dropdown_menu_wrap {
   padding: 2rem 0;
+  z-index: 3;
 }
 .index_timezome_flag_dropdown_menu {
   /* 取消ul預設的內縮及樣式 */
@@ -703,13 +705,22 @@ body {
 .TimezoneInfo_wrap {
   text-align: center;
 }
+.TimezoneInfo_wrap p {
+  margin-bottom: 0;
+}
 .TimezoneInfo {
   color: #d3b572;
   font-size: 24px;
+  font-weight: 300;
 }
 .TimezoneInfoCount {
   color: #fff;
   font-size: 24px;
+}
+@media screen and (min-width: 1140px) {
+  .TimezoneInfo {
+    font-weight: 400;
+  }
 }
 
 /* -----index_intro_chevron_left---- */
@@ -726,7 +737,7 @@ body {
 .index_intro_chevron_right_wrap {
   position: absolute;
   right: 0%;
-  top: -24rem;
+  top: -41rem;
 }
 .index_intro_chevron_right_wrap svg:hover path {
   stroke: #667080;
@@ -759,14 +770,16 @@ body {
   }
 }
 
+
 /* ----index_MEME_outwrap---- */
-@media screen and (min-width: 1140px) {
+
   .index_MEME_outwrap {
-    max-width: 1140px;
-    height: 800px;
-    max-height: 800px;
+    max-width: 375px;
+    /* height: 338px; */
+    max-height: 338px;
     /* outline: 2px solid #348ec7; */
     position: relative;
+    top: -5rem;
   }
 
   .index_MEME_text p {
@@ -775,28 +788,68 @@ body {
     /* outline: 2px solid #348ec7; */
   }
   .index_MEME_text_up {
-    transform: translateY(-5.5rem);
+    transform: translateY(0rem);
+    display: flex;
+    align-items:flex-end;
   }
 
   .MEME_text_1 {
-    font-size: 80px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 0.3rem;
-    transform: translate(15rem, -5rem);
+    transform: translate(11rem, .5rem);
   }
   .MEME_text_2 {
-    font-size: 128px;
+    font-size: 48px;
     font-weight: 500;
-    line-height: 120px;
-    transform: translate(15rem, 0rem);
+    line-height: 48px;
+    transform: translate(1rem, 0rem);
     z-index: 3;
   }
   .MEME_text_3 {
-    font-size: 128px;
+    font-size: 48px;
     font-weight: 500;
-    line-height: 120px;
-    transform: rotate(-90deg) translate(-10rem, -1rem);
+    line-height: 48px;
+    transform: rotate(-90deg) translate(-4.5rem, -5rem);
   }
+  @media screen and (min-width: 1140px) {
+    .index_MEME_outwrap {
+      max-width: 1140px;
+      /* height: 800px; */
+      max-height: 800px;
+      /* outline: 2px solid #348ec7; */
+      position: relative;
+    }
+  
+    .index_MEME_text p {
+      margin-bottom: 0;
+      position: absolute;
+      /* outline: 2px solid #348ec7; */
+    }
+    .index_MEME_text_up {
+      transform: translateY(-5.5rem);
+      display: block;
+    }
+  
+    .MEME_text_1 {
+      font-size: 80px;
+      font-weight: 600;
+      letter-spacing: 0.3rem;
+      transform: translate(15rem, -5rem);
+    }
+    .MEME_text_2 {
+      font-size: 128px;
+      font-weight: 500;
+      line-height: 120px;
+      transform: translate(15rem, 0rem);
+      z-index: 3;
+    }
+    .MEME_text_3 {
+      font-size: 128px;
+      font-weight: 500;
+      line-height: 120px;
+      transform: rotate(-90deg) translate(-10rem, -1rem);
+    }
 }
 
 /* ----------- menu_btn ------------*/
@@ -859,6 +912,32 @@ body {
 }
 
 /* ----------index_MEME_img----------- */
+.index_MEME_img_wrap {
+  width: 345px;
+  height: 237px;
+  position: relative;
+  /* outline: 3px solid #00f0ff; */
+  /* transform: translate(-2rem, 0rem); */
+}
+.index_MEME_img {
+  width: 375px;
+  height: 237px;
+  outline: 3px solid #00ff66;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-1rem, 0rem);
+  /* background-color: #fff; */
+}
+.index_MEME_img img {
+  width: 345px;
+  object-fit: contain;
+  object-position:center ;
+  /* background-origin: content-box ; */
+  transform: translate(1rem, .5rem);
+}
+.index_MEME_img_wrap_other {
+  display: none;
+}
 @media screen and (min-width: 1140px) {
   .index_MEME_img_wrap {
     width: 720px;
@@ -873,12 +952,57 @@ body {
     z-index: -1;
     transform: translate(15rem, 0rem);
   }
+  .index_MEME_img img {
+    width: 100%;
+    object-fit: contain;
+    object-position:center ;
+    /* background-origin: content-box ; */
+    transform: translate(0rem, 0rem);
+  }
   .index_MEME_img_wrap_other {
     display: none;
   }
 }
 
 /* -----------index_MEME_btn------------ */
+
+.index_MEME_btn_wrap {
+  margin-top: 1rem;
+  justify-content: center;
+}
+.index_MEME_btn {
+  width: 345px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+}
+.MEME_btn {
+  width: 55px;
+  height: 37px;
+  border: 1px solid #d3b572;
+  padding: 4.5px 4px;
+  /* margin: 0px 5px; */
+  text-align: center;
+}
+.MEME_btn p {
+  width: 45px;
+  height: 26px;
+  background-color: #d3b572;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+.contain-1 {
+  background-origin: content-box;
+}
+.MEME_btn:hover p {
+  background-color: #eef1f4;
+  color: #667080;
+}
+
 @media screen and (min-width: 1140px) {
   .index_MEME_btn_wrap {
     margin-top: 3rem;
@@ -914,5 +1038,25 @@ body {
   .MEME_btn:hover p {
     background-color: #eef1f4;
     color: #667080;
+  }
+}
+
+
+.index_arrow_3 {
+  position: absolute;
+  transform: translate(14rem, 1.5rem);
+}
+.index_arrow_3:hover p {
+  color: #667080;
+}
+.index_arrow_3 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 1140px) {
+  .index_arrow_3 {
+    position: absolute;
+    transform: translate(50rem, 1rem);
   }
 }
