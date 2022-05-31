@@ -1156,7 +1156,7 @@ body {
 .tab-inner {
   margin-top: 2rem;
   padding: 15px;
-  height: 300px;
+  height: 350px;
   width: 1350px;
   font-size: 16px;
   transform: translateX(-8rem);
@@ -1222,6 +1222,67 @@ body {
 
 .index_Watch_img_wrap:hover .index_Watch_text {
   color: #d3b572;
+}
+
+/* -------index_Watch_fansrt_img_wrap------- */
+
+.index_Watch_fanart_img_wrap {
+  width: 300px;
+  height: 310px;
+}
+.index_Watch_fanart_img {
+  width: 300px;
+  height: 185px;
+  overflow: hidden;
+}
+.index_Watch_fanart_img img {
+  width: 100%;
+}
+.index_Watch_fanart_img_wrap a {
+  text-decoration: none;
+}
+.index_Watch_fanart_img_wrap:hover img {
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+.index_Watch_fanart_img_wrap:hover .index_Watch_text {
+  color: #d3b572;
+}
+.index_Watch_fanart_img_wrap:hover a path {
+  fill: #667080;
+}
+.index_Watch_text_2 {
+  font-size: 16px;
+  color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.index_Watch_fanart_img_wrap:hover .index_Watch_text_2 {
+  color: #d3b572;
+}
+.index_Watch_fanart_img_wrap:hover .index_Watch_text_2 > span {
+  color: #667080;
+}
+.tr-img {
+  transform: translateY(-10rem);
+}
+.index_Watch_fanart_img_wrap:hover .tr-img {
+  transform: translateY(-8rem) scale(1.2);
+}
+.tr-img_2 {
+  transform: translateY(-3rem);
+}
+.index_Watch_fanart_img_wrap:hover .tr-img_2 {
+  transform: translateY(-3rem) scale(1.2);
+}
+.modal-title {
+  font-size: 24px;
+}
+.modal-content {
+  background-color: #000000;
+  outline: 1px solid #d3b572;
 }
 
 /* ---------index_arrow_4------------- */
