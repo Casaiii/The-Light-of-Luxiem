@@ -26,16 +26,17 @@
 
 
     <style>
-        .itemshop-itemdetails {
+        .itemshop-choose-coin {
             /* width: 350vh; */
             width: 100vw;
-            height: 150vh;
+            height: 100vh;
             position: fixed;
-            background-color: rgb(0, 0, 0, 0.3);
+            background-color: rgb(0, 0, 0, 0.5);
             z-index: 3;
+            /* display: none; */
         }
 
-        .itemshop-itemdetails-wrap {
+        .itemshop-choose-coin-wrap {
             width: 95%;
             height: 300px;
             background-color: #000;
@@ -49,7 +50,7 @@
             text-align: center;
         }
 
-        .itemshop-itemdetails-name {
+        .itemshop-choose-coin-name {
             /* outline: 1px solid red; */
             color: #fff;
             font-size: 16px;
@@ -58,13 +59,13 @@
         }
 
         /* 左邊配件圖和價錢 */
-        .itemshop-itemdetails-item-unit {
+        .itemshop-choose-coin-item-unit {
             /* outline: 1px solid red; */
             margin-top: 25px;
             padding-left: 33px;
         }
 
-        .itemshop-itemdetailsm-item-imgwrap {
+        .itemshop-choose-coin-item-imgwrap {
             width: 133px;
             height: 133px;
             border: 2px solid #667080;
@@ -73,19 +74,19 @@
             position: relative;
         }
 
-        .itemshop-itemdetailsm-item-imgwrap img {
+        .itemshop-choose-coin-item-imgwrap img {
             width: 100%;
             object-fit: cover;
             opacity: 1;
             transition: .5s;
         }
 
-        .itemshop-itemdetailsm-item-imgwrap:hover img {
+        .itemshop-choose-coin-item-imgwrap:hover img {
             opacity: .5;
         }
 
         /* 喜愛追蹤 飄入愛心 */
-        .itemshop-itemdetails-follow-heart svg {
+        .itemshop-choose-coin-follow-heart svg {
             width: 20px;
             height: 20px;
             /* outline: 1px solid red; */
@@ -95,34 +96,34 @@
             transition: .5s;
         }
 
-        .itemshop-itemdetailsm-item-imgwrap:hover .itemshop-itemdetails-follow-heart svg {
+        .itemshop-choose-coin-item-imgwrap:hover .itemshop-choose-coin-follow-heart svg {
             bottom: 5px;
         }
 
-        .itemshop-itemdetails-item-price {
+        .itemshop-choose-coin-item-price {
             /* outline: 1px solid red; */
             padding-top: 18px;
         }
 
-        .itemshop-itemdetails-item-price-gold svg,
-        .itemshop-itemdetails-item-price-free svg {
+        .itemshop-choose-coin-item-price-gold svg,
+        .itemshop-choose-coin-item-price-free svg {
             width: 16px;
             height: 16px;
         }
 
-        .itemshop-itemdetails-item-price-gold-number,
-        .itemshop-itemdetails-item-price-free-number {
+        .itemshop-choose-coin-item-price-gold-number,
+        .itemshop-choose-coin-item-price-free-number {
             font-size: 16px;
             font-weight: 500;
             color: #D3B572;
             padding-left: 6px;
         }
 
-        .itemshop-itemdetails-item-price-gold {
+        .itemshop-choose-coin-item-price-gold {
             padding-left: 18px;
         }
 
-        .itemshop-itemdetails-item-price-free {
+        .itemshop-choose-coin-item-price-free {
             padding-left: 20px;
         }
 
@@ -192,7 +193,7 @@
 
 
         /* 關閉叉叉按鈕 */
-        .itemshop-itemdetails-close {
+        .itemshop-choose-coin-close {
             width: 30px;
             height: 30px;
             position: absolute;
@@ -200,7 +201,7 @@
             top: 10px;
         }
 
-        .itemshop-itemdetails-close svg {
+        .itemshop-choose-coin-close svg {
             width: 20px;
             height: 20px;
         }
@@ -214,57 +215,57 @@
 
         /* ---RWD桌機版：1920px--- */
         @media screen and (min-width: 1600px) {
-            .itemshop-itemdetails-wrap {
+            .itemshop-choose-coin-wrap {
                 width: 25%;
                 height: 400px;
             }
 
-            .itemshop-itemdetails-name {
+            .itemshop-choose-coin-name {
                 font-size: 24px;
                 margin-top: 40px;
             }
 
             /* 左邊配件圖和價錢 */
-            .itemshop-itemdetails-item-unit {
+            .itemshop-choose-coin-item-unit {
                 /* outline: 1px solid red; */
                 margin-top: 25px;
                 padding-left: 40px;
             }
 
-            .itemshop-itemdetailsm-item-imgwrap {
+            .itemshop-choose-coin-item-imgwrap {
                 width: 200px;
                 height: 200px;
             }
 
             /* 喜愛追蹤 飄入愛心 */
-            .itemshop-itemdetails-follow-heart svg {
+            .itemshop-choose-coin-follow-heart svg {
                 width: 32px;
                 height: 32px;
                 right: 10px;
                 bottom: -35px;
             }
 
-            .itemshop-itemdetailsm-item-imgwrap:hover .itemshop-itemdetails-follow-heart svg {
+            .itemshop-choose-coin-item-imgwrap:hover .itemshop-choose-coin-follow-heart svg {
                 bottom: 8px;
             }
 
-            .itemshop-itemdetails-item-price-gold svg,
-            .itemshop-itemdetails-item-price-free svg {
+            .itemshop-choose-coin-item-price-gold svg,
+            .itemshop-choose-coin-item-price-free svg {
                 width: 25px;
                 height: 25px;
             }
 
-            .itemshop-itemdetails-item-price-gold-number,
-            .itemshop-itemdetails-item-price-free-number {
+            .itemshop-choose-coin-item-price-gold-number,
+            .itemshop-choose-coin-item-price-free-number {
                 font-size: 20px;
                 padding-left: 10px;
             }
 
-            .itemshop-itemdetails-item-price-gold {
+            .itemshop-choose-coin-item-price-gold {
                 padding-left: 27px;
             }
 
-            .itemshop-itemdetails-item-price-free {
+            .itemshop-choose-coin-item-price-free {
                 padding-left: 30px;
             }
 
@@ -296,30 +297,21 @@
             .itemshop-choose-coin-btn-free {
                 margin-top: 25px;
             }
-
-
-
-
-
-
-
-
-
         }
     </style>
 </head>
 
 <body>
-    <div class="itemshop-itemdetails">
-        <div class="itemshop-itemdetails-wrap">
-            <div class="itemshop-itemdetails-name">Shu KARAOKE 麥克風</div>
+    <div class="itemshop-choose-coin">
+        <div class="itemshop-choose-coin-wrap">
+            <div class="itemshop-choose-coin-name">Shu KARAOKE 麥克風</div>
 
-            <div class="itemshop-itemdetails-main">
+            <div class="itemshop-choose-coin-main">
                 <!-- 左邊配件圖和價錢 -->
-                <div class="itemshop-itemdetails-item-unit">
-                    <div class="itemshop-itemdetailsm-item-imgwrap">
+                <div class="itemshop-choose-coin-item-unit">
+                    <div class="itemshop-choose-coin-item-imgwrap">
                         <!-- 喜愛追蹤 飄入愛心 -->
-                        <div class="itemshop-itemdetails-follow-heart">
+                        <div class="itemshop-choose-coin-follow-heart">
                             <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12.0895 3.17123L11.8924 3.37949L11.6842 3.18238C9.21847 0.848789 5.32788 0.955871 2.99429 3.42156C0.660692 5.88724 0.767773 9.77783 3.23346 12.1114L11.6445 20.0718L12.3708 20.7592L13.0581 20.0329L21.0186 11.6219C23.3522 9.15624 23.2451 5.26565 20.7794 2.93206C18.3137 0.598463 14.4231 0.705543 12.0895 3.17123Z"
@@ -330,18 +322,18 @@
                         <img src="./imgs/Itemshop/itemshop_banner_ikehand1.png" alt="">
                     </div>
 
-                    <div class="d-flex itemshop-itemdetails-item-price">
-                        <div class="d-flex itemshop-itemdetails-item-price-gold align-items-center">
+                    <div class="d-flex itemshop-choose-coin-item-price">
+                        <div class="d-flex itemshop-choose-coin-item-price-gold align-items-center">
                             <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12.25 9.33344V4.66677C12.2498 4.46218 12.1958 4.26125 12.0934 4.08412C11.991 3.90699 11.8438 3.7599 11.6667 3.65761L7.58333 1.32427C7.40598 1.22188 7.20479 1.16797 7 1.16797C6.79521 1.16797 6.59402 1.22188 6.41667 1.32427L2.33333 3.65761C2.15615 3.7599 2.00899 3.90699 1.9066 4.08412C1.80422 4.26125 1.75021 4.46218 1.75 4.66677V9.33344C1.75021 9.53803 1.80422 9.73897 1.9066 9.91609C2.00899 10.0932 2.15615 10.2403 2.33333 10.3426L6.41667 12.6759C6.59402 12.7783 6.79521 12.8322 7 12.8322C7.20479 12.8322 7.40598 12.7783 7.58333 12.6759L11.6667 10.3426C11.8438 10.2403 11.991 10.0932 12.0934 9.91609C12.1958 9.73897 12.2498 9.53803 12.25 9.33344Z"
                                     fill="#D3B572" stroke="#D3B572" stroke-width="1.5" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
-                            <div class="itemshop-itemdetails-item-price-gold-number">10</div>
+                            <div class="itemshop-choose-coin-item-price-gold-number">10</div>
 
                         </div>
-                        <div class="d-flex itemshop-itemdetails-item-price-free align-items-center">
+                        <div class="d-flex itemshop-choose-coin-item-price-free align-items-center">
                             <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6.99984 12.8334C10.2215 12.8334 12.8332 10.2217 12.8332 7.00008C12.8332 3.77842 10.2215 1.16675 6.99984 1.16675C3.77818 1.16675 1.1665 3.77842 1.1665 7.00008C1.1665 10.2217 3.77818 12.8334 6.99984 12.8334Z"
@@ -350,7 +342,7 @@
                                 <path d="M8.75 5.25H5.25V8.75H8.75V5.25Z" stroke="#D3B572" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
-                            <div class="itemshop-itemdetails-item-price-free-number">46</div>
+                            <div class="itemshop-choose-coin-item-price-free-number">46</div>
 
                         </div>
                     </div>
@@ -383,7 +375,7 @@
 
 
             <!-- 關閉叉叉按鈕 -->
-            <div class="itemshop-itemdetails-close">
+            <div class="itemshop-choose-coin-close">
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5 8.5L8.5 25.5" stroke="white" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
@@ -403,9 +395,9 @@
     <script src="./bootstrap-4.2.1-dist/js/bootstrap.bundle.js"></script>
 
     <script>
-        $('.itemshop-itemdetails-close').click(function () {
+        $('.itemshop-choose-coin-close').click(function () {
             console.log('hi');
-            $('.itemshop-itemdetails').addClass('hide');
+            $('.itemshop-choose-coin').addClass('hide');
         })
     </script>
 
