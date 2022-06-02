@@ -67,7 +67,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  transform: translateY(-30px);
+  transform: translateY(20px);
   z-index: -1;
 }
 @media screen and (min-width: 1140px) {
@@ -160,6 +160,18 @@ body {
   .index_visual_chat p {
     color: #667080;
     margin-bottom: 10px;
+  }
+  .Spinner_img_wrap img {
+    -webkit-animation: circle 1.5s infinite linear;
+  }
+
+  @-webkit-keyframes circle {
+    0%{
+       transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 
