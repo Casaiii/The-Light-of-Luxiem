@@ -20,6 +20,12 @@ $(".MEME_btn_5").click(function () {
   $(".index_MEME_img img").attr("src", $(".index_MEME_img_5 img").attr("src"));
 });
 
+//-----按鈕顯示ｃｓｓ
+
+$(".MEME_btn p").click(function (){
+  $(this).addClass("active").parents().siblings().find("p").removeClass("active");
+})
+
 //----------------創作區切換-------------------
 
 $(function () {

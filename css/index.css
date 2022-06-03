@@ -70,7 +70,7 @@ body {
   transform: translateY(20px);
   z-index: -1;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_visual_video {
     height: 630px;
     transform: translateY(-80px);
@@ -106,7 +106,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_visual_bc_wrap {
     width: 100%;
     height: 900px;
@@ -138,7 +138,7 @@ body {
 .index_visual_chat {
   display: none;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_visual_chat {
     display: block;
     width: 36%;
@@ -148,6 +148,7 @@ body {
     padding: 24px 32px;
     position: absolute;
     top: 18rem;
+    cursor: default;
   }
   .index_visual_chat h3 {
     color: #d3b572;
@@ -181,6 +182,7 @@ body {
   position: relative;
   text-align: center;
   justify-content: center;
+  cursor: default;
 }
 .index_text_up {
   font-size: 36px;
@@ -197,7 +199,7 @@ body {
   transform: translate(7rem, 0rem);
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_text_up {
     font-size: 96px;
     font-weight: 700;
@@ -269,7 +271,7 @@ body {
 .index_arrow_text svg {
   transform: translateX(0.5rem);
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_circle_btn1 {
     width: 412px;
     height: 412px;
@@ -305,6 +307,7 @@ body {
   font-size: 40px;
   font-weight: 700;
   position: relative;
+  cursor: default;
 }
 .index_intro_count_wrap {
   position: absolute;
@@ -317,7 +320,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_intro_count_wrap {
     display: flex;
     margin-left: 15rem;
@@ -331,6 +334,7 @@ body {
 /* -------index_text_2--------- */
 .index_text_2 {
   padding-left: 1rem;
+  cursor: default;
 }
 .index_text_2_up {
   font-size: 36px;
@@ -342,7 +346,7 @@ body {
   font-weight: 700;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_text_2 {
     margin-top: 15rem;
     padding-right: 10rem;
@@ -362,7 +366,7 @@ body {
   overflow: hidden;
   /* outline: 2px solid #ffff00; */
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_intro_Bigtrain_wrap {
     width: 1140px;
     overflow: hidden;
@@ -378,11 +382,11 @@ body {
   /* transform: translateX(-690px); */
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_intro_Bigtrain {
     width: 5700px;
     /* outline: 2px solid #00ff66; */
-    height: 700px;
+    height: 720px;
     /* transform: translateX(-3420px); */
   }
 }
@@ -394,7 +398,7 @@ body {
   /* outline: 2px solid #00f0ff; */
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_intro_Ike_outwrap {
     width: 1140px;
     /* height: 300px; */
@@ -420,7 +424,7 @@ body {
   transform: translateX(1rem);
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_IKE_body {
     /* transform: translateX(50% - 105px); */
     transform: translate(130%, -10rem);
@@ -444,6 +448,7 @@ body {
   font-size: 12px;
   line-height: 1.5rem;
   margin: 1rem 0;
+  cursor: pointer;
   /* outline: 1px solid green; */
 }
 .index_square_btn_wrap p:hover {
@@ -454,7 +459,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_square_btn {
     justify-content: center;
     right: unset;
@@ -484,6 +489,7 @@ body {
   }
   .index_IKE_head {
     height: 342px;
+    cursor: default;
   }
   .index_IKE_head img {
     margin-bottom: 1rem;
@@ -504,6 +510,9 @@ body {
   }
   .svg_link {
     margin-top: 1rem;
+  }
+  .svg_link svg {
+    cursor: pointer;
   }
 
   .see_more_ph {
@@ -531,7 +540,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   /* -----index_SC_rank---- */
 
   .index_SC_rank {
@@ -542,6 +551,7 @@ body {
     top: -21rem;
     left: 44rem;
     z-index: 1;
+    cursor: default;
   }
 
   .index_SC_rank_info {
@@ -569,8 +579,17 @@ body {
     padding: 13px 24px;
     border: 1px solid #d3b572;
     border-radius: 5px;
+    cursor: pointer;
   }
   .index_SC_rank_info_btn p:hover {
+    color: #fff;
+    background-color: #d3b572;
+  }
+  .index_SC_rank_info_btn p.active {
+    color: #fff;
+    background-color: #d3b572;
+  }
+  .index_SC_rank_info_btn p:nth-child(1) {
     color: #fff;
     background-color: #d3b572;
   }
@@ -609,6 +628,7 @@ body {
   height: 155px;
   position: relative;
   background-color: #000000;
+  cursor: pointer;
 }
 .index_livenow_img img {
   width: 100%;
@@ -631,7 +651,7 @@ body {
   transform: scale(1);
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_livenow_timezone {
     left: 15%;
     top: -28rem;
@@ -657,6 +677,7 @@ body {
 .index_timezome_flag_dropdown_menu_wrap {
   padding: 2rem 0;
   z-index: 3;
+  cursor: pointer;
 }
 .index_timezome_flag_dropdown_menu {
   /* 取消ul預設的內縮及樣式 */
@@ -726,6 +747,7 @@ body {
 /* -------timezone_info--------- */
 .TimezoneInfo_wrap {
   text-align: center;
+  cursor: default;
 }
 .TimezoneInfo_wrap p {
   margin-bottom: 0;
@@ -739,7 +761,7 @@ body {
   color: #fff;
   font-size: 24px;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .TimezoneInfo {
     font-weight: 400;
   }
@@ -748,6 +770,9 @@ body {
 /* -----index_intro_chevron_left---- */
 .index_intro_chevron_left {
   display: none;
+}
+.index_intro_chevron_left_wrap svg {
+  cursor: pointer;
 }
 .index_intro_chevron_left_wrap svg:hover path {
   stroke: #667080;
@@ -761,11 +786,14 @@ body {
   right: 0%;
   top: -43rem;
 }
+.index_intro_chevron_right_wrap svg {
+  cursor: pointer;
+}
 .index_intro_chevron_right_wrap svg:hover path {
   stroke: #667080;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   /* -----index_intro_chevron_left---- */
   .index_intro_chevron_left {
     display: unset;
@@ -802,7 +830,9 @@ body {
   position: relative;
   top: -5rem;
 }
-
+.index_MEME_text {
+  cursor: default;
+}
 .index_MEME_text p {
   margin-bottom: 0;
   position: absolute;
@@ -833,7 +863,7 @@ body {
   line-height: 48px;
   transform: rotate(-90deg) translate(-4.5rem, -5rem);
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_MEME_outwrap {
     max-width: 1140px;
     /* height: 800px; */
@@ -878,7 +908,7 @@ body {
 .menu_btn {
   display: none;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .menu_btn {
     display: block;
     width: 4rem;
@@ -890,6 +920,7 @@ body {
     /* left: 8rem; */
     background-color: #d3b572;
     transform: translate(58rem, -1.5rem);
+    cursor: pointer;
   }
   .menu_line {
     position: absolute;
@@ -960,7 +991,7 @@ body {
 .index_MEME_img_wrap_other {
   display: none;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_MEME_img_wrap {
     width: 720px;
     height: 455px;
@@ -1006,6 +1037,7 @@ body {
   padding: 4.5px 4px;
   /* margin: 0px 5px; */
   text-align: center;
+  cursor: pointer;
 }
 .MEME_btn p {
   width: 45px;
@@ -1024,8 +1056,18 @@ body {
   background-color: #eef1f4;
   color: #667080;
 }
+.MEME_btn p.active {
+  background-color: transparent;
+  border: 1px solid #d3b572;
+  color: #fff;
+}
+.index_MEME_btn .MEME_btn:first-child p {
+  background-color: transparent;
+  border: 1px solid #d3b572;
+  color: #fff;
+}
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_MEME_btn_wrap {
     margin-top: 3rem;
     justify-content: center;
@@ -1080,7 +1122,7 @@ body {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_arrow_3 {
     position: absolute;
     transform: translate(50rem, 1rem);
@@ -1091,11 +1133,12 @@ body {
 .index_watch_text {
   display: none;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   /* -----------index_watch_text---------- */
   .index_watch_text {
     display: block;
     margin-bottom: 3rem;
+    cursor: default;
   }
   .index_watch_text p {
     margin-bottom: 0;
@@ -1125,11 +1168,11 @@ body {
 .index_watch_wrap {
   margin-top: 10rem;
 }
-
+/* ----#tab-demo---- */
 #tab-demo {
   display: none;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   #tab-demo {
     display: block;
     width: 1110px;
@@ -1248,7 +1291,7 @@ body {
     color: #d3b572;
   }
 
-  /* -------index_Watch_fansrt_img_wrap------- */
+  /* -------index_Watch_fanart_img_wrap------- */
 
   .index_Watch_fanart_img_wrap {
     width: 300px;
@@ -1309,6 +1352,46 @@ body {
     outline: 1px solid #d3b572;
   }
 }
+/* ----------ndex_Watch_img_wrap_ph------------ */
+.index_Watch_img_wrap_ph {
+  width: 100%;
+  outline: 3px solid #00f0ff;
+}
+.index_Watch_img_ph {
+  width: 258px;
+  outline: 3px solid #00f0ff;
+  margin: auto;
+}
+.index_Watch_text_ph {
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* -----------tab_title_ph------------- */
+.tab_title_ph {
+  transform: translateY(-5rem);
+}
+.tab_title_ph_p {
+  display: block;
+  border-bottom: 3px solid #d3b572;
+  width: 170px;
+  height: 55px;
+  line-height: 48px;
+  background: transparent;
+  padding: 0 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .tab_title_ph {
+    display: none;
+  }
+}
 
 /* ---------index_arrow_4------------- */
 
@@ -1327,10 +1410,10 @@ body {
   margin-bottom: 0;
 }
 .index_arrow_4 svg {
-  transform: translate(.5rem, 0rem);
+  transform: translate(0.5rem, 0rem);
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .index_arrow_4 {
     position: absolute;
     transform: translate(55rem, 15rem);
