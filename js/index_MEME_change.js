@@ -20,10 +20,16 @@ $(".MEME_btn_5").click(function () {
   $(".index_MEME_img img").attr("src", $(".index_MEME_img_5 img").attr("src"));
 });
 
-//-----按鈕顯示ｃｓｓ
+//-----按鈕顯示ｃｓｓ切換
 
 $(".MEME_btn p").click(function (){
   $(this).addClass("active").parents().siblings().find("p").removeClass("active");
+})
+
+//-----SC 按鈕 css切換
+
+$(".index_SC_rank_info_btn p").click(function (){
+  $(this).addClass("active").siblings().removeClass("active");
 })
 
 //----------------創作區切換-------------------
