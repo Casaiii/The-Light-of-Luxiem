@@ -182,6 +182,7 @@ body {
   position: relative;
   text-align: center;
   justify-content: center;
+  cursor: default;
 }
 .index_text_up {
   font-size: 36px;
@@ -1488,7 +1489,7 @@ body {
 .index_timeline_bg_halfcircle {
   width: 1126px;
   height: 887px;
-  background: url("/gitclass/20220505_vtuber-main/imgs/index/marquee/halfcircle-black.png")
+  background: url("/imgs/index/marquee/halfcircle-black.png")
     center center / contain no-repeat;
   position: relative;
   /* z-index: 1; */
@@ -1546,7 +1547,7 @@ body {
 .index_timeline_bg_circle_2 {
   width: 958px;
   height: 620px;
-  outline: 4px solid #348ec7;
+  /* outline: 4px solid #348ec7; */
   transform: translateY(-7rem);
   overflow: auto;
   margin: auto;
