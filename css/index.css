@@ -5,6 +5,10 @@ body {
   background-color: #000000 !important;
 }
 
+.index_whole_body {
+  padding-top: 5%;
+}
+
 /* -------字型-------- */
 
 .Inter {
@@ -1488,7 +1492,7 @@ body {
 .index_timeline_bg_halfcircle {
   width: 300px;
   height: 259px;
-  background: url("/gitclass/20220505_vtuber-main/imgs/index/marquee/halfcircle-black_sm.png")
+  background: url("../imgs/index/marquee/halfcircle-black_sm.png")
     center center / contain no-repeat;
   position: relative;
   /* z-index: 1; */
@@ -1727,7 +1731,7 @@ body {
 .index_timeline_bg_halfcircle {
   width: 1126px;
   height: 887px;
-  background: url("/gitclass/20220505_vtuber-main/imgs/index/marquee/halfcircle-black.png")
+  background: url("../imgs/index/marquee/halfcircle-black.png")
     center center / contain no-repeat;
   position: relative;
   /* z-index: 1; */
