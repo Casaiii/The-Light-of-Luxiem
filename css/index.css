@@ -1,12 +1,12 @@
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 body {
   background-color: #000000 !important;
 }
 
 .index_whole_body {
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom:68%;
 }
 @media screen and (min-width: 1440px) {
@@ -560,7 +560,7 @@ body {
 
   .index_SC_rank {
     display: block;
-    width: 264px;
+    width: 274px;
     height: 177px;
     position: relative;
     top: -21rem;
@@ -585,7 +585,12 @@ body {
   .SC_rank_money {
     font-size: 16px;
   }
-
+  .index_SC_rank_info_number {
+    justify-content: space-between;
+  }
+  .index_SC_rank_info_btn {
+    justify-content: space-between;
+  }
   .index_SC_rank_info_btn p {
     position: relative;
     color: #d3b572;
@@ -2091,7 +2096,7 @@ body {
   cursor: default;
 }
 
-.index_item_style_text_tc {
+.index_item_style_text_tc { 
   font-size: 24px;
   font-weight: 500;
   color: #fff;
