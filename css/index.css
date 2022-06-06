@@ -1158,7 +1158,7 @@ body {
   .index_watch_text {
     display: block;
     margin-bottom: 3rem;
-    cursor: default;
+    cursor: pointer;
   }
   .index_watch_text p {
     margin-bottom: 0;
@@ -1270,6 +1270,7 @@ body {
   .index_Watch_img_wrap {
     width: 300px;
     height: 250px;
+    cursor: pointer;
   }
   .index_Watch_img_wrap a {
     text-decoration: none;
@@ -1325,6 +1326,7 @@ body {
   .index_Watch_fanart_img_wrap {
     width: 300px;
     height: 310px;
+    cursor: pointer;
   }
   .index_Watch_fanart_img {
     width: 300px;
@@ -1846,7 +1848,7 @@ body {
     transform: translate(-10px, -20px);
   }
   .timeline_vector {
-    transform: translate(-13px, 98vh);
+    transform: translate(-13px, 960px);
   }
 
   #timeline ul {
@@ -2202,7 +2204,7 @@ body {
   }
 
   .index_item_style_wrap::-webkit-scrollbar {
-    width: 3px;
+    height: 5px;
   }
   .index_item_style_wrap::-webkit-scrollbar-thumb {
     background-color: #d3b572;
