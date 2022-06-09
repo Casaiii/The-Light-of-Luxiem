@@ -63,10 +63,12 @@ body {
 .index_Bigtitle {
   width: 100%;
   margin: auto;
+  padding-top: 20%;
 }
 .index_Bigtitle_img {
   width: 100%;
   z-index: 1;
+  display: none;
 }
 /* --------visual---------- */
 .index_visual {
@@ -82,9 +84,18 @@ body {
   z-index: -1;
 }
 @media screen and (min-width: 1440px) {
+  .index_Bigtitle {
+    padding-top: 0%;
+  }
+
   .index_visual_video {
     height: 630px;
     transform: translateY(-80px);
+  }
+  .index_Bigtitle_img {
+    width: 100%;
+    z-index: 1;
+    display: block;
   }
 }
 
@@ -94,9 +105,11 @@ body {
   height: 250px;
   overflow: hidden;
   position: relative;
-  top: -70px;
+  top: -83px;
 }
 .index_visual_bc {
+  top: 5%;
+  left: -10%;
   width: 500px;
   height: 400px;
   background: url(../imgs/index/hope_ph.png) repeat center center / cover;
@@ -130,6 +143,7 @@ body {
     height: 900px;
     background: url(../imgs/index/hope.png) no-repeat center center / cover;
     top: 10%;
+    left: 0%;
   }
 }
 @keyframes sdl {
@@ -1608,7 +1622,7 @@ body {
   /* perspective: 2000px */
 }
 .timeline_vector {
-  transform: translate(-13px, 140vh);
+  transform: translate(-13px, 1140px);
 }
 
 #timeline ul li:after {
