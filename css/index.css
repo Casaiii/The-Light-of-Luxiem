@@ -272,6 +272,7 @@ body {
   height: 100%;
 }
 .index_circle_btn_circle:hover {
+  transition: .5s;
   transform: translate(0px, 0px);
 }
 
